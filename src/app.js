@@ -1,4 +1,11 @@
 const VOCAB = {
+    //ADJ = VOCAB.CONDITION.concat(VOCAB.MATERIAL).concat(VOCAB.SUBJECT).concat(VOCAB.EMOTION);
+GRAMMAR : [
+    "<CONDITION> <BUILDING>",
+    "<CONDITION> <MATERIAL> <BUILDING>",
+    "<CONDITION> <BUILDING> looking <EMOTION>",
+
+],    
 BIOME : [
     "Oceanic",
     "Mountain",
@@ -73,8 +80,32 @@ MINERAL : [
     "silver",
     "iron"    
 ],
-//replace with character generator
-PERSON : [
+
+TRAIT: [
+    "rich",
+    "skillful",
+    "average",
+    "clumsy",
+    "noisy",
+    "drunken",
+    "poor",
+    "angry",
+    "optimistic",
+    "tolerant",
+    "charismatic",
+    "dumb",
+    "smart",
+    "careless",
+    "careful",
+    "fearless",
+    "courageous",    
+],
+
+PERSON: [
+    "<TRAIT|> <PROFESSION>"
+],
+
+PROFESSION : [
     "mage",
     "alchemyst",
     "knight",
@@ -90,15 +121,17 @@ PERSON : [
     "rogue",
     "archer",
     "guard",
-    "leader"
+    "leader",
+    "man",
+    "woman"
 ],
 
-CITY_PARTS : [
+BUILDING : [
     "gate",
     "church",
     "<SUBJECT|MINERAL> market",
     "house",
-    "home of <PERSON>",
+    "home of a <PERSON>",
     "tower",
     "port",
     "shop",
@@ -127,7 +160,7 @@ CITY_PARTS : [
     "cave",
     "castle",
     "road",
-    "statue of <SUBJECT|PERSON>",
+    "statue of a <SUBJECT|PERSON>",
     "lighthouse",
     "brothel"      
 ],
@@ -142,20 +175,16 @@ EMOTION : [
 ]
 }
 
-ADJ = VOCAB.CONDITION.concat(VOCAB.MATERIAL).concat(VOCAB.SUBJECT).concat(VOCAB.EMOTION);
-
 const main = () => {    
     document.writeln(randomWord(VOCAB.BIOME) + " city <br/><br/>");
-    for (var i = 0; i < 30; i++) {
+    for (let i = 0; i < 30; i++) {
         writeRandomSentence();   
     }    
 }
 
 const writeRandomSentence = () => {
     document.write(
-        generateWord(ADJ)
-        + " " + generateWord(VOCAB.CITY_PARTS) 
-        // + " looking " + randomWord(EMOTIONS) 
+        expandWord(VOCAB.GRAMMAR) 
         + "<br/>"
     ); 
 }
@@ -166,29 +195,26 @@ const randomWord = (array) => {
 
 }
 
-const generateWord = (array) => {
-    var word = randomWord(array);
-    var bonusMatch = word.match(/<(.*)>/);
-    if (bonusMatch) {
-        var subArray = randomWord(bonusMatch[1].split("|"));
-        return generateWord(VOCAB[subArray]);
-    } else {
-        return word;
+const expandWord = (array) => {
+    let word = randomWord(array);
+    //var bonusMatch = word.match(/<(.*)>/);
+    let toExpand = word.match(/<([^>]*)>/g);
+    
+    if (toExpand) {        
+        for (let i = 0; i < toExpand.length; i++) {
+            let subArrayNames = toExpand[i].replace(/<(.*)>/,"$1");
+            let subArray = randomWord(subArrayNames.split("|"));
+            if (!subArray) {
+                word = word.replace(toExpand[i],"")
+            } else {
+                if (! VOCAB[subArray]) {
+                    throw "cannot expand " + subArray;
+                }        
+                word = word.replace(toExpand[i], expandWord(VOCAB[subArray]));   
+            }  
+        }     
     }
+    return word;
 }
 
 main();
-
-/*
-Grammar
-
-H house
-C condtion
-S subject
-M material
-
-H -> Ch | CSh | CMSh
-C -> c
-S -> s
-M -> m
-*/
