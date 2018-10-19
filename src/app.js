@@ -1,11 +1,47 @@
 const VOCAB = {
     //ADJ = VOCAB.CONDITION.concat(VOCAB.MATERIAL).concat(VOCAB.SUBJECT).concat(VOCAB.EMOTION);
-GRAMMAR : [
+BUILDING_GRAMMAR : [
     "<CONDITION> <BUILDING>",
     "<CONDITION> <MATERIAL> <BUILDING>",
+    "<CONDITION> <AREA>",
     "<CONDITION> <BUILDING> looking <EMOTION>",
 
-],    
+],
+
+FAITH_GRAMMAR: [
+    "mother of gods",
+    "father of gods",
+    "<TRAIT|> <RACE|> god of <ELEMENT|ANIMAL|SUBJECT|BIOME>",
+    "<TRAIT|> <RACE|> goddess of <ELEMENT|ANIMAL|SUBJECT|BIOME>",
+    "<RACE|> guardian of <ANIMAL|SUBJECT|BIOME>",
+    "<TRAIT> <RACE|> bestower of healing",
+    "<TRAIT|> <RACE|> gatekeeper of <BIOME>",
+
+],
+
+CHARACTER: [
+
+],
+
+RACE: [
+    "reptilian",
+    "fungal",
+    "undead",
+    "skeletal",
+    "coral",
+    "draconian",
+    "desert",
+    "feline",
+    "treant",
+    "stone",
+    "<ELEMENT> elemental",
+    "vampiric",
+    "demonic",
+    "aquatic",
+    "amphibian",
+    "elven"
+],
+
 BIOME : [
     "Oceanic",
     "Mountain",
@@ -26,13 +62,13 @@ BIOME : [
     "Lake",
     "Swamp",
     "Wetlands",
+    "Ocean",
 ],
 CONDITION : [
     "poor",
     "abandoned",
     "fancy",
     "magical",
-    "mage",
     "arcane",
     "alchemyst",    
     "old",
@@ -46,8 +82,9 @@ CONDITION : [
     "forest",    
     "botanical",
     "volcanic",
-    "luxury"
-    
+    "luxury",
+    "sexy",
+    "exciting"    
 ],
 
 MATERIAL : [
@@ -60,7 +97,13 @@ MATERIAL : [
     "glass",
     "grass",
     "ice",
+],
 
+ANIMAL: [
+    "sheep",
+    "fish",
+    "bird",    
+    "horse"
 ],
 
 SUBJECT : [
@@ -69,10 +112,47 @@ SUBJECT : [
     "fruit",
     "jewel",
     "carpet",
-    "meat",
-    "sheep",
-    "fish",
-    "bird",
+    "magical items",
+    "meat"
+],
+
+SCIENCE: [
+    "theology",
+    "technology"   
+],
+
+MAGIC: [
+    "abjuration",
+    "conjuration",
+    "divination",
+    "enchantment",
+    "evocation",
+    "illustion",
+    "necromancy",
+    "transmutation",
+
+],
+
+ELEMENT: [
+    "thunder",
+    "ice",
+    "fire",
+    "water",
+],
+
+ABSTRACT: [
+    "war",
+    "fear",
+    "chaos",
+    "love",
+    "indulgence",
+    "appetites",
+    "hunger",
+    "prosperity",
+    "technology",
+    "death",
+    "harvest",
+    "hunt",    
 ],
 
 MINERAL : [
@@ -126,42 +206,47 @@ PROFESSION : [
     "woman"
 ],
 
+AREA: [
+    "cemetary",
+    "park",
+    "garden",
+    "slum",
+    "alley",
+    "cave",
+    "road",
+],
+
 BUILDING : [
     "gate",
     "church",
     "<SUBJECT|MINERAL> market",
     "house",
     "home of a <PERSON>",
-    "tower",
+    "<PROFESSION|SUBJECT|ANIMAL|> tower",
     "port",
-    "shop",
-    "workshop",
-    "cemetary",
-    "station",
-    "garden",
-    "park",
+    "<ANIMAL|SUBJECT> shop",
+    "workshop",    
+    "station",   
     "shrine",
     "fountain",
-    "university",
+    "university of <SCIENCE|MAGIC>",
     "<PERSON>'s laboratory",
     "<MINERAL> mine",
     "factory",
     "fortress",
     "monument",
-    "farm",
+    "<ANIMAL|> farm",
     "storage",
     "guild house", 
     "crypt",
-    "slum",
-    "alley",
     "wreck",
     "temple",
-    "cathedral",
-    "cave",
-    "castle",
-    "road",
+    "cathedral",    
+    "castle",    
     "statue of a <SUBJECT|PERSON>",
     "lighthouse",
+    "pub",
+    "hotel",
     "brothel"      
 ],
 
@@ -178,13 +263,17 @@ EMOTION : [
 const main = () => {    
     document.writeln(randomWord(VOCAB.BIOME) + " city <br/><br/>");
     for (let i = 0; i < 30; i++) {
-        writeRandomSentence();   
-    }    
+        writeRandomSentence(VOCAB.BUILDING_GRAMMAR);   
+    } 
+    document.writeln("<hr/> Faith: <br/><br/>");
+    for (let i = 0; i < 7; i++) {
+        writeRandomSentence(VOCAB.FAITH_GRAMMAR);   
+    }     
 }
 
-const writeRandomSentence = () => {
+const writeRandomSentence = (grammar) => {
     document.write(
-        expandWord(VOCAB.GRAMMAR) 
+        expandWord(grammar) 
         + "<br/>"
     ); 
 }
