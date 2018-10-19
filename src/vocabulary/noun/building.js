@@ -1,3 +1,7 @@
+VOCAB.PERSON = [
+    "<TRAIT|> <PROFESSION>"
+];
+
 VOCAB.BUILDING = [
     "gate",
     "church of <FAITH_GRAMMAR>",
@@ -14,8 +18,10 @@ VOCAB.BUILDING = [
     "shrine",
     "fountain",
     "university of <ABSTRACT|MAGIC>",
-    "<PERSON>'s laboratory",
+    "<PROFESSION>'s laboratory",
     "<MINERAL> mine",
+    "spa",
+    "baths",
     "factory",
     "fortress",
     "monument",

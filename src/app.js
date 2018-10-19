@@ -45,13 +45,14 @@ const writeRandomSentence = (grammar) => {
 }
 
 const cityName = (size) => {
+    const name = expandWord(VOCAB.CITY_NAMES_GRAMMAR).toUpperCase();
     const biome = randomWord(VOCAB.BIOME);
     if (size < 10) {
-        return biome + " village";
+        return name + ", " + biome + " village";
     } else if (size < 20){
-        return "City of " + biome;
+        return name + ", " + biome + "city";
     } else {
-        return "Great " + biome +" city";    
+        return name + ", great " + biome +" city";    
     }    
 }
 
