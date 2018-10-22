@@ -49,3 +49,14 @@ VOCAB.MINERAL = [
     "diamond",
     "topaz"    
 ];
+
+VOCAB.SIZE = [
+    "Great",
+    "Small",
+    "Tall",
+    "Short",
+    "Average",
+    "Narrow",
+    "Wide",
+    "Monstrous",    
+]

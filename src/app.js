@@ -11,37 +11,31 @@ const main = () => {
     document.write('<div class="col-sm">');    
     document.writeln('<h2>Places of interest:</h2>');
 
-    for (let i = 0; i < citySize; i++) {
-        writeRandomSentence(VOCAB.BUILDING_GRAMMAR);   
-    }
-
+    writeList(VOCAB.BUILDING_GRAMMAR, citySize); 
     document.write("</div>")
 
     //faith
     document.writeln('<div class="col-sm"><h2 class="title">Faith:</h2>');
-    for (let i = 0; i < citySize/3; i++) {
-        writeRandomSentence(VOCAB.FAITH_GRAMMAR);   
-    }
+    writeList(VOCAB.FAITH_GRAMMAR, citySize/3); 
     document.write("</div>") 
 
     //people
     document.writeln('<div class="col-sm"><h2 class="title">Famous people:</h2>'); 
-    document.write('<ul class="list-group">');  
-    for (let i = 0; i < citySize/2; i++) {
-        document.write('<li class="list-item">');  
-        writeRandomSentence(VOCAB.CHARACTER_GRAMMAR);   
-        document.write('</li>');  
-    }
-    document.write('</ul>'); 
+                 
+    writeList(VOCAB.CHARACTER_GRAMMAR, citySize/2);   
+    
     document.write('</div>');   
     document.write('</div>');  
 }
 
-const writeRandomSentence = (grammar) => {
-    document.write(
-        expandWord(grammar) 
-        + "<br/>"
-    ); 
+const writeList = (grammar, count) => {
+    document.write('<ul class="list-group">'); 
+    for (let i = 0; i < count; i++) {
+        document.write('<li class="list-item">');  
+        document.write(expandWord(grammar)); 
+        document.write('</li>'); 
+    }
+    document.write('</ul>'); 
 }
 
 const cityName = (size) => {

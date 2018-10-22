@@ -45,7 +45,8 @@ VOCAB.ABSTRACT = [
     "harvest",
     "hunt",
     "theology",
-    "philosophy",    
+    "philosophy",
+    "victory",    
 ];
 
 VOCAB.FOOD = [
@@ -68,6 +69,24 @@ VOCAB.ANIMAL = [
     "pig",
     "chicken",
     "dragon",
+    "rat",
+    "insect",
+    "snake",
+];
+
+VOCAB.ANIMALS = [
+    "sheep",
+    "fish",
+    "birds",    
+    "horses",
+    "wolfs",
+    "boars",
+    "pigs",
+    "chicken",
+    "dragons",
+    "rats",
+    "insects",
+    "snakes",
 ];
 
 VOCAB.BIOME = [    

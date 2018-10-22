@@ -4,6 +4,7 @@ VOCAB.PERSON = [
 
 VOCAB.BUILDING = [
     "gate",
+    "gate made of <MATERIAL>",
     "church of <FAITH_GRAMMAR>",
     "<SUBJECT|MINERAL> market",
     "house",
@@ -24,7 +25,7 @@ VOCAB.BUILDING = [
     "baths",
     "factory",
     "fortress",
-    "monument",
+    "monument of <ANIMAL|SUBJECT|ABSTRACT|>",
     "<ANIMAL|> farm",
     "<FOOD|SUBJECT|> storage",
     "guild house", 
@@ -33,7 +34,7 @@ VOCAB.BUILDING = [
     "temple",
     "cathedral",    
     "castle",    
-    "statue of a <SUBJECT|PERSON>",
+    "statue of a <SUBJECT|PERSON|ABSTRACT>",
     "lighthouse",
     "pub",
     "hotel",

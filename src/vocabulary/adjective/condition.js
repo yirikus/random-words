@@ -5,21 +5,25 @@ VOCAB.CONDITION = [
     "fancy",
     "magical",
     "arcane",
-    "alchemyst",
-    "ancient",    
+    "ancient",   
     "old",
     "cursed",
+    "sacred",
     "holy",
-    "ruined",
-    "industrial",
-    "subterranean",
-    "fungal",    
-    "frozen",
-    "forest",    
-    "botanical",
-    "volcanic",
+    "ruined",          
+    "frozen",       
     "luxury",
     "sexy",
     "exciting",
-    "corrupted"    
+    "corrupted",
+    "famous",    
+];
+
+VOCAB.LOCATION = [
+    "underground",  
+    "forest",
+]
+
+VOCAB.PURPOSE = [
+    "botanical",
 ];
