@@ -72,6 +72,7 @@ VOCAB.ANIMAL = [
     "rat",
     "insect",
     "snake",
+    "bat",
 ];
 
 VOCAB.ANIMALS = [
@@ -87,6 +88,7 @@ VOCAB.ANIMALS = [
     "rats",
     "insects",
     "snakes",
+    "bats",
 ];
 
 VOCAB.BIOME = [    

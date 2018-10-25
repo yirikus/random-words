@@ -16,7 +16,8 @@ VOCAB.CONDITION = [
     "sexy",
     "exciting",
     "corrupted",
-    "famous",    
+    "famous",
+    "overgrown",    
 ];
 
 VOCAB.LOCATION = [
