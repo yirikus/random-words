@@ -5,6 +5,11 @@ const main = () => {
     document.writeln(cityName(citySize));
     document.write("</h1>")
 
+    //story
+    document.write('<emphasis>');    
+    writeList(VOCAB.STORY_GRAMMAR, 5); 
+    document.write("</emphasis>")
+
     //buildings
     document.write('<div class="container">');    
     document.write('<div class="row">');    

@@ -72,4 +72,8 @@ WEAPON_GRAMMAR: [
     "skillful with <CONDITION|> <WEAPON|INSTRUMENT>", 
 ],
 
+STORY_GRAMMAR: [    
+    "<PROFESSION> <VERB>",    
+],
+
 };

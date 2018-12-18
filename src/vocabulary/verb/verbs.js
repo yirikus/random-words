@@ -1,0 +1,50 @@
+VOCAB.VERB = [
+    //action
+    "delivers a message",
+    "hurries",
+    "fights <ANIMAL>",    
+    "ambushes a caravan",
+    "murders <PROFESSION>",
+    "assasinates",
+    "uncovers a secret",
+    "performs a ritual",
+    "catches a fish in a canal",
+    "steals <SUBJECT>",
+    "summons a demon",
+    "competes at amusement park",
+    "runs away",
+    "is chasing a rogue <PROFESSION>",
+    "leads his followers to battle",
+    "gives a speech",
+    "is trading forbidden <SUBJECT>",
+    "plays an awesome song",
+    "dances with a <PROFESSION>",
+    "plots a masterplan",
+
+    //mystery
+    "attends a secret meeting",
+    "unlocks a secret cache",
+    "is hiding stuff in his secret stash",
+    "hides in shadows",
+    "worships god of <ELEMENT>",
+
+    //rest
+    "is guarding a treasure",
+    "arrives to a city",
+    "takes a boatride",
+    "walks over a bridge",
+    "walks under a bridge",
+    "enjoys a view",
+    "takes a break",
+    "visits a sacred place",
+    "is trying to sell <FOOD>",
+    "prepares for war",
+    "teaches his craft",
+    "prepaers a meal",
+    "works on a farmlands",
+    "tends to <ANIMAL>",
+
+    //romance
+    "is being seduced by a courtesan",
+    "is eyballing an attractive woman",
+];
