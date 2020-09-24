@@ -24,6 +24,15 @@ VOCAB.MAGIC = [
 
 ];
 
+VOCAB.ELEMENT_2 = [
+    "blesku",
+    "ledu",
+    "ohně",
+    "vody",
+    "vzduchu",
+    "slunce",
+];
+
 VOCAB.ELEMENT = [
     "thunder",
     "ice",
@@ -94,6 +103,20 @@ VOCAB.ANIMALS = [
     "insects",
     "snakes",
     "bats",
+];
+
+VOCAB.BIOME_2_MN = [    
+    "hor",
+    "sopek",
+    "lesů",
+    "podzemí",
+    "pouští",
+    "džungle",
+    "řek",
+    "jezer",
+    "bažin",
+    "mokřadů",
+    "oceánů",
 ];
 
 VOCAB.BIOME = [    

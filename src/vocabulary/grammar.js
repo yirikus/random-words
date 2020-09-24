@@ -36,6 +36,10 @@ CHARACTER_GRAMMAR: [
     "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|EMOTION|> <PROFESSION|ANIMAL> killer",
 ],
 
+MONSTER_GRAMMAR: [
+    "<TRAIT|CONDITION> <ELEMENT|MATERIAL|FOOD> golem that looks <EMOTION>"
+],
+
 CLOTHES_GRAMMAR: [
     "wearing <HEAD>",
     "in <BODY>",

@@ -1,2 +1,2 @@
 # random-words
-test
+published on yirikus.cz/x/rnd

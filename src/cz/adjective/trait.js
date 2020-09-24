@@ -1,0 +1,23 @@
+VOCAB.TRAIT = [
+    "bioluomiscent",
+    "blindfold",
+    "smoking",
+    "rich",
+    "skillful",
+    "average",
+    "clumsy",
+    "noisy",
+    "drunken",
+    "poor",
+    "angry",
+    "optimistic",
+    "tolerant",
+    "charismatic",
+    "dumb",
+    "smart",
+    "careless",
+    "careful",
+    "fearless",
+    "courageous",
+    "tattooed"    
+];
