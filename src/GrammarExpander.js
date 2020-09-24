@@ -46,7 +46,7 @@ const replaceExapandableWord = (word, expandable) => {
  */
 const applyParams = (word, params) => {
     
-    if (word.indexOf('$') < 0) {
+    if (!word || word.indexOf('$') < 0) {
         return word;
     }
     for (let i = 0; i < params.length; i++) {
@@ -62,7 +62,7 @@ const applyParams = (word, params) => {
  * @param {[]} params list of params
  */
 const expandWord = (vocabulary, params) => {
-    let word = Utils.chooseRandomFrom(vocabulary);
+    let word = Utils.chooseRandomFrom(vocabulary) || '';
     word = applyParams(word, params);
     let expandables = word.match(/<([^>]*)>/g);
 

@@ -31,7 +31,26 @@ VOCAB.ELEMENT_2 = [
     "vody",
     "vzduchu",
     "slunce",
+    "krve",
+    "měsíce",
+    "hvězd",
+    "země",
+    "světla",
+    "temnoty",
+    "nicoty",
+    "léčení",
+    "lásky",
+    "zdraví",
+    "plodnosti",
+    "úrody",
+    "války",
+    "smrti",
+    "hladomoru",
+    "moru"
+
 ];
+
+
 
 VOCAB.ELEMENT = [
     "thunder",
@@ -72,22 +91,25 @@ VOCAB.VEGETABLE = [
     ""   
 ];
 
+VOCAB.ANIMAL_2_MN = [
+    "ovcí",
+    "ryb",
+    "ptáků",    
+    "koní",
+    "vlků",
+    "kanců",
+    "prasat",
+    "kuřat",
+    "draků",
+    "krys",
+    "hmyzu",
+    "hadů",
+    "netopýrů",
+    "krav",
+    "koček",
 
-VOCAB.ANIMAL = [
-    "sheep",
-    "fish",
-    "bird",    
-    "horse",
-    "wolf",
-    "boar",
-    "pig",
-    "chicken",
-    "dragon",
-    "rat",
-    "insect",
-    "snake",
-    "bat",
 ];
+
 
 VOCAB.ANIMALS = [
     "sheep",

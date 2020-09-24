@@ -11,47 +11,31 @@ BUILDING_GRAMMAR : [
 ],
 
 BUILDING_STATE_GRAMMAR : [
-    "looking <EMOTION>",
+    "looking <TRAIT>",
     "swarming with <ANIMALS>",
 ],
 
 FAITH_GRAMMAR: [
-    "<GODNAME>, bůh <ELEMENT_2>", 
-    "<GODNAME>, strážce <ELEMENT_2|BIOME_2_MN>", 
-    "<GODNAME>, bohyně <ELEMENT_2>", 
-    // "mother of <CONDITION|> <ELEMENT|RACE> gods",
-    // "father of <CONDITION|> <ELEMENT|RACE> gods",
-    // "<TRAIT|> <RACE|> god of <ANIMAL|SUBJECT>",
-    // "<TRAIT|> <RACE|> goddess of <ANIMAL|SUBJECT>",
-    // "<RACE|> guardian of <ANIMAL|SUBJECT>",
-    // "<TRAIT|> <RACE|> god of the <ELEMENT|BIOME>",
-    // "<TRAIT|> <RACE|> goddess of the <ELEMENT|BIOME>",
-    // "<RACE|> guardian of the <BIOME>",
-    // "<TRAIT> <RACE|> bestower of healing",
-    // "<TRAIT|> <RACE|> gatekeeper of the <BIOME>",
-
+    "<GODNAME>, <ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M> <ADJ:RACE:_M|> bůh <ELEMENT_2>", 
+    "<GODNAME>, <ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M> <ADJ:RACE:_M|> pán <ELEMENT_2>", 
+    "<GODNAME>, <ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M> <ADJ:RACE:_M|> strážce <BIOME_2_MN>", 
+    "<GODNAME>, <ADJ:APPEARENCE_CHAR:_F|ADJ:TRAIT:_F> <ADJ:RACE:_F|> strážkyně <BIOME_2_MN>", 
+    "<GODNAME>, <ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M> <ADJ:RACE:_M|> ochránce <ANIMAL_2_MN>", 
+    "<GODNAME>, <ADJ:APPEARENCE_CHAR:_F|ADJ:TRAIT:_F> <ADJ:RACE:_F|> bohyně <ELEMENT_2>", 
 ],
 
 CHARACTER_GRAMMAR: [
-    "?"
-    // "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|EMOTION|> <RACE> <PROFESSION> <CLOTHES_GRAMMAR>",
-    // "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|EMOTION|RACE|> <PROFESSION> <WEAPON_GRAMMAR>",    
-    // "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|EMOTION|RACE|> <PROFESSION> evil twin <CLOTHES_GRAMMAR>",
-    // "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|EMOTION|RACE|> <PROFESSION> <CLOTHES_GRAMMAR>, <WEAPON_GRAMMAR>",
-    // "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|EMOTION|> <RACE> <PROFESSION> <CLOTHES_GRAMMAR>",
-    // "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|EMOTION|> <PROFESSION|ANIMAL> killer",
+    "<NAMES_1|NAMES_2|NAMES_3>, <ADJ:TRAIT:_M|> <ADJ:RACE:_M|> <PROFESSION_M> <CLOTHES_7|WEAPON_7|>",
+    "<NAMES_1|NAMES_2|NAMES_3>, <ADJ:TRAIT:_F|> <ADJ:RACE:_F|> <PROFESSION_F> <CLOTHES_7|WEAPON_7|>",    
+    // "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|TRAIT|RACE|> <PROFESSION> <CLOTHES_GRAMMAR>, <WEAPON_GRAMMAR>",
+    // "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|TRAIT|> <RACE> <PROFESSION> <CLOTHES_GRAMMAR>",
+    // "<NAMES_1|NAMES_2|NAMES_3>, the <TRAIT|TRAIT|> <PROFESSION|ANIMAL> killer",
 ],
 
 MONSTER_GRAMMAR: [
-    "?"
-    // "<TRAIT|CONDITION> <ELEMENT|MATERIAL|FOOD> golem that looks <EMOTION>"
-],
-
-CLOTHES_GRAMMAR: [
-    "?"
-    // "wearing <HEAD>",
-    // "in <BODY>",
-    // "with <FEATURE>",
+    "<ADJ:TRAIT:_M> <ADJ:RACE:_M|> <ADJ:MATERIAL:_M> golem <CLOTHES_7|WEAPON_7|>",
+    "<ADJ:TRAIT:_F> <ADJ:RACE:_F|> bestie <FEATURE_7>"
+    // "<TRAIT|CONDITION> <ELEMENT|MATERIAL|FOOD> golem that looks <TRAIT>"
 ],
 
 CITY_NAMES_GRAMMAR: [

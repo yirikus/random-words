@@ -18,7 +18,11 @@ VOCAB.GODNAME_P1 = [
     "Rod",
     "Rag",
     "Sva",
-    "Vel"
+    "Vel",
+    "Pol",
+    "Sol",
+    "Dur",
+    "Az"
 ];
 VOCAB.GODNAME_P2 = [
     "oš",
@@ -33,6 +37,12 @@ VOCAB.GODNAME_P2 = [
     "s",
     "nor",
     "rog",
-    "es"
+    "es",
+    "iel",
+    "el",
+    "za",
+    "zel",
+    "us",
+    "fe",
 ];
 

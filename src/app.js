@@ -27,14 +27,14 @@ const main = () => {
     //people
     document.writeln('<div class="col-sm"><h2 class="title">Famous people:</h2>'); 
                  
-    writeList(VOCAB.CHARACTER_GRAMMAR, citySize/2);   
+    writeList(VOCAB.CHARACTER_GRAMMAR, 5);   
     
     document.write('</div>');   
     document.write('</div>');  
 
     document.writeln('<div class="col-sm"><h2 class="title">Monsters: </h2>'); 
                  
-    writeList(VOCAB.MONSTER_GRAMMAR, 50);  
+    writeList(VOCAB.MONSTER_GRAMMAR, 5);  
     
     document.write('</div>');   
     document.write('</div>');  
