@@ -31,7 +31,8 @@ const replaceExapandableWord = (word, expandable) => {
         return word.replace(expandable, "");
     } else {
         if (!VOCAB[vocabName]) {
-            throw "cannot expand " + vocabName;
+            console.warn("cannot expand " + vocabName);
+            return "";
         }
         return word.replace(expandable, expandWord(VOCAB[vocabName], vocabNameAndParams.slice(1)));
     }

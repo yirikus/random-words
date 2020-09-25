@@ -24,6 +24,8 @@ VOCAB.PROFESSION_M = [
     "správce klíčů",
     "kníže",
     "kuchař",
+    "mnich",
+    "ninja",
     "řezník",
     "sluha",
     "kapitán",

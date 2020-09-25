@@ -1,8 +1,11 @@
+const version = '25.9.2020, 10:17';
 const main = () => {    
     //city name        
     document.write('<h1>');
-    var citySize = Utils.randomNumber(7,25);
-    document.writeln(cityName(citySize));
+    document.writeln(cityName());
+    document.write('<small class="text-muted">');
+    document.writeln(cityDesc());
+    document.write('</small>');
     document.write("</h1>")
 
     //story
@@ -38,28 +41,30 @@ const main = () => {
     
     document.write('</div>');   
     document.write('</div>');  
+    document.write('<div>last update ' + version + ' </div>');
 }
 
 const writeList = (grammar, count) => {
     document.write('<ul class="list-group">'); 
     for (let i = 0; i < count; i++) {
         document.write('<li class="list-item">');  
-        document.write(GrammarExpander.expandWord(grammar)); 
+        document.write(generateWord(grammar));         
         document.write('</li>'); 
     }
     document.write('</ul>'); 
 }
 
-const cityName = (size) => {
-    const name = GrammarExpander.expandWord(VOCAB.CITY_NAMES_GRAMMAR).toUpperCase();
-    const biome = Utils.chooseRandomFrom(VOCAB.BIOME);
-    if (size < 10) {
-        return name + ", " + biome + " village";
-    } else if (size < 20){
-        return name + ", " + biome + "city";
-    } else {
-        return name + ", great " + biome +" city";    
-    }    
+const generateWord = (grammar) => {
+    let word = GrammarExpander.expandWord(grammar);
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+const cityName = () => {
+    return GrammarExpander.expandWord(VOCAB.CITY_NAME_GRAMMAR).toUpperCase();    
+}
+
+const cityDesc = () => {
+    return GrammarExpander.expandWord(VOCAB.CITY_DESC_GRAMMAR).toUpperCase();    
 }
 
 main();

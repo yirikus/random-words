@@ -37,7 +37,7 @@ VOCAB.TRAIT_ML = [
     "zručn",
     "nešikovn",
     "věčně opil",
-    "závislý"
+    "závisl"
     
 ];
 
@@ -86,17 +86,21 @@ VOCAB.RACE_ML = [
     "pekeln"
 ];
 
-VOCAB.RACE_JR = [
-    "ještěří",
-    "dračí",
+VOCAB.RACE_JR = [    
     "pouštní",
-    "kočičí",
+    "<ANIMAL_ADJ>",
     "elementální",
-    //"<ELEMENT> elemental",
     "upíří",
     "vodní",
     "elfí"
 ];
+
+VOCAB.ANIMAL_ADJ=[
+    "kočičí",
+    "medvědí",
+    "ještěří",
+    "dračí",
+]
 
 
 

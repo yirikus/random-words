@@ -1,4 +1,5 @@
 VOCAB.PROFESSION = [
+    "advisor",
     "mage",
     "hunter",
     "alchemyst",
@@ -9,6 +10,7 @@ VOCAB.PROFESSION = [
     "rebel",
     "thief",
     "murderer",
+    "monk",
     "courtesan",
     "fisherman",
     "<ABSTRACT> teacher",

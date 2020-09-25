@@ -63,23 +63,6 @@ VOCAB.VEGETABLE = [
     ""   
 ];
 
-
-VOCAB.ANIMAL = [
-    "sheep",
-    "fish",
-    "bird",    
-    "horse",
-    "wolf",
-    "boar",
-    "pig",
-    "chicken",
-    "dragon",
-    "rat",
-    "insect",
-    "snake",
-    "bat",
-];
-
 VOCAB.ANIMALS = [
     "sheep",
     "fish",
@@ -116,6 +99,13 @@ VOCAB.BIOME = [
     "Wetlands",
     "Ocean",
 ];
+
+VOCAB.COMMUNITY = [
+    "city",
+    "town",
+    "village",
+    "settlement"
+]
 
 VOCAB.SCIENCE = [
     "theology",
