@@ -30,11 +30,12 @@ const replaceExapandableWord = (word, expandable) => {
         // empty option, ie <> or second option in <A|>
         return word.replace(expandable, "");
     } else {
-        if (!VOCAB[vocabName]) {
-            console.warn("cannot expand " + vocabName);
-            return "";
+        let replaceWith = VOCAB[vocabName];
+        if (!replaceWith) {
+            console.warn("cannot expand " + vocabName + " in word " + word);
+            replaceWith = "";
         }
-        return word.replace(expandable, expandWord(VOCAB[vocabName], vocabNameAndParams.slice(1)));
+        return word.replace(expandable, expandWord(replaceWith, vocabNameAndParams.slice(1)));
     }
 }
 

@@ -78,4 +78,8 @@ STORY_GRAMMAR: [
     "<PROFESSION> <VERB>",    
 ],
 
+MAIN_STORY_GRAMMAR: [    
+    "<PROFESSION> <VERB>",    
+],
+
 };

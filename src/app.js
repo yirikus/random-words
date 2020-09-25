@@ -1,7 +1,8 @@
-const version = '25.9.2020, 11:20';
+const version = '25.9.2020, 15:00 (v15 - moar czech stories!)';
 const main = () => {     
     writeElement('cityName', cityName());
     writeElement('cityDesc', cityDesc());
+    writeElement('mainStory', mainStory()); 
     writeElement('story', story()); 
     writeElement('buildings', buildings());   
     writeElement('faith', faith());  
@@ -36,6 +37,10 @@ const cityName = () => {
 
 const cityDesc = () => {
     return GrammarExpander.expandWord(VOCAB.CITY_DESC_GRAMMAR).toUpperCase();    
+}
+
+const mainStory = () => {
+    return generateWord(VOCAB.MAIN_STORY_GRAMMAR);    
 }
 
 const story = () => {

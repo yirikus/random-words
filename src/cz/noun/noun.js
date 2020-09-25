@@ -117,27 +117,32 @@ VOCAB.MAGIC = [
 ];
 
 VOCAB.GOD_ASPECT_2 = [
-    "<ELEMENT_2|ELEMENT_2_E|ABSTRACT_2|ABSTRACT_2_E>"
+    "<ELEMENT_F_2|ABSTRACT_2|ABSTRACT_2_E>",
+    "<ELEMENT_2_S_E|ABSTRACT_2|ABSTRACT_2_E>",
+    "<ELEMENT_M_2|ABSTRACT_2|ABSTRACT_2_E>",
 ];
 
-VOCAB.ELEMENT_2 = [
+VOCAB.ELEMENT_M_2 = [
     "blesku",
     "ledu",
     "ohně",
-    "vody",
     "vzduchu",
-    "slunce",
-    "krve",
     "měsíce",
-    "hvězd",
-    "země",
-    "světla",
-    "temnoty",
-    "nicoty",
-
 ];
 
-VOCAB.ELEMENT_2_E = [
+VOCAB.ELEMENT_F_2 = [
+    "vody",
+    "krve",
+    "hvězdy",
+    "země",
+    "temnoty",
+    "nicoty",
+];
+
+VOCAB.ELEMENT_S_2 = [
+];
+
+VOCAB.ELEMENT_2_S_E = [
     "slunce",
     "světla",
 ];
@@ -171,72 +176,47 @@ VOCAB.ABSTRACT_2_E = [
     "smíchu",    
 ]
 
-VOCAB.FOOD = [
-    "<ANIMAL> meat",
-    "wheat",
-    "rice", 
-    "pastry",
-    "beer",
-    "wine",   
+VOCAB.FOOD_7 = [
+    "masem z <ANIMAL_2_MN>",
+    "pšenicí",
+    "rajčaty",
+    "rýží", 
+    "pečivem",
+    "pivem",
+    "vínem",   
 ];
 
-VOCAB.VEGETABLE = [
-    "tomato",
-    ""   
+VOCAB.FOOD_4 = [
+    "maso z <ANIMAL_2_MN>",
+    "pšenici",
+    "rajčata",
+    "rýži", 
+    "pečivo",
+    "pivo",
+    "víno",   
 ];
 
-VOCAB.CREATURE = [
-    "drak",
-    "nymfa",
-    "stín",
-    "gremlin",
-    "harpye",
 
-]
 
-VOCAB.ANIMAL_S = [
-    "prase", 
-    "kuře",
-]
-
-VOCAB.ANIMAL_F = [
-    "ovce",
-    "ryba",
-    "krysa",
-    "kráva",
-    "kočka",
-    "liška"
+VOCAB.TARGETLOC_M_2 = [    
+    "skalního města",    
+    "lesa",
+    "mokřadu",
+    "vstupu do podzemí"
 ];
 
-VOCAB.ANIMAL_M = [
-    "pták",    
-    "vlk",       
-    "hmyz",
-    "had",
-    "kanec",
-    "kůň",
-    "medvěd",
-    "netopýr",
+VOCAB.TARGETLOC_F_2 = [    
+    "kanalizace",
+    "džungle",
+    "jeskyně",
+    "řeky",
+    "jezera",
+    "bažiny",
 ];
 
-VOCAB.ANIMAL_2_MN = [
-    "ovcí",
-    "ryb",
-    "ptáků",    
-    "koní",
-    "vlků",
-    "kanců",
-    "prasat",
-    "kuřat",
-    "draků",
-    "krys",
-    "hmyzu",
-    "hadů",
-    "netopýrů",
-    "krav",
-    "koček",
-    "medvědů",
-
+VOCAB.TARGETLOC_S_2 = [    
+    "podzemí",
+    "jezera",
 ];
 
 VOCAB.BIOME_2_MN = [    

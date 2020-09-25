@@ -43,7 +43,7 @@ VOCAB.TRAIT_ML = [
 
 VOCAB.TRAIT_JR = [
     "legrační",
-    "majestání",    
+    "majestátní",    
     "agresivní",
     "depresivní",
     "tolerantní",
@@ -51,8 +51,8 @@ VOCAB.TRAIT_JR = [
 
 VOCAB.APPEARENCE_ML = [
     "oškliv",
-    "nechutn",
-    "křehk",    
+    "nechutn",    
+    "začarovan",
     "<SIZE_ML>"
 ];
 VOCAB.APPEARENCE_JR = [
@@ -61,26 +61,30 @@ VOCAB.APPEARENCE_JR = [
 
 VOCAB.APPEARENCE_CHAR_ML = [
     "oškliv",
+    "přitažliv",
     "křehk",
     "nechutn",
+    "nahat",
     "zjizven",
     "potetovan",
     "tlust",
     "štíhl",
-    "mlad",    
+    "mlad", 
+    "vyhubl",
+    "špinav", 
+    "krásn",  
     "<SIZE_ML>"
 ];
 VOCAB.APPEARENCE_CHAR_JR = [
     "<SIZE_JR>",
-    "bioluminiscentní"
+    "bioluminiscentní",
+    "atraktivní"
 ];
 
 VOCAB.RACE_ML = [
     "nemrtv",
     "plísňov",
-    "kostěn",
-    "stromov",
-    "kamenn",
+    "stromov",    
     "démonick",
     "obojživeln",
     "pekeln"
@@ -139,43 +143,51 @@ VOCAB.MINERAL_JR = [
 
 ];
 
+//mlady
 VOCAB._F= ["á"];
-VOCAB._F2= ["é"];
-VOCAB._F3= ["é"];
-VOCAB._F4= ["ou"];
-VOCAB._F6= ["é"];
-VOCAB._F7= ["ým"];
-
+VOCAB._F_2= ["é"];
+VOCAB._F_3= ["é"];
+VOCAB._F_4= ["ou"];
+VOCAB._F_6= ["é"];
+VOCAB._F_7= ["ým"];
 
 VOCAB._S= ["é"];
-VOCAB._S2= ["ého"];
-VOCAB._S3= ["ému"];
-VOCAB._S4= ["é"];
-VOCAB._S6= ["ém"];
-VOCAB._S7= ["ým"];
+VOCAB._S_2= ["ého"];
+VOCAB._S_3= ["ému"];
+VOCAB._S_4= ["é"];
+VOCAB._S_6= ["ém"];
+VOCAB._S_7= ["ým"];
 
 VOCAB._M= ["ý"];
-VOCAB._M2= ["ého"];
-VOCAB._M3= ["ému"];
-VOCAB._M4= ["ého"];
-VOCAB._M6= ["ém"];
-VOCAB._M7= ["ým"];
+VOCAB._M_2= ["ého"];
+VOCAB._M_3= ["ému"];
+VOCAB._M_4= ["ého"];
+VOCAB._M_6= ["ém"];
+VOCAB._M_7= ["ým"];
+//jarni
+VOCAB._JAR_F_7= ["m"];
+
+VOCAB._JAR_S_2= ["ho"];
+VOCAB._JAR_S_3= ["mu"];
+VOCAB._JAR_S_6= ["m"];
+VOCAB._JAR_S_7= ["m"];
+
+VOCAB._JAR_M_2= ["ho"];
+VOCAB._JAR_M_3= ["mu"];
+VOCAB._JAR_M_4= ["ho"];
+VOCAB._JAR_M_6= ["m"];
+VOCAB._JAR_M_7= ["m"];
 
 
-VOCAB._MN= [
-    "ých"  
-]
-
-VOCAB._MN= [
-    "ých"  
-]
+VOCAB._MN= [ "ých"];
+VOCAB._MN_4= ["é"];
 
 /**
  * $1 = vocab name (adjectives)
  * $2 = vocab name _M,_F,_S
  */
 VOCAB.ADJ = [
-    "<$1$_JR>",
+    "<$1$_JR><_JAR$2$>",
     "<$1$_ML><$2$>",
 ]
 
