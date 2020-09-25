@@ -2,35 +2,84 @@ VOCAB.PERSON = [
     "<TRAIT|> <PROFESSION>"
 ];
 
+VOCAB.BUILDING_M = [
+    "kostel <SWARMING:_M|HOUSING:_M>",
+    "dům <SWARMING:_M|HOUSING:_M>",
+    "<METAL_ML><_M> důl",
+    "přístav",
+    "přístav <SWARMING:_M>",
+    "nevěstinec <SWARMING:_M|HOUSING:_M>",
+    "obchod s <FOOD_7>",
+    "obchod s <FOOD_7> <SWARMING:_M>",
+    "dům <PROFESSION_M_2|PROFESSION_F_2>",
+    "dům <ADJ:TRAIT:_F_2> <PROFESSION_F_2|PROFESSION_M_2|>",
+    "menhir z meteorovitého kamene popsaný <ADJ:ORIGIN:_S_7> písmem",
+    "menhir z <ADJ:CELESTIAL:_M_2>  kamene popsaný <ADJ:ORIGIN:_S_7> písmem",
+    "menhir z <ADJ:CELESTIAL:_M_2>  kamene postavený <RACE_JR|ORIGIN_JR>mi lidmi",
+    "menhir z <ADJ:CELESTIAL:_M_2> kamene postavený <RACE_JR>mi lidmi",
+];
+
 VOCAB.BUILDING_F = [
     "<ADJ:MATERIAL:_F> brána",
-    "dílna",
-    "věž",
-    "svatyně",
+    "dílna <SWARMING:_F|HOUSING:_F>",
+    "věž <SWARMING:_F|HOUSING:_F>",
+    "svatyně <SWARMING:_F|HOUSING:_F>",
     "fontána",
-    "továrna",
-    "pevnost",
-    "<ADJ:METAL:_F|ADJ:MATERIAL:_F> socha <ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2>",
+    "továrna <SWARMING:_F|HOUSING:_F>",
+    "zřícenina dříve létající <BUILDING_F_4>",
+    "zřícenina dříve létajícího <BUILDING_M_4>",
+    "pevnost <SWARMING:_F|HOUSING:_F>",
+    "<METAL_ML><_F> socha <ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2>",    
 ];
+
+VOCAB.BUILDING_F_4 = [
+    "<ADJ:MATERIAL:_F> brána",
+    "dílna",
+    "věže",
+    "svatyně",
+    "fontány",
+    "továrny",
+    "pevnosti",    
+    "<METAL_ML><_F> socha <ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2>",    
+];
+
 
 VOCAB.BUILDING_F_7 = [
     "<ADJ:MATERIAL:_F> bránou",
     "dílnou",
-    "věží",
-    "svatyní",
+    "věží <SWARMING:_F_7|HOUSING:_F_7>",
+    "svatyní <SWARMING:_F_7|HOUSING:_F_7>",
     "fontánou",
-    "továrnou",
-    "pevností",
+    "továrnou <SWARMING:_F_7|HOUSING:_F_7>",
+    "pevností <SWARMING:_F_7|HOUSING:_F_7>",
 ];
 
-VOCAB.BUILDING_M = [
-    "kostel",
-    "dům",
-    "přístav",
+
+VOCAB.SWARMING = [
+    "zamořen<$1$> <ANIMAL_7_MN>",
+],
+
+VOCAB.HOUSING = [
+    "obývan<$1$> <PROFESSION_MN_7>",
+],
+
+
+VOCAB.BUILDING_M_4 = [
+    "kostela",
+    "domu",
+    "<METAL_ML><_M> dolu",
+    "přístavu",
+    "nevěstince",
     "obchod s <FOOD_7>",
-    "dům <PROFESSION_M_2|PROFESSION_F_2>",
-    "dům <ADJ:TRAIT:_F_2> <PROFESSION_F_2|PROFESSION_M_2|>"
+    "domu <PROFESSION_M_2|PROFESSION_F_2>",
+    "domu <ADJ:TRAIT:_F_2> <PROFESSION_F_2|PROFESSION_M_2|>",
+    "menhiru z meteorovitého kamene popsaný <ADJ:ORIGIN:_S_7> písmem",
+    "menhiru z <ADJ:ELEMENT:_M_2> kamene popsaný <ADJ:ORIGIN:_S_7> písmem",
+    "menhiru z <ADJ:ELEMENT:_M_2> kamene postavený <RACE_JR|ORIGIN_JR>mi lidmi",
+    "menhiru z <ADJ:ELEMENT:_M_2> kamene postavený <RACE_JR>mi lidmi",
 ];
+
+//The Primeval Rock: A strange glyphed meteorite from which ruled a terrible race of shapeshifting savages.
 
 VOCAB.BUILDING_7 = [
     "<BUILDING_M_7|BUILDING_F_7|BUILDING_S_7>"
@@ -46,7 +95,7 @@ VOCAB.BUILDING_M_7 = [
 ];
 
 VOCAB.BUILDING_S = [
-    "lázně",
+    "lázně pro <PROFESSION_MN_4>",
     "tržiště",    
 ];
 
@@ -125,7 +174,7 @@ The Obsidian Enclave: A centuries-old laboratory deep in the caverns below where
 
 Earthmote of the Elemental Lords: The ruins of a once-mighty floating embassy of the elemental lords.
 
-The Primeval Rock: A strange glyphed meteorite from which ruled a terrible race of shapeshifting savages.
+
 
 The Infernal Machine: A machine that crosses worlds devouring entire civilizations and leaving behind nothing but poisoned ruins.
 

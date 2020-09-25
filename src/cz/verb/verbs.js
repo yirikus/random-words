@@ -25,7 +25,7 @@ VOCAB.VERB_ACTION = [
     "zápasí s <ADJ:TRAIT:_M_7> <ANIMAL_M_7|CREATURE_M_7>",
     "zápasí s <ADJ:TRAIT:_S_7> <ANIMAL_S_7>",
     "se chystá přepadnout karavanu",
-    "zabíjí <ANIMAL_2_MN> v <BIOME_6>",
+    "zabíjí <ANIMAL_4_MN> v <BIOME_6>",
     "odhalí tajemství <ANIMAL_2_MN>",
     "provádí rituál",    
     //"steals <SUBJECT>",

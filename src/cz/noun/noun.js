@@ -268,12 +268,37 @@ VOCAB.SCIENCE = [
     "technology"   
 ];
 
-VOCAB.SUBJECT = [
-    "technology",
-    "clock",    
-    "fruit",
-    "jewel",
-    "carpet",
-    "magical items",
-    "meat"
-];
+VOCAB.INSTRUMENT_F_4 = [
+    "harfu",
+    "loutnu",
+    "píšťalu",
+    "banjo",
+    "rumba kouli",
+]
+
+VOCAB.ITEM_F_4 = [
+    "nádobu",
+    "schránku",
+    "truhlici",
+    "sošku",    
+    "<INSTRUMENT_F_4>"
+]
+
+VOCAB.ITEM_M_4 = [
+    "koberec",
+    "šperk",
+    "svícen",
+    "amulet"    
+]
+
+VOCAB.ITEM_S_4 = [
+
+]
+
+VOCAB.ARTEFACT_4 = [
+    "<ITEM_M_4> <ABSTRACT_2>",
+    "<METAL_ML><_F_4> <ITEM_F_4> <ABSTRACT_2>",
+    "<METAL_ML>ý <ITEM_M_4> <ABSTRACT_2>"
+   // "<ADJ:METAL:_S_4><ITEM_S_4> <ABSTRACT_2>",
+
+]

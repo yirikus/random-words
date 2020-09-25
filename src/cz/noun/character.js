@@ -14,7 +14,8 @@ VOCAB.CLOTHES_7 = [
     "s dredy",
     "s copem",
     "v obvazech",
-    "s infekcí",    
+    "s infekcí",
+    "v <ADJ:COLOR:_F_MN_6> šatech"    
 ];
 
 VOCAB.ORIGIN = [

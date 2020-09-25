@@ -1,21 +1,29 @@
+VOCAB.POWER_ML = [
+    "mocn",
+    "prastar",
+    "nekontrolovateln",
+    "vychytral",
+    "hrůzostrašn",
+    "nebezpečn",
+    "vznešen",
+    "zuřiv",
+    "hlučn",
+    "svůdn",
+    "podl",
+
+]
 VOCAB.TRAIT_ML = [
     "nudn",
     "strašideln",
     "podezřel",
-    "vesel",
-    "vznešen",
-    "nebezpečn",
-    "svůdn",
+    "vesel",        
     "optimistick",
     "charismatick",
-    "mocn",
     "vyrovnan",
     "žárliv",    
-    "osaměl",
-    "hrůzostrašn",
+    "osaměl",    
     "důvěřiv",
-    "nedůvěřiv",
-    "nekontrolovateln",
+    "nedůvěřiv",    
     "bezmocn",
     "smutn",
     "zmaten",
@@ -25,29 +33,44 @@ VOCAB.TRAIT_ML = [
     "vystrašen",
     "směšn",
     "ustaran",
-    "nevin",
+    "nevinn",
     "hloup",
     "odvážn",
-    "nedbal",
-    "vychytral",
-    "zuřiv",
-    "hlučn",
+    "nedbal",    
     "chud",
     "bohat",
     "zručn",
     "nešikovn",
     "věčně opil",
-    "závisl"
+    "závisl",
+    "<POWER_ML>"
     
 ];
 
+VOCAB.CELESTIAL_ML = [
+    "hvězdn",
+    "vesmírn",
+    "meteoritov",
+]
+
+VOCAB.CELESTIAL_JR = [
+    "měsíční",
+    "sluneční",
+]
+
+
 VOCAB.TRAIT_JR = [
     "legrační",
-    "majestátní",    
+   // "majestátní",    
     "agresivní",
     "depresivní",
     "tolerantní",
+    "létající",
 ];
+
+VOCAB.APPEARENCE_B_ML= [
+    "popsaný neznámým písmem"
+]
 
 VOCAB.APPEARENCE_ML = [
     "oškliv",
@@ -104,6 +127,9 @@ VOCAB.ANIMAL_ADJ=[
     "medvědí",
     "ještěří",
     "dračí",
+    "soví",
+    "krabí",
+    "vlčí"
 ]
 
 
@@ -119,17 +145,18 @@ VOCAB.MATERIAL_ML = [
     "<METAL_ML>",   
 ];
 
-VOCAB.MATERIAL_JR = [];
+//VOCAB.MATERIAL_JR = [];
 
 VOCAB.METAL_ML = [
     "zlat",
     "stříbrn",
+    "bronzov",
     "platinov",
     "železn",   
 ];
-VOCAB.METAL_JR = [];
+//VOCAB.METAL_JR = [];
 
-VOCAB.GEM_JR = [];
+//VOCAB.GEM_JR = [];
 VOCAB.GEM_ML = [
     "emeraldov",
     "rubínov",
@@ -139,9 +166,7 @@ VOCAB.GEM_ML = [
 ];
 
 
-VOCAB.MINERAL_JR = [
-
-];
+//VOCAB.MINERAL_JR = [];
 
 //mlady
 VOCAB._F= ["á"];
@@ -149,7 +174,7 @@ VOCAB._F_2= ["é"];
 VOCAB._F_3= ["é"];
 VOCAB._F_4= ["ou"];
 VOCAB._F_6= ["é"];
-VOCAB._F_7= ["ým"];
+VOCAB._F_7= ["ou"];
 
 VOCAB._S= ["é"];
 VOCAB._S_2= ["ého"];
@@ -161,7 +186,7 @@ VOCAB._S_7= ["ým"];
 VOCAB._M= ["ý"];
 VOCAB._M_2= ["ého"];
 VOCAB._M_3= ["ému"];
-VOCAB._M_4= ["ého"];
+VOCAB._M_4= ["ého"]; // živonost D: mladého kraba vs mladý špark
 VOCAB._M_6= ["ém"];
 VOCAB._M_7= ["ým"];
 //jarni
@@ -189,17 +214,21 @@ VOCAB._MN_4= ["é"];
 VOCAB.ADJ = [
     "<$1$_JR><_JAR$2$>",
     "<$1$_ML><$2$>",
+    "<$1$_ML><$2$>",
+    "<$1$_ML><$2$>",
 ]
 
 VOCAB.SIZE_JR = [
-         
+    "miniaturní",
+    "monstrózní",
+    "majestátní"
 ];
+
 VOCAB.SIZE_ML = [
         "velk",
         "mal",
         "vysok",
-        "krátk",
-        "průměrn",
+        "nízk",
         "úzk",
         "širok",
     ]
@@ -212,8 +241,7 @@ VOCAB.CONDITION_JR = [
 VOCAB.CONDITION_ML = [
     "uboh",
     //"spiky",
-    "opuštěn",
-    "magick",
+    "opuštěn",    
     "křehk",
     //"arcane",
     "prastar",   
@@ -228,9 +256,36 @@ VOCAB.CONDITION_ML = [
     "zarostl",    
 ];
 
+VOCAB.PROPERTY_ML = [
+    "magick",
+];
+VOCAB.PROPERTY_JR = [
+    ""
+];
+
 VOCAB.LOCATION = [
     "underground",  
     "forest",
+]
+
+VOCAB.ORIGIN_ML = [
+    'neznám',
+    'podivn',
+    'mimozemsk',
+    'vesmírn',
+    'seversk',    
+    "horsk",    
+]
+
+VOCAB.ORIGIN_JR = [
+    "cizí",
+    'západní',
+    "východní",
+    "jižní",
+    "jezerní",
+    "lesní",
+    "pouštní",
+    "původní",
 ]
 
 VOCAB.PURPOSE = [

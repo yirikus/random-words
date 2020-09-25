@@ -1,9 +1,53 @@
-VOCAB.CREATURE = [
+
+VOCAB.HUMANOID_M = [
+    "op",
+    "barbar",
+    "kyklop",
+    "démon",   
+    "goblin", 
+    "obr",
+    "imp",
+    "kobold",
+    "<ANIMAL_ADJ> muž",    
+    "mnich",
+    "opičák",
+    "mutant",    
+    "ninja",
+    "ogr",
+    "pirát",
+    "kostlivec",
+    "satyr",
+    "šapan",
+    "trol",
+    "upír",    
+    "vlkodlak",
+    "čaroděj",
+    "válečník", 
+    "mág",
+    "yetti",
+    
+];
+
+VOCAB.HUMANOID_F = [
+    "naga",
+    "mořská panna",
+    "siréna",
+    "upíří královna",
+    "upírka",
+    "zombie <PROFESSION_M|PROFESSION_F>"
+]
+
+VOCAB.CREATURE = [ "<CREATURE_M|CREATURE_F>"]
+
+VOCAB.CREATURE_M = [
     "drak",
-    "nymfa",
     "stín",
     "gremlin",
     "goblin",
+]
+
+VOCAB.CREATURE_F = [
+    "nymfa",
     "harpye",
 ]
 
@@ -110,6 +154,9 @@ VOCAB.ANIMAL_2_MN = [
     "krav",
     "koček",
     "medvědů",
+    "mamutů",
+    "slonů",
+    "chlupatých slonů"
 ];
 
 VOCAB.ANIMAL_4_MN = [
@@ -128,6 +175,25 @@ VOCAB.ANIMAL_4_MN = [
     "netopýry",
     "krávy",
     "kočky",
+    "medvědy",
+    "draky",
+];
+
+VOCAB.ANIMAL_7_MN = [
+    "ovcemi",
+    "rybami",
+    "ptáky",    
+    "koněmi",
+    "vlky",
+    "kanci",
+    "prasaty",
+    "kuřaty",
+    "krysami",
+    "hmyzem",
+    "hady",
+    "netopýry",
+    "krávami",
+    "kočkami",
     "medvědy",
     "draky",
 ];
