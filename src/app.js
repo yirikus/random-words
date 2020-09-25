@@ -1,57 +1,28 @@
-const version = '25.9.2020, 10:17';
-const main = () => {    
-    //city name        
-    document.write('<h1>');
-    document.writeln(cityName());
-    document.write('<small class="text-muted">');
-    document.writeln(cityDesc());
-    document.write('</small>');
-    document.write("</h1>")
+const version = '25.9.2020, 11:20';
+const main = () => {     
+    writeElement('cityName', cityName());
+    writeElement('cityDesc', cityDesc());
+    writeElement('story', story()); 
+    writeElement('buildings', buildings());   
+    writeElement('faith', faith());  
+    writeElement('characters', characters()); 
+    writeElement('monsters', monsters());            
+    writeElement('version', version);  
+}
 
-    //story
-    document.write('<emphasis>');    
-    writeList(VOCAB.STORY_GRAMMAR, 5); 
-    document.write("</emphasis>")
-
-    //buildings
-    document.write('<div class="container">');    
-    document.write('<div class="row">');    
-    document.write('<div class="col-sm">');    
-    document.writeln('<h2>Places of interest:</h2>');
-
-    writeList(VOCAB.BUILDING_GRAMMAR, 8); 
-    document.write("</div>")
-
-    //faith
-    document.writeln('<div class="col-sm"><h2 class="title">Faith:</h2>');
-    writeList(VOCAB.FAITH_GRAMMAR, 3); 
-    document.write("</div>") 
-
-    //people
-    document.writeln('<div class="col-sm"><h2 class="title">Famous people:</h2>'); 
-                 
-    writeList(VOCAB.CHARACTER_GRAMMAR, 5);   
-    
-    document.write('</div>');   
-    document.write('</div>');  
-
-    document.writeln('<div class="col-sm"><h2 class="title">Monsters: </h2>'); 
-                 
-    writeList(VOCAB.MONSTER_GRAMMAR, 5);  
-    
-    document.write('</div>');   
-    document.write('</div>');  
-    document.write('<div>last update ' + version + ' </div>');
+const writeElement = (elementId, value) => {
+    document.getElementById(elementId).innerHTML = value;    
 }
 
 const writeList = (grammar, count) => {
-    document.write('<ul class="list-group">'); 
+    let innerHtml = '<ul class="list-group">'; 
     for (let i = 0; i < count; i++) {
-        document.write('<li class="list-item">');  
-        document.write(generateWord(grammar));         
-        document.write('</li>'); 
+        innerHtml += '<li class="list-item">';  
+        innerHtml += generateWord(grammar);         
+        innerHtml += '</li>'; 
     }
-    document.write('</ul>'); 
+    innerHtml += '</ul>'; 
+    return innerHtml;
 }
 
 const generateWord = (grammar) => {
@@ -65,6 +36,26 @@ const cityName = () => {
 
 const cityDesc = () => {
     return GrammarExpander.expandWord(VOCAB.CITY_DESC_GRAMMAR).toUpperCase();    
+}
+
+const story = () => {
+    return writeList(VOCAB.STORY_GRAMMAR, 5); 
+}
+
+const buildings = () => {
+    return writeList(VOCAB.BUILDING_GRAMMAR, 8); 
+}
+
+const faith = () => {
+    return writeList(VOCAB.FAITH_GRAMMAR, 3);
+}
+
+const characters = () => {
+    return writeList(VOCAB.CHARACTER_GRAMMAR, 5); 
+}
+
+const monsters = () => {
+    return writeList(VOCAB.MONSTER_GRAMMAR, 5);
 }
 
 main();

@@ -264,8 +264,8 @@ VOCAB.BIOME_6 = [
     "mokřadech",    
 ];
 
-VOCAB.BIOME_6_Е = [    
-    "skále",
+VOCAB.BIOME_6_E = [    
+    "skále"
 ];
 
 VOCAB.BIOME_ATYP = [    

@@ -14,15 +14,56 @@
         <script src="common/noun/cityName.js"></script>
         <script src="util.js"></script>
         <script src="GrammarExpander.js"></script>
-        <script src="app.js"></script>
+        <script defer="defer" src="app.js"></script>
         <link rel="stylesheet" href="style.css">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
     </head>
     <body>
-    <a href="index.html">EN</a>
-    <br/>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">EN</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="cz.html">CZ</a>
+            </li>
+        </ul>
+        <div class="container">
+            <h1>
+                <span id="cityName"></span>
+                <small class="text-muted" id="cityDesc"></small>
+            </h1>
+            <div class="row">
+                <emphasis class="list-unstyled" id="story"></emphasis> 
+            </div>
+            <br/>
+            <div class="row">   
+                <div class="col-sm">  
+                    <h2>Places of interest:</h2>
+                    <div id="buildings"></div>
+                </div>
+                <div class="col-sm">
+                    <h2 class="title">Faith:</h2>
+                    <div id="faith"></div>
+                </div>
+                <div class="col-sm">
+                    <h2 class="title">Famous people:</h2>
+                    <div id="characters"></div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-sm">
+                    <h2 class="title">Monsters: </h2>
+                    <div id="monsters"></div>
+                </div>
+            </div>
+            </div>
+            <div>last update <span id="version"></span></div>
+        </div>
+        <br/>
     </body>
 
 </html>
