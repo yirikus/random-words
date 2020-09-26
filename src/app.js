@@ -1,4 +1,4 @@
-const version = '25.9.2020, 15:00 (v15 - moar czech stories!)';
+const version = '25.9.2020, 20:29 (v16 - moar czech buildings!)';
 const main = () => {     
     writeElement('cityName', cityName());
     writeElement('cityDesc', cityDesc());
