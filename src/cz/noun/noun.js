@@ -1,4 +1,3 @@
-
 /**
  * $1: noun
  * $2: plurarity: '_MN' or ''
@@ -11,7 +10,7 @@
  */ 
 VOCAB.NOUN_M = [    
     "<$1><$2>"
-]
+];
 VOCAB.NOUN_S = [    
     "<$1_MESTO$2><_MESTO$2$3>",
     "<$1_KURE$2><_KURE$2$3>",
@@ -20,7 +19,7 @@ VOCAB.NOUN_S = [
 ]
 VOCAB.NOUN_F = [    
     "<$1><$2>"
-]
+];
 
 // stredni rod
 // mesto
@@ -186,10 +185,35 @@ VOCAB.FOOD_7 = [
     "vínem",   
 ];
 
+VOCAB.DRINK_2 = [
+    "piva",
+    "vína", 
+    "tvrdého alkoholu",
+    "džusu",    
+    "vody z latríny",
+    "vody",
+];
+
+VOCAB.FOOD_2 = [
+    "masa z <ANIMAL_2_MN>",
+    "steaků z <ANIMAL_2_MN>",
+    "párků z <ANIMAL_2_MN>",
+    "hamburgerů z <ANIMAL_2_MN>",
+    "knedlíků",
+    "polívky",
+    "banánů",
+    "jablek",
+    "pšenice",
+    "rajčat",
+    "rýže", 
+    "pečiva", 
+];
+
 VOCAB.FOOD_4 = [
     "maso z <ANIMAL_2_MN>",
     "pšenici",
     "rajčata",
+    "exotické kndedlíky",
     "rýži", 
     "pečivo",
     "pivo",
@@ -293,6 +317,67 @@ VOCAB.ITEM_M_4 = [
 
 VOCAB.ITEM_S_4 = [
 
+]
+
+VOCAB.ACTIVITY=[
+    "čůrání",
+    "jezení <FOOD_2>",
+    "pití <DRINK_2>",
+    "házení <WEAPON_7>",
+    "rozbíjení <FURNITURE_2>",
+    "sekání polínek",
+    "vaření",
+    "běhání",
+    "zpívání",
+    "hraní na <INSTRUMENT_F_4>",
+    "skákání",
+    "jezdění na <BIG_ANIMAL_6>",
+    "okrádání <PROFESSION_MN_2>",
+    "svádění <PROFESSION_MN_2>",
+    "vaření <FOOD_2>",
+]
+
+VOCAB.FURNITURE_MN_2 = [
+    "židlí",
+    "klavírů",
+    "barových židliček",
+    "stolů",
+    "postelí",
+    "skříní",
+    "šatních skříní",
+]
+
+VOCAB.FURNITURE_M_4 = [
+    "stůl",
+    "bar",
+    "klavír"
+]
+
+VOCAB.FURNITURE_F_4 = [
+    "židli",
+    "barovou židličku",
+    "stoličku",
+    "pohovku",
+    "postel",
+    "vzácnou vázu dynastie <GODNAME_P1|GODNAME_P2>"
+]
+
+VOCAB.FURNITURE_S_4 = [
+    "piano",
+    "mistrně vyřezávané křeslo",
+    "staré křeslo",    
+]
+
+VOCAB.BODY_PART_7 = [
+    "hlavou",
+    "nohou",
+    "rukou",
+    "zadkem",
+    "kolenem",
+    "loktem",
+    "zády",
+    "břichem",
+    "pěstí",
 ]
 
 VOCAB.ARTEFACT_4 = [

@@ -70,6 +70,40 @@ VOCAB.PROFESSION_M_2 = [
     "zabijáka", //TODO čeho
 ];
 
+VOCAB.PROFESSION_M_7 = [
+    "čarodějem",
+    "lovcem", 
+    "alchymistou",
+    "rytířem", 
+    "knězem",
+    "kovářem",
+    "obchodníkem",
+    "rebelem",
+    "lupičem",
+    "vrahem",
+    "svůdníkem",
+    "rybářem",
+    "učitelem",
+    "lučištníkem",
+    "strážcem",
+    "vůdcem",
+    "hrdinou",
+    "darebákem",
+    "trhovcem",
+    "bardem",
+    "umělcem",
+    "putovního bavičem",
+    "správcem klíčů",
+    "knížetem",
+    "kuchařem",
+    "mnichem",
+    "ninjou",
+    "řezníkem",
+    "sluhou",
+    "kapitánem",
+    "zabijákem",
+];
+
 VOCAB.PROFESSION_F = [
     "čarodějnice",
     "lovkyně",
@@ -94,6 +128,32 @@ VOCAB.PROFESSION_F = [
     "kapitánka",
     "služka",
     "kněžna",
+];
+
+VOCAB.PROFESSION_F_7 = [
+    "čarodějnicí",
+    "lovkyní",
+    "bojovnicí",
+    "kněžkou",
+    "kovářkou",
+    "obchodnicí",
+    "rebelkou",
+    "zlodějkou",
+    "kurtizánou",
+    "rybářkou",
+    "učitelkou",
+    "lučištnicí",
+    "strážkyní",
+    "vůdkyní",    
+    "hrdinkou",
+    "trhovkyní",
+    "akrobatkou",
+    "umělkyní",
+    "kuchařkou",
+    "pekařkou",
+    "kapitánkou",
+    "služkou",
+    "kněžnou",
 ];
 
 VOCAB.PROFESSION_F_2 = [
@@ -144,9 +204,63 @@ VOCAB.PROFESSION_MN_4 = [
     "mnichy",
 ]
 
+VOCAB.PROFESSION_MN_2 = [
+    "čarodějů",
+    "lovců", //čeho
+    "alchymistů",
+    "rytířů",    
+    "knězů",
+    "kovářů",
+    "obchodníků", 
+    "rebelů",
+    "lupičů",
+    "vrahů",
+    "svůdníků",
+    "rybářů",
+    "učitelů",
+    "lučištníků",
+    "strážců",    
+    "hrdinů",
+    "darebáků",
+    "trhovců",
+    "bardů",
+    "umělců",
+    "putovních bavičů",
+    "správců klíčů",
+    "knížat",
+    "kuchařů",
+    "kultistů",
+    "mnichů",
+    "ninjů",
+    "řezníků",
+    "sluhů",
+    "kapitánů",
+    "zabijáků",
+    "čarodějnic",    
+    "bojovnic",
+    "kněžek",
+    "kovářek",
+    "obchodnic",
+    "rebelek",
+    "zlodějek",
+    "kurtizán",
+    "rybářek",
+    "učitelek",
+    "lučištnic",        
+    "trhovkyň",
+    "akrobatek",
+    "umělkyň",
+    "kuchařek",
+    "pekařek",
+    "kapitánek",
+    "služek",
+    "kněžek",
+];
+
 
 VOCAB.PROFESSION_S = [
-    "dítě <PROFESSION_F_2>",
+    //"dítě <PROFESSION_F_2>",
+    "nemehlo",
 ];
 
 VOCAB.PROFESSION_MN_7 = [

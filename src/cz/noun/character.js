@@ -1,4 +1,4 @@
-VOCAB.CLOTHES_7 = [
+VOCAB.CLOTHES_6 = [
     "v masce",
     "v ceremoniální čelence",
     "v ornamentální čelence",

@@ -17,7 +17,7 @@ VOCAB.HUMANOID_M = [
     "pirát",
     "kostlivec",
     "satyr",
-    "šapan",
+    "šaman",
     "trol",
     "upír",    
     "vlkodlak",
@@ -28,13 +28,54 @@ VOCAB.HUMANOID_M = [
     
 ];
 
+VOCAB.HUMANOID_M_7 = [
+    "opem",
+    "barbarem",
+    "kyklopem",
+    "démonem",   
+    "goblinem", 
+    "obrem",
+    "impem",
+    "koboldem",
+    "<ANIMAL_ADJ>m mužem",    
+    "mnichem",
+    "opičákem",
+    "mutantem",    
+    "ninjou",
+    "ogrem",
+    "pirátem",
+    "kostlivecem",
+    "satyrem",
+    "šamanem",
+    "trolem",
+    "upírem",    
+    "vlkodlakem",
+    "čarodějem",
+    "válečníkem", 
+    "mágem",
+    "yettim",
+    
+];
+
 VOCAB.HUMANOID_F = [
     "naga",
+    "kyklopka",
     "mořská panna",
     "siréna",
+    "obryně",
     "upíří královna",
     "upírka",
     "zombie <PROFESSION_M|PROFESSION_F>"
+]
+
+VOCAB.HUMANOID_F_7 = [    
+    "mořskou pannou",
+    "sirénou",
+    "kyklopkou",
+    "obryní",
+    "upíří královnou",
+    "upírkou",
+    "zombie <PROFESSION_M_7|PROFESSION_F_7>"
 ]
 
 VOCAB.CREATURE = [ "<CREATURE_M|CREATURE_F>"]
@@ -126,6 +167,44 @@ VOCAB.ANIMAL_F_7 = [
     "liškou"
 ];
 
+VOCAB.ANIMAL_F_6 = [ 
+    "<BIG_ANIMAL_F_6|BIG_ANIMAL_M_6>",
+    "<SMALL_ANIMAL_F_6|SMALL_ANIMAL_M_6>"
+];
+
+VOCAB.SMALL_ANIMAL_F_6 = [
+    "rybě",
+    "kryse",
+    "kočce",
+    "lišce"
+];
+
+VOCAB.BIG_ANIMAL_F_6 = [
+    "ovci",
+    "krávě",
+    "antilopě",
+    "koze"
+];
+
+VOCAB.SMALL_ANIMAL_M_6 = [
+    "ptáku",    
+    "hadu",
+    "netopýrovi",
+];
+
+VOCAB.BIG_ANIMAL_M_6 = [    
+    "vlku",               
+    "kanci",
+    "koni",
+    "medvědu",  
+    "velbloudu",  
+];
+
+VOCAB.ANIMAL_6 = [ "<ANIMAL_F_6|ANIMAL_M_6>"];
+
+VOCAB.BIG_ANIMAL_6 = [ "<BIG_ANIMAL_F_6|BIG_ANIMAL_M_6>"];
+
+
 VOCAB.ANIMAL_M = [
     "pták",    
     "vlk",       
@@ -135,6 +214,30 @@ VOCAB.ANIMAL_M = [
     "kůň",
     "medvěd",
     "netopýr",
+];
+
+VOCAB.ANIMAL_MN = [
+    "ovce",
+    "ryby",
+    "ptáky",    
+    "koně",
+    "vlci",
+    "kanci",
+    "prasata",
+    "velbloudi",
+    "velryby",
+    "kuřata",
+    "draci",
+    "krysy",
+    "hmyz",
+    "hadi",
+    "netopýři",
+    "krávy",
+    "kočky",
+    "medvědi",
+    "mamuti",
+    "sloni",
+    "chlupatí sloni"
 ];
 
 VOCAB.ANIMAL_2_MN = [

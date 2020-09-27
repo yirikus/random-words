@@ -112,6 +112,15 @@ VOCAB.SCIENCE = [
     "technology"   
 ];
 
+VOCAB.FURNITURE = [
+    "table",
+    "chair",
+    "masterpiece by local painter",
+    "armchair",
+    "sofa",
+    "bar stool"
+]
+
 VOCAB.SUBJECT = [
     "technology",
     "clock",    
@@ -119,5 +128,19 @@ VOCAB.SUBJECT = [
     "jewel",
     "carpet",
     "magical items",
-    "meat"
+    "meat",
+    "map"
 ];
+
+//items 
+/*
+D100 items that are clues to an enemy's hideout location
+A gem mined in a nearby cave (enemy found in mining operation)
+
+A map with a location marked (enemy found wherever is marked)
+
+A coin with the sigil of a local guild (enemy found with protection from guild)
+
+A card from the local casino (enemy found in casino)
+
+A VIP pass to a city theatrical troupe (enemy found in theater) */

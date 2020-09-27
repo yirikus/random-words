@@ -43,6 +43,7 @@ VOCAB.TRAIT_ML = [
     "nešikovn",
     "věčně opil",
     "závisl",
+    "trapn",
     "<POWER_ML>"
     
 ];
@@ -190,7 +191,7 @@ VOCAB._M_4= ["ého"]; // živonost D: mladého kraba vs mladý špark
 VOCAB._M_6= ["ém"];
 VOCAB._M_7= ["ým"];
 //jarni
-VOCAB._JAR_F_7= ["m"];
+VOCAB._JAR_F_7= [""];
 
 VOCAB._JAR_S_2= ["ho"];
 VOCAB._JAR_S_3= ["mu"];

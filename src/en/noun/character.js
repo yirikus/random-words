@@ -114,29 +114,63 @@ VOCAB.INSTRUMENT = [
     "guitar", 
 ];
 
-VOCAB.WEAPON = [
-    "axe",
-    "hammer",
-    "knife",
-    "crossbow",
+VOCAB.THROWABLE_WEAPON = [
+    "axe",    
     "sword",
-    "poleaxe",
+    "hammer",
+    "morning star", 
+    "ceremonial knife",
+    "knife",
+    
+];
+VOCAB.BLUNT_WEAPON = [
     "staff",
+    "wand",
     "sceptre",
+];
+
+VOCAB.SHARP_WEAPON = [
+    "staff",
     "wand",
     "longsword",
-    "shield",
-    "throwing knives",
-    "dart blower",
-    "magical gauntlets",
-    "spellcasting hands",
+    "poleaxe",
     "two swords",
     "dual bladed sword",
-    "whip",
-    "morning star",    
+];
+
+VOCAB.SHOOTING_WEAPON = [
+    "crossbow",
     "bow",
+    "dart blower",
+    "throwing knives",
+    "sling shot",
+    "pistol"
+];
+
+VOCAB.SPECIAL_WEAPON = [
+    "magical gauntlets",
+    "whip",                
+    "shield",            
+    "spellcasting hands",
     "spear",
     "spellbook",
     "grimoire",
-    "ceremonial knife"
+]
+
+VOCAB.WEAPON = [
+    "<THROWABLE_WEAPON|BLUNT_WEAPON|SHARP_WEAPON|SHOOTING_WEAPON|SPECIAL_WEAPON>"
+    
 ];
+
+VOCAB.SKILL = [
+    "log sawing",
+    "<SHARP_WEAPON|BLUNT_WEAPON|THROWABLE_WEAPON> fighting",
+    "wrestling",
+    "climbing",
+    "horse riding",
+    "sneaking",
+    "stealing",
+    "running",
+    "parkour",
+    "<SLASHING_WEAPON> throwing",
+]

@@ -97,6 +97,7 @@ VOCAB.PURPOSE = [
 ];
 
 VOCAB.TRAIT = [
+    "awesome",
     "bioluomiscent",
     "blindfold",
     "smoking",
@@ -117,5 +118,6 @@ VOCAB.TRAIT = [
     "careful",
     "fearless",
     "courageous",
-    "tattooed"    
+    "tattooed",
+    
 ];
