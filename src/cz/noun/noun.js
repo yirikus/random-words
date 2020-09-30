@@ -9,16 +9,16 @@
  * Z: zena ruze kost
  */ 
 VOCAB.NOUN_M = [    
-    "<$1><$2>"
+    "[$1][$2]"
 ];
 VOCAB.NOUN_S = [    
-    "<$1_MESTO$2><_MESTO$2$3>",
-    "<$1_KURE$2><_KURE$2$3>",
-    "<$1_MORE$2><_MORE$2$3>",
-    "<$1_STAV$2><_STAV$2$3>",
+    "[$1_MESTO$2][_MESTO$2$3]",
+    "[$1_KURE$2][_KURE$2$3]",
+    "[$1_MORE$2][_MORE$2$3]",
+    "[$1_STAV$2][_STAV$2$3]",
 ]
 VOCAB.NOUN_F = [    
-    "<$1><$2>"
+    "[$1][$2]"
 ];
 
 // stredni rod
@@ -116,9 +116,9 @@ VOCAB.MAGIC = [
 ];
 
 VOCAB.GOD_ASPECT_2 = [
-    "<ELEMENT_F_2|ABSTRACT_2|ABSTRACT_2_E>",
-    "<ELEMENT_2_S_E|ABSTRACT_2|ABSTRACT_2_E>",
-    "<ELEMENT_M_2|ABSTRACT_2|ABSTRACT_2_E>",
+    "[ELEMENT_F_2|ABSTRACT_2|ABSTRACT_2_E]",
+    "[ELEMENT_2_S_E|ABSTRACT_2|ABSTRACT_2_E]",
+    "[ELEMENT_M_2|ABSTRACT_2|ABSTRACT_2_E]",
 ];
 
 VOCAB.ELEMENT_M_2 = [
@@ -176,7 +176,7 @@ VOCAB.ABSTRACT_2_E = [
 ]
 
 VOCAB.FOOD_7 = [
-    "masem z <ANIMAL_2_MN>",
+    "masem z [ANIMAL_2_MN]",
     "pšenicí",
     "rajčaty",
     "rýží", 
@@ -195,10 +195,10 @@ VOCAB.DRINK_2 = [
 ];
 
 VOCAB.FOOD_2 = [
-    "masa z <ANIMAL_2_MN>",
-    "steaků z <ANIMAL_2_MN>",
-    "párků z <ANIMAL_2_MN>",
-    "hamburgerů z <ANIMAL_2_MN>",
+    "masa z [ANIMAL_2_MN]",
+    "steaků z [ANIMAL_2_MN]",
+    "párků z [ANIMAL_2_MN]",
+    "hamburgerů z [ANIMAL_2_MN]",
     "knedlíků",
     "polívky",
     "banánů",
@@ -210,7 +210,7 @@ VOCAB.FOOD_2 = [
 ];
 
 VOCAB.FOOD_4 = [
-    "maso z <ANIMAL_2_MN>",
+    "maso z [ANIMAL_2_MN]",
     "pšenici",
     "rajčata",
     "exotické kndedlíky",
@@ -275,8 +275,8 @@ VOCAB.BIOME_6_E = [
 VOCAB.BIOME_ATYP = [    
     "na ostrově",
     "na poušti",
-    "u jezera <CITY_NAME_GRAMMAR|>",
-    "u řeky <CITY_NAME_GRAMMAR|>"
+    "u jezera [CITY_NAME_GRAMMAR|]",
+    "u řeky [CITY_NAME_GRAMMAR|]"
 ];
 
 VOCAB.COMMUNITY = [
@@ -305,7 +305,7 @@ VOCAB.ITEM_F_4 = [
     "schránku",
     "truhlici",
     "sošku",    
-    "<INSTRUMENT_F_4>"
+    "[INSTRUMENT_F_4]"
 ]
 
 VOCAB.ITEM_M_4 = [
@@ -321,20 +321,20 @@ VOCAB.ITEM_S_4 = [
 
 VOCAB.ACTIVITY=[
     "čůrání",
-    "jezení <FOOD_2>",
-    "pití <DRINK_2>",
-    "házení <WEAPON_7>",
-    "rozbíjení <FURNITURE_2>",
+    "jezení [FOOD_2]",
+    "pití [DRINK_2]",
+    "házení [WEAPON_7]",
+    "rozbíjení [FURNITURE_2]",
     "sekání polínek",
     "vaření",
     "běhání",
     "zpívání",
-    "hraní na <INSTRUMENT_F_4>",
+    "hraní na [INSTRUMENT_F_4]",
     "skákání",
-    "jezdění na <BIG_ANIMAL_6>",
-    "okrádání <PROFESSION_MN_2>",
-    "svádění <PROFESSION_MN_2>",
-    "vaření <FOOD_2>",
+    "jezdění na [BIG_ANIMAL_6]",
+    "okrádání [PROFESSION_MN_2]",
+    "svádění [PROFESSION_MN_2]",
+    "vaření [FOOD_2]",
 ]
 
 VOCAB.FURNITURE_MN_2 = [
@@ -359,7 +359,7 @@ VOCAB.FURNITURE_F_4 = [
     "stoličku",
     "pohovku",
     "postel",
-    "vzácnou vázu dynastie <GODNAME_P1|GODNAME_P2>"
+    "vzácnou vázu dynastie [GODNAME_P1|GODNAME_P2]"
 ]
 
 VOCAB.FURNITURE_S_4 = [
@@ -381,9 +381,9 @@ VOCAB.BODY_PART_7 = [
 ]
 
 VOCAB.ARTEFACT_4 = [
-    "<ITEM_M_4> <ABSTRACT_2>",
-    "<METAL_ML><_F_4> <ITEM_F_4> <ABSTRACT_2>",
-    "<METAL_ML>ý <ITEM_M_4> <ABSTRACT_2>"
-   // "<ADJ:METAL:_S_4><ITEM_S_4> <ABSTRACT_2>",
+    "[ITEM_M_4] [ABSTRACT_2]",
+    "[METAL_ML][_F_4] [ITEM_F_4] [ABSTRACT_2]",
+    "[METAL_ML]ý [ITEM_M_4] [ABSTRACT_2]"
+   // "[ADJ:METAL:_S_4][ITEM_S_4] [ABSTRACT_2]",
 
 ]

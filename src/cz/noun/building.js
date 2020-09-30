@@ -1,101 +1,101 @@
 VOCAB.PERSON = [
-    "<TRAIT|> <PROFESSION>"
+    "[TRAIT|] [PROFESSION]"
 ];
 
 VOCAB.BUILDING_M = [
-    "kostel <SWARMING:_M|HOUSING:_M>",
-    "dům <SWARMING:_M|HOUSING:_M>",
-    "<METAL_ML><_M> důl",
+    "kostel [SWARMING:_M|HOUSING:_M]",
+    "dům [SWARMING:_M|HOUSING:_M]",
+    "[METAL_ML][_M] důl",
     "přístav",
-    "přístav <SWARMING:_M>",
-    "nevěstinec <SWARMING:_M|HOUSING:_M>",
-    "obchod s <FOOD_7>",
-    "obchod s <FOOD_7> <SWARMING:_M>",
-    "dům <PROFESSION_M_2|PROFESSION_F_2>",
-    "dům <ADJ:TRAIT:_F_2> <PROFESSION_F_2|PROFESSION_M_2|>",
-    "menhir z meteorovitého kamene popsaný <ADJ:ORIGIN:_S_7> písmem",
-    "menhir z <ADJ:CELESTIAL:_M_2>  kamene popsaný <ADJ:ORIGIN:_S_7> písmem",
-    "menhir z <ADJ:CELESTIAL:_M_2>  kamene postavený <RACE_JR|ORIGIN_JR>mi lidmi",
-    "menhir z <ADJ:CELESTIAL:_M_2> kamene postavený <RACE_JR>mi lidmi",
+    "přístav [SWARMING:_M]",
+    "nevěstinec [SWARMING:_M|HOUSING:_M]",
+    "obchod s [FOOD_7]",
+    "obchod s [FOOD_7] [SWARMING:_M]",
+    "dům [PROFESSION_M_2|PROFESSION_F_2]",
+    "dům [ADJ:TRAIT:_F_2] [PROFESSION_F_2|PROFESSION_M_2|]",
+    "menhir z meteorovitého kamene popsaný [ADJ:ORIGIN:_S_7] písmem",
+    "menhir z [ADJ:CELESTIAL:_M_2]  kamene popsaný [ADJ:ORIGIN:_S_7] písmem",
+    "menhir z [ADJ:CELESTIAL:_M_2]  kamene postavený [RACE_JR|ORIGIN_JR]mi lidmi",
+    "menhir z [ADJ:CELESTIAL:_M_2] kamene postavený [RACE_JR]mi lidmi",
 ];
 
 VOCAB.BUILDING_F = [
-    "<ADJ:MATERIAL:_F> brána",
-    "dílna <SWARMING:_F|HOUSING:_F>",
-    "věž <SWARMING:_F|HOUSING:_F>",
-    "svatyně <SWARMING:_F|HOUSING:_F>",
+    "[ADJ:MATERIAL:_F] brána",
+    "dílna [SWARMING:_F|HOUSING:_F]",
+    "věž [SWARMING:_F|HOUSING:_F]",
+    "svatyně [SWARMING:_F|HOUSING:_F]",
     "fontána",
-    "továrna <SWARMING:_F|HOUSING:_F>",
-    "zřícenina dříve létající <BUILDING_F_4>",
-    "zřícenina dříve létajícího <BUILDING_M_4>",
-    "pevnost <SWARMING:_F|HOUSING:_F>",
-    "<METAL_ML><_F> socha <ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2>",    
+    "továrna [SWARMING:_F|HOUSING:_F]",
+    "zřícenina dříve létající [BUILDING_F_4]",
+    "zřícenina dříve létajícího [BUILDING_M_4]",
+    "pevnost [SWARMING:_F|HOUSING:_F]",
+    "[METAL_ML][_F] socha [ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2]",
 ];
 
 VOCAB.BUILDING_F_4 = [
-    "<ADJ:MATERIAL:_F> brána",
+    "[ADJ:MATERIAL:_F] brána",
     "dílna",
     "věže",
     "svatyně",
     "fontány",
     "továrny",
     "pevnosti",    
-    "<METAL_ML><_F> socha <ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2>",    
+    "[METAL_ML][_F] socha [ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2]",
 ];
 
 
 VOCAB.BUILDING_F_7 = [
-    "<ADJ:MATERIAL:_F> bránou",
+    "[ADJ:MATERIAL:_F] bránou",
     "dílnou",
-    "věží <SWARMING:_F_7|HOUSING:_F_7>",
-    "svatyní <SWARMING:_F_7|HOUSING:_F_7>",
+    "věží [SWARMING:_F_7|HOUSING:_F_7]",
+    "svatyní [SWARMING:_F_7|HOUSING:_F_7]",
     "fontánou",
-    "továrnou <SWARMING:_F_7|HOUSING:_F_7>",
-    "pevností <SWARMING:_F_7|HOUSING:_F_7>",
+    "továrnou [SWARMING:_F_7|HOUSING:_F_7]",
+    "pevností [SWARMING:_F_7|HOUSING:_F_7]",
 ];
 
 
 VOCAB.SWARMING = [
-    "zamořen<$1$> <ANIMAL_7_MN>",
+    "zamořen[$1$] [ANIMAL_7_MN]",
 ],
 
 VOCAB.HOUSING = [
-    "obývan<$1$> <PROFESSION_MN_7>",
+    "obývan[$1$] [PROFESSION_MN_7]",
 ],
 
 
 VOCAB.BUILDING_M_4 = [
     "kostela",
     "domu",
-    "<METAL_ML><_M> dolu",
+    "[METAL_ML][_M] dolu",
     "přístavu",
     "nevěstince",
-    "obchod s <FOOD_7>",
-    "domu <PROFESSION_M_2|PROFESSION_F_2>",
-    "domu <ADJ:TRAIT:_F_2> <PROFESSION_F_2|PROFESSION_M_2|>",
-    "menhiru z meteorovitého kamene popsaný <ADJ:ORIGIN:_S_7> písmem",
-    "menhiru z <ADJ:ELEMENT:_M_2> kamene popsaný <ADJ:ORIGIN:_S_7> písmem",
-    "menhiru z <ADJ:ELEMENT:_M_2> kamene postavený <RACE_JR|ORIGIN_JR>mi lidmi",
-    "menhiru z <ADJ:ELEMENT:_M_2> kamene postavený <RACE_JR>mi lidmi",
+    "obchod s [FOOD_7]",
+    "domu [PROFESSION_M_2|PROFESSION_F_2]",
+    "domu [ADJ:TRAIT:_F_2] [PROFESSION_F_2|PROFESSION_M_2|]",
+    "menhiru z meteorovitého kamene popsaný [ADJ:ORIGIN:_S_7] písmem",
+    "menhiru z [ADJ:ELEMENT:_M_2] kamene popsaný [ADJ:ORIGIN:_S_7] písmem",
+    "menhiru z [ADJ:ELEMENT:_M_2] kamene postavený [RACE_JR|ORIGIN_JR]mi lidmi",
+    "menhiru z [ADJ:ELEMENT:_M_2] kamene postavený [RACE_JR]mi lidmi",
 ];
 
 //The Primeval Rock: A strange glyphed meteorite from which ruled a terrible race of shapeshifting savages.
 
 VOCAB.BUILDING_7 = [
-    "<BUILDING_M_7|BUILDING_F_7|BUILDING_S_7>"
+    "[BUILDING_M_7|BUILDING_F_7|BUILDING_S_7]"
 ]
 
 VOCAB.BUILDING_M_7 = [
     "kostelem",
     "domem",
     "přístavem",
-    "obchodem s <FOOD_7>",
-    "domem <PROFESSION_2>",
-    "domem <ADJ:TRAIT:_F_2> <PROFESSION_F_2>"
+    "obchodem s [FOOD_7]",
+    "domem [PROFESSION_2]",
+    "domem [ADJ:TRAIT:_F_2] [PROFESSION_F_2]"
 ];
 
 VOCAB.BUILDING_S = [
-    "lázně pro <PROFESSION_MN_4>",
+    "lázně pro [PROFESSION_MN_4]",
     "tržiště",    
 ];
 
@@ -106,7 +106,7 @@ VOCAB.BUILDING_2 = [
     "brány",
     "lázní",
     "fontány",
-    "<METAL_ML|MATERIAL_ML>é sochy <ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2>"
+    "[METAL_ML|MATERIAL_ML]é sochy [ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2]"
 ]
 
 VOCAB.BUILDING_S_7 = [
@@ -116,37 +116,37 @@ VOCAB.BUILDING_S_7 = [
 
 VOCAB.BUILDING = [
     "gate",
-    "gate made of <MATERIAL>",
-    "church of <FAITH_GRAMMAR>",
-    "<SUBJECT|MINERAL> market",
+    "gate made of [MATERIAL]",
+    "church of [FAITH_GRAMMAR]",
+    "[SUBJECT|MINERAL] market",
     "house",
-    "home of a <TRAIT|> <PROFESSION>",
-    "home of a <PROFESSION>",
-    "house of <PROFESSION> killer",
-    "<PROFESSION|SUBJECT|ANIMAL|> tower",
+    "home of a [TRAIT|] [PROFESSION]",
+    "home of a [PROFESSION]",
+    "house of [PROFESSION] killer",
+    "[PROFESSION|SUBJECT|ANIMAL|] tower",
     "port",
-    "<ANIMAL|SUBJECT> shop",
+    "[ANIMAL|SUBJECT] shop",
     "workshop",    
     "station",   
     "shrine",
     "fountain",
-    "university of <ABSTRACT|MAGIC>",
-    "<PROFESSION>'s laboratory",
-    "<MINERAL> mine",
+    "university of [ABSTRACT|MAGIC]",
+    "[PROFESSION]'s laboratory",
+    "[MINERAL] mine",
     "spa",
     "baths",
     "factory",
     "fortress",
-    "monument of <ANIMAL|SUBJECT|ABSTRACT|>",
-    "<ANIMAL|> farm",
-    "<FOOD|SUBJECT|> storage",
+    "monument of [ANIMAL|SUBJECT|ABSTRACT|]",
+    "[ANIMAL|] farm",
+    "[FOOD|SUBJECT|] storage",
     "guild house", 
     "crypt",
     "wreck",
     "temple",
     "cathedral",    
     "castle",    
-    "statue of a <SUBJECT|PERSON|ABSTRACT>",
+    "statue of a [SUBJECT|PERSON|ABSTRACT]",
     "lighthouse",
     "pub",
     "hotel",

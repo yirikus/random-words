@@ -13,7 +13,7 @@ VOCAB.PROFESSION = [
     "monk",
     "courtesan",
     "fisherman",
-    "<ABSTRACT> teacher",
+    "[ABSTRACT] teacher",
     "rogue",
     "archer",
     "guard",

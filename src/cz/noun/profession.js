@@ -1,12 +1,12 @@
-VOCAB.PROFESSION = ["<PROFESSION_M|PROFESSION_F>"];
+VOCAB.PROFESSION = ["[PROFESSION_M|PROFESSION_F]"];
 VOCAB.PROFESSION_M = [
     "čaroděj",
     "lovec", //čeho
     "alchymista",
     "rytíř",
-    "rytíř řádu <ADJ:TRAIT:_F_2|ADJ:METAL:_F_2> <ELEMENT_F_2>",
-    "rytíř řádu <ADJ:TRAIT:_S_2|ADJ:METAL:_S_2> <ELEMENT_S_2>",
-    "rytíř řádu <ADJ:TRAIT:_M_2|ADJ:METAL:_M_2> <ELEMENT_M_2>",
+    "rytíř řádu [ADJ:TRAIT:_F_2|ADJ:METAL:_F_2] [ELEMENT_F_2]",
+    "rytíř řádu [ADJ:TRAIT:_S_2|ADJ:METAL:_S_2] [ELEMENT_S_2]",
+    "rytíř řádu [ADJ:TRAIT:_M_2|ADJ:METAL:_M_2] [ELEMENT_M_2]",
     "kněz",
     "kovář",
     "obchodník", //s čím
@@ -183,12 +183,12 @@ VOCAB.PROFESSION_F_2 = [
 ];
 
 VOCAB.PROFESSION_M_4 = [
-    "zloděje <ANIMAL_2_MN>",
+    "zloděje [ANIMAL_2_MN]",
     "čarodějnice"
 ]
 
 VOCAB.PROFESSION_MN_4 = [
-    "zloděje <ANIMAL_2_MN>",
+    "zloděje [ANIMAL_2_MN]",
     "čarodějnice",
     "kurtizány",
     "válečníky",
@@ -259,18 +259,18 @@ VOCAB.PROFESSION_MN_2 = [
 
 
 VOCAB.PROFESSION_S = [
-    //"dítě <PROFESSION_F_2>",
+    //"dítě [PROFESSION_F_2]",
     "nemehlo",
 ];
 
 VOCAB.PROFESSION_MN_7 = [
     "čaroději",
-    "lovci <ANIMALS_MN_2>", //čeho
+    "lovci [ANIMALS_MN_2]", //čeho
     "alchymisty",
     "rytíři",
-    "rytíři řádu <ADJ:TRAIT:_F_2|ADJ:METAL:_F_2> <ELEMENT_F_2>",
-    "rytíři řádu <ADJ:TRAIT:_S_2|ADJ:METAL:_S_2> <ELEMENT_S_2>",
-    "rytíři řádu <ADJ:TRAIT:_M_2|ADJ:METAL:_M_2> <ELEMENT_M_2>",
+    "rytíři řádu [ADJ:TRAIT:_F_2|ADJ:METAL:_F_2] [ELEMENT_F_2]",
+    "rytíři řádu [ADJ:TRAIT:_S_2|ADJ:METAL:_S_2] [ELEMENT_S_2]",
+    "rytíři řádu [ADJ:TRAIT:_M_2|ADJ:METAL:_M_2] [ELEMENT_M_2]",
     "knězi",
     "kováři",
     "obchodníky", 

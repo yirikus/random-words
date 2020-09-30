@@ -18,7 +18,7 @@ VOCAB.RACE = [
     "feline",
     "treant",
     "stone",
-    "<ELEMENT> elemental",
+    "[ELEMENT] elemental",
     "vampiric",
     "demonic",
     "aquatic",
@@ -35,7 +35,7 @@ VOCAB.MATERIAL = [
     "bone",
     "glass",
     "ice",
-    "<MINERAL>"
+    "[MINERAL]"
 ];
 
 VOCAB.MINERAL = [

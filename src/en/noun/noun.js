@@ -50,7 +50,7 @@ VOCAB.ABSTRACT = [
 ];
 
 VOCAB.FOOD = [
-    "<ANIMAL> meat",
+    "[ANIMAL] meat",
     "wheat",
     "rice", 
     "pastry",

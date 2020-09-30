@@ -44,7 +44,7 @@ VOCAB.TRAIT_ML = [
     "věčně opil",
     "závisl",
     "trapn",
-    "<POWER_ML>"
+    "[POWER_ML]"
     
 ];
 
@@ -77,10 +77,10 @@ VOCAB.APPEARENCE_ML = [
     "oškliv",
     "nechutn",    
     "začarovan",
-    "<SIZE_ML>"
+    "[SIZE_ML]"
 ];
 VOCAB.APPEARENCE_JR = [
-    "<SIZE_JR>"
+    "[SIZE_JR]"
 ];
 
 VOCAB.APPEARENCE_CHAR_ML = [
@@ -97,10 +97,10 @@ VOCAB.APPEARENCE_CHAR_ML = [
     "vyhubl",
     "špinav", 
     "krásn",  
-    "<SIZE_ML>"
+    "[SIZE_ML]"
 ];
 VOCAB.APPEARENCE_CHAR_JR = [
-    "<SIZE_JR>",
+    "[SIZE_JR]",
     "bioluminiscentní",
     "atraktivní"
 ];
@@ -116,7 +116,7 @@ VOCAB.RACE_ML = [
 
 VOCAB.RACE_JR = [    
     "pouštní",
-    "<ANIMAL_ADJ>",
+    "[ANIMAL_ADJ]",
     "elementální",
     "upíří",
     "vodní",
@@ -143,7 +143,7 @@ VOCAB.MATERIAL_ML = [
     "kostěnn",
     "skleněnn",
     "ledov",
-    "<METAL_ML>",   
+    "[METAL_ML]",
 ];
 
 //VOCAB.MATERIAL_JR = [];
@@ -213,10 +213,10 @@ VOCAB._MN_4= ["é"];
  * $2 = vocab name _M,_F,_S
  */
 VOCAB.ADJ = [
-    "<$1$_JR><_JAR$2$>",
-    "<$1$_ML><$2$>",
-    "<$1$_ML><$2$>",
-    "<$1$_ML><$2$>",
+    "[$1$_JR][_JAR$2$]",
+    "[$1$_ML][$2$]",
+    "[$1$_ML][$2$]",
+    "[$1$_ML][$2$]",
 ]
 
 VOCAB.SIZE_JR = [

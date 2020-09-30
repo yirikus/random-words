@@ -3,9 +3,9 @@ VOCAB.CLOTHES_6 = [
     "v ceremoniální čelence",
     "v ornamentální čelence",
     "s brýlemi",
-    "se <ADJ:METAL:_F_7|ADJ:GEM:_F_7> korunou",
+    "se [ADJ:METAL:_F_7|ADJ:GEM:_F_7] korunou",
     "s archaickou helmou",
-    "s <ADJ:METAL:_M_7|ADJ:GEM:_M_7> náhrdelníkem",
+    "s [ADJ:METAL:_M_7|ADJ:GEM:_M_7] náhrdelníkem",
     "s amuletem", 
     "v klobouku", 
     "se zavázanýma očima",
@@ -15,7 +15,7 @@ VOCAB.CLOTHES_6 = [
     "s copem",
     "v obvazech",
     "s infekcí",
-    "v <ADJ:COLOR:_F_MN_6> šatech"    
+    "v [ADJ:COLOR:_F_MN_6] šatech"
 ];
 
 VOCAB.ORIGIN = [
@@ -23,7 +23,7 @@ VOCAB.ORIGIN = [
 ];
 
 VOCAB.FEATURE_7 = [
-    //"<ORIGIN|ANIMAL> tattoo",
+    //"[ORIGIN|ANIMAL] tattoo",
     //"external power source",    
     //"angel wings",
     "s křídly",
@@ -41,7 +41,7 @@ VOCAB.FEATURE_7 = [
     // "war paint",
     // "extreme beard",
     // "braid",
-    // "<ANIMAL> companion",
+    // "[ANIMAL] companion",
     // "scars",
     // "medusa hair",
     // "horns",
@@ -70,7 +70,7 @@ VOCAB.BODY = [
     "monk robe",
     "robe",
     "corset",    
-    "<MINERAL> armor",
+    "[MINERAL] armor",
     "cape",    
     "chains",
     "swashbuckler's boots",
@@ -82,9 +82,9 @@ VOCAB.BODY = [
 ];
 
 VOCAB.BODY_PART = [
-    "<ANIMAL> head",
-    "<ANIMAL> eye",
-    "<ANIMAL> leg",
+    "[ANIMAL] head",
+    "[ANIMAL] eye",
+    "[ANIMAL] leg",
 ];
 
 VOCAB.TOOL_VERB = [
@@ -94,7 +94,7 @@ VOCAB.TOOL_VERB = [
 VOCAB.TOOL = [
     "journal",
     "book",
-    "book of <ABSTRACT>",
+    "book of [ABSTRACT]",
     "wrench", 
     "keys", 
     "scroll",
@@ -108,10 +108,10 @@ VOCAB.TOOL = [
     "banner",
     "beverage",
     "elixir",
-    "<ANIMAL|> statuette",
+    "[ANIMAL|] statuette",
     "saw",
     "enchanted fruit",
-    "enchanted <FOOD>"
+    "enchanted [FOOD]"
 
 ];
 

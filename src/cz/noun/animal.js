@@ -8,7 +8,7 @@ VOCAB.HUMANOID_M = [
     "obr",
     "imp",
     "kobold",
-    "<ANIMAL_ADJ> muž",    
+    "[ANIMAL_ADJ] muž",
     "mnich",
     "opičák",
     "mutant",    
@@ -37,7 +37,7 @@ VOCAB.HUMANOID_M_7 = [
     "obrem",
     "impem",
     "koboldem",
-    "<ANIMAL_ADJ>m mužem",    
+    "[ANIMAL_ADJ]m mužem",
     "mnichem",
     "opičákem",
     "mutantem",    
@@ -65,7 +65,7 @@ VOCAB.HUMANOID_F = [
     "obryně",
     "upíří královna",
     "upírka",
-    "zombie <PROFESSION_M|PROFESSION_F>"
+    "zombie [PROFESSION_M|PROFESSION_F]"
 ]
 
 VOCAB.HUMANOID_F_7 = [    
@@ -75,10 +75,10 @@ VOCAB.HUMANOID_F_7 = [
     "obryní",
     "upíří královnou",
     "upírkou",
-    "zombie <PROFESSION_M_7|PROFESSION_F_7>"
+    "zombie [PROFESSION_M_7|PROFESSION_F_7]"
 ]
 
-VOCAB.CREATURE = [ "<CREATURE_M|CREATURE_F>"]
+VOCAB.CREATURE = [ "[CREATURE_M|CREATURE_F]"]
 
 VOCAB.CREATURE_M = [
     "drak",
@@ -168,8 +168,8 @@ VOCAB.ANIMAL_F_7 = [
 ];
 
 VOCAB.ANIMAL_F_6 = [ 
-    "<BIG_ANIMAL_F_6|BIG_ANIMAL_M_6>",
-    "<SMALL_ANIMAL_F_6|SMALL_ANIMAL_M_6>"
+    "[BIG_ANIMAL_F_6|BIG_ANIMAL_M_6]",
+    "[SMALL_ANIMAL_F_6|SMALL_ANIMAL_M_6]"
 ];
 
 VOCAB.SMALL_ANIMAL_F_6 = [
@@ -200,9 +200,9 @@ VOCAB.BIG_ANIMAL_M_6 = [
     "velbloudu",  
 ];
 
-VOCAB.ANIMAL_6 = [ "<ANIMAL_F_6|ANIMAL_M_6>"];
+VOCAB.ANIMAL_6 = [ "[ANIMAL_F_6|ANIMAL_M_6]"];
 
-VOCAB.BIG_ANIMAL_6 = [ "<BIG_ANIMAL_F_6|BIG_ANIMAL_M_6>"];
+VOCAB.BIG_ANIMAL_6 = [ "[BIG_ANIMAL_F_6|BIG_ANIMAL_M_6]"];
 
 
 VOCAB.ANIMAL_M = [

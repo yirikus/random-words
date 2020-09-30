@@ -1,13 +1,13 @@
 VOCAB.HEAD = [
-    "<ANIMAL|MINERAL> mask",
+    "[ANIMAL|MINERAL] mask",
     "ceremonial headress",
     "ornamental headress",
     "glasses",
     "crown",
     "archaic helmet",
-    "<MINERAL> jewelry",
-    "<CONDITION> jewelry",
-    "<MINERAL> necklace",
+    "[MINERAL] jewelry",
+    "[CONDITION] jewelry",
+    "[MINERAL] necklace",
     "amulet", 
     "fedora",   
 ];
@@ -17,7 +17,7 @@ VOCAB.ORIGIN = [
 ];
 
 VOCAB.FEATURE = [
-    "<ORIGIN|ANIMAL> tattoo",
+    "[ORIGIN|ANIMAL] tattoo",
     "external power source",    
     "angel wings",
     "gills",
@@ -30,7 +30,7 @@ VOCAB.FEATURE = [
     "extreme beard",
     "braid",
     "long hair",
-    "<ANIMAL> companion",
+    "[ANIMAL] companion",
     "scars",
     "scales",
     "tentacles",
@@ -64,7 +64,7 @@ VOCAB.BODY = [
     "monk robe",
     "robe",
     "corset",    
-    "<MINERAL> armor",
+    "[MINERAL] armor",
     "cape",    
     "chains",
     "swashbuckler's boots",
@@ -76,9 +76,9 @@ VOCAB.BODY = [
 ];
 
 VOCAB.BODY_PART = [
-    "<ANIMAL> head",
-    "<ANIMAL> eye",
-    "<ANIMAL> leg",
+    "[ANIMAL] head",
+    "[ANIMAL] eye",
+    "[ANIMAL] leg",
 ];
 
 VOCAB.TOOL_VERB = [
@@ -88,7 +88,7 @@ VOCAB.TOOL_VERB = [
 VOCAB.TOOL = [
     "journal",
     "book",
-    "book of <ABSTRACT>",
+    "book of [ABSTRACT]",
     "wrench", 
     "keys", 
     "scroll",
@@ -102,10 +102,10 @@ VOCAB.TOOL = [
     "banner",
     "beverage",
     "elixir",
-    "<ANIMAL|> statuette",
+    "[ANIMAL|] statuette",
     "saw",
     "enchanted fruit",
-    "enchanted <FOOD>"
+    "enchanted [FOOD]"
 
 ];
 
@@ -158,13 +158,13 @@ VOCAB.SPECIAL_WEAPON = [
 ]
 
 VOCAB.WEAPON = [
-    "<THROWABLE_WEAPON|BLUNT_WEAPON|SHARP_WEAPON|SHOOTING_WEAPON|SPECIAL_WEAPON>"
+    "[THROWABLE_WEAPON|BLUNT_WEAPON|SHARP_WEAPON|SHOOTING_WEAPON|SPECIAL_WEAPON]"
     
 ];
 
 VOCAB.SKILL = [
     "log sawing",
-    "<SHARP_WEAPON|BLUNT_WEAPON|THROWABLE_WEAPON> fighting",
+    "[SHARP_WEAPON|BLUNT_WEAPON|THROWABLE_WEAPON] fighting",
     "wrestling",
     "climbing",
     "horse riding",
@@ -172,5 +172,5 @@ VOCAB.SKILL = [
     "stealing",
     "running",
     "parkour",
-    "<SLASHING_WEAPON> throwing",
+    "[SLASHING_WEAPON] throwing",
 ]
