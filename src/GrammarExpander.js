@@ -5,6 +5,16 @@
  * @param {*} expandable 
  */
 const getVocabNames = (expandable) => expandable.replace(/\[(.*)\]/, "$1").split("|");
+const context = {
+    currentContext: 'default',
+    vocabNames: {
+        /*  example:
+        'PROFESSION': {
+                'blacksmith': []
+            }
+        } */
+    }
+};
 
 /**
  * Choose on of possible vocabularies from given expandable element
@@ -16,6 +26,30 @@ const getVocabName = (expandable) => {
     return Utils.chooseRandomFrom(vocabNames).split(':');
 }
 
+const addToContext = (vocabName, word) => {
+    if (!context.vocabNames[vocabName]) {
+        context.vocabNames[vocabName] = {};
+    }
+    if (!context.vocabNames[vocabName][word]) {
+        context.vocabNames[vocabName][word] = [];
+    }
+    context.vocabNames[vocabName][word].push(context.currentContext);
+}
+
+const setContext = (contextName) => {
+    context.currentContext = contextName;
+}
+
+const useFromContext = (vocabName) => {
+    let words = context.vocabNames[vocabName];
+    for (let word in words) {
+        if (words[word].indexOf(context.currentContext) < 0) {
+            addToContext(vocabName, word);
+            return word;
+        }
+    }
+}
+
 /**
  * Replace one expandable element in a word
  * @param {*} word word that consists of exapandable elements ie [A][B][C]
@@ -24,19 +58,34 @@ const getVocabName = (expandable) => {
  */
 const replaceExapandableWord = (word, expandable) => {
     //example with params: //<ADJ:SIZE:_M>
-    vocabNameAndParams = getVocabName(expandable);
-    vocabName = vocabNameAndParams[0];
-
+    let vocabNameAndParams = getVocabName(expandable);
+    let vocabName = vocabNameAndParams[0];
+    let useContext = false;
     if (!vocabName) {
         // empty option, ie <> or second option in <A|>
         return word.replace(expandable, "");
     } else {
-        let replaceWith = VOCAB[vocabName];
-        if (!replaceWith) {
-            console.warn("cannot expand " + vocabName + " in word " + word);
-            replaceWith = "";
+        if (vocabName.indexOf('*') === 0) {
+            vocabName = vocabName.substr(1);
+            useContext = true;
         }
-        return word.replace(expandable, expandWord(replaceWith, vocabNameAndParams.slice(1)));
+        if (useContext) {
+            let fromContext = useFromContext(vocabName);
+            if (fromContext) {
+                return word.replace(expandable, fromContext);
+            }
+        }
+        let replaceWithExpandable = VOCAB[vocabName];
+        if (!replaceWithExpandable) {
+            console.warn("cannot expand " + vocabName + " in word " + word);
+            replaceWithExpandable = "";
+        }
+        let replaceWith = expandWord(replaceWithExpandable, vocabNameAndParams.slice(1));
+        let expandedWord = word.replace(expandable, replaceWith);
+        if (useContext) {
+            addToContext(vocabName, replaceWith);
+        }
+        return expandedWord;
     }
 }
 
@@ -78,5 +127,6 @@ const expandWord = (vocabulary, params) => {
 }
 
 GrammarExpander = {
-    expandWord: expandWord
+    expandWord,
+    setContext
 }

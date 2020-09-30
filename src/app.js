@@ -32,34 +32,42 @@ const generateWord = (grammar) => {
 }
 
 const cityName = () => {
+    GrammarExpander.setContext('city');
     return GrammarExpander.expandWord(VOCAB.CITY_NAME_GRAMMAR).toUpperCase();    
 }
 
 const cityDesc = () => {
-    return GrammarExpander.expandWord(VOCAB.CITY_DESC_GRAMMAR).toUpperCase();    
+    GrammarExpander.setContext('city');
+    return GrammarExpander.expandWord(VOCAB.CITY_DESC_GRAMMAR).toUpperCase();
 }
 
 const mainStory = () => {
+    GrammarExpander.setContext('story');
     return generateWord(VOCAB.MAIN_STORY_GRAMMAR);    
 }
 
 const story = () => {
+    GrammarExpander.setContext('story');
     return writeList(VOCAB.STORY_GRAMMAR, 5); 
 }
 
 const buildings = () => {
+    GrammarExpander.setContext('buildings');
     return writeList(VOCAB.BUILDING_GRAMMAR, 8); 
 }
 
 const faith = () => {
+    GrammarExpander.setContext('faith');
     return writeList(VOCAB.FAITH_GRAMMAR, 3);
 }
 
 const characters = () => {
-    return writeList(VOCAB.CHARACTER_GRAMMAR, 5); 
+    GrammarExpander.setContext('characters');
+    return writeList(VOCAB.CHARACTER_GRAMMAR, 5);
 }
 
 const monsters = () => {
+    GrammarExpander.setContext('monsters');
     return writeList(VOCAB.MONSTER_GRAMMAR, 5);
 }
 
