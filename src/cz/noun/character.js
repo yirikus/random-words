@@ -3,10 +3,11 @@ VOCAB.CLOTHES_6 = [
     "v ceremoniální čelence",
     "v ornamentální čelence",
     "s brýlemi",
-    "se [ADJ:METAL:_F_7|ADJ:GEM:_F_7] korunou",
+    "se [METAL_ML|GEM_ML][_F_7] korunou",
+    "se [METAL_ML|GEM_ML][_F_7] korunou",
     "s archaickou helmou",
-    "s [ADJ:METAL:_M_7|ADJ:GEM:_M_7] náhrdelníkem",
-    "s amuletem", 
+    "s [METAL_ML|GEM_ML][_M_7] náhrdelníkem",
+    "s amuletem",
     "v klobouku", 
     "se zavázanýma očima",
     "s oholenou hlavou",
@@ -15,7 +16,7 @@ VOCAB.CLOTHES_6 = [
     "s copem",
     "v obvazech",
     "s infekcí",
-    "v [ADJ:COLOR:_F_MN_6] šatech"
+    "v [COLOR][_F_MN_6] šatech"
 ];
 
 VOCAB.ORIGIN = [

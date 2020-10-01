@@ -50,7 +50,7 @@ VOCAB.VERB = [
     "is eyballing an attractive woman",
 
     //drunk
-    "got drunk and [VERB_DRUNK]",
+    "got drunk in [*PUB_NAME] inn and [VERB_DRUNK]",
 
     //fun
     "attends a [FOOD] eating contest"
@@ -74,4 +74,17 @@ VOCAB.VERB_DRUNK = [
     "woke up with a shiny medal around your neck having apparently won a [SKILL] competition.",
     "ran around the whole city naked and jumping around",
     "got extremely thirsty and threw themselves down a nearby well to quench their thirst."
-]
+];
+
+VOCAB.ACTIVITY = [
+    "staggering",
+    "laughing",
+    "prancing",
+    "running",
+    "howling",
+    "leering",
+    "leaping",
+    "roaring",
+    "frowning",
+    "wandering",
+];

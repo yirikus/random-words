@@ -58,6 +58,12 @@ VOCAB.FOOD = [
     "wine",   
 ];
 
+VOCAB.CELESTIAL = [
+    "star",
+    "sun",
+    "moon",
+]
+
 VOCAB.VEGETABLE = [
     "tomato",
     ""   

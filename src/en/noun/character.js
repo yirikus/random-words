@@ -130,8 +130,6 @@ VOCAB.BLUNT_WEAPON = [
 ];
 
 VOCAB.SHARP_WEAPON = [
-    "staff",
-    "wand",
     "longsword",
     "poleaxe",
     "two swords",
@@ -172,5 +170,5 @@ VOCAB.SKILL = [
     "stealing",
     "running",
     "parkour",
-    "[SLASHING_WEAPON] throwing",
+    "[THROWABLE_WEAPON] throwing",
 ]

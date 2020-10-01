@@ -1,4 +1,4 @@
-const version = '27.9.2020, 13:20 (v17 - drunk and skillful)';
+const version = '1.10.2020, 21:39 (v18 - Pubs!)';
 const main = () => {     
     writeElement('cityName', cityName());
     writeElement('cityDesc', cityDesc());
@@ -16,7 +16,7 @@ const writeElement = (elementId, value) => {
 }
 
 const writeList = (grammar, count) => {
-    let innerHtml = '<ul class="list-group">'; 
+    let innerHtml = '<ul class="list-group">';
     for (let i = 0; i < count; i++) {
         innerHtml += '<li class="list-item">';  
         innerHtml += generateWord(grammar);         

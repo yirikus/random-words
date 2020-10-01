@@ -5,9 +5,11 @@ VOCAB.CREATURE = [
     "manticore",
     "dragon",
     "gargoyle",
+    "pegasus",
     "unicorn",
     "wraith",
     "phoenix",
+    "spirit",
 
 ];
 //     "angel","archer","archon",
@@ -43,7 +45,9 @@ VOCAB.HUMANOID = [
     "ape",
     "barbarian",
     "cyclops",
-    "demon",   
+    "demon",
+    "dwarf",
+    "elf",
     "goblin", "giant",
     "imp",
     "kobold",
@@ -62,31 +66,57 @@ VOCAB.HUMANOID = [
     "vampire queen",
     "werewolf","warlock","warrior", "wizard",
     "yetti","zombie"
+
+];
+
+VOCAB.FISH = [
+    "eel",
+    "catfish",
+    "shark",
+    "piranha",
+    "tuna",
+    "salmon"
+]
+
+VOCAB.COLOR = [
+  "black",
+  "white",
+  "green",
+  "red",
+  "yellow",
+  "blue",
+  "orange",
+  "pink",
+  "violet",
+  "purple",
+  "brown",
 ];
 
 VOCAB.ANIMAL = [
+    "[FISH]",
     "antelope", "ape",
     "bird",
-    "bat",
+    "bat", "beetle",
     "boar","bear",
     "leech",
     "chicken",
     "dog",
-    "elephant",    
+    "elephant", "eagle",
     "fish",
-    "fox","frog", 
+    "fox","frog",
+    "goat",
     "horse",
     "hyena",
-    "insect",
     "jackal","jellyfish",
-    "lizard",    
+    "lizard", "lamb",
     "mouse", "monkey",
-    "ox", "otter",
-    "pig",
+    "ox", "otter", "owl",
+    "pig", "pony",
     "rat", "rabbit", "rhino",
     "sheep", "scorpion", "squid","squirrel","starfish", "slug", "serpent",
-    "snake", "spider", "salamander",
+    "snake", "spider", "salamander", "stag",
     "turtle",
-    "wolf", "whale",
+    "wasp",
+    "wolf", "whale", "winter stag",
     "wolverine","wombat","worm",
 ];

@@ -2,11 +2,31 @@ VOCAB.PERSON = [
     "[TRAIT|] [PROFESSION]"
 ];
 
+VOCAB.PUB_NAME = [
+    "<span class='name'>[PUB_NAME_PART]</span>"
+];
+
+VOCAB.PUB_NAME_PART = [
+    "U [ITEM_CONDITION_ML][_M_2] [INSTRUMENT_M_2|ITEM_M_2]",
+    "U [ITEM_CONDITION_ML][_F_2] [INSTRUMENT_F_2|ITEM_F_2]",
+    "U [ADJ_ACTIV_JR]ho [INSTRUMENT_M_2]",
+    "U [ADJ_ACTIV_JR] [INSTRUMENT_F_2]",
+    "[COLOR][_F] [FLOWER]",
+    "U [COLOR|METAL_ML][_S_2] slunce",
+    "U [COLOR|METAL_ML][_F_2] hvězdy",
+    "U [COLOR|METAL_ML][_M_2] měsíce",
+    "U [ADJ:TRAIT:_M_2] [HUMANOID_M_2|ANIMAL_M_2|CREATURE_M_2]",
+    "U [ADJ:TRAIT:_M_2] [HUMANOID_F_2|ANIMAL_F_2|CREATURE_F_2]",
+    "U [ADJ_ACTIV_JR] [HUMANOID_F_2|ANIMAL_F_2|CREATURE_F_2]",
+    "U [ADJ_ACTIV_JR]ho [HUMANOID_M_2|ANIMAL_M_2|CREATURE_M_2]",
+];
+
 VOCAB.BUILDING_M = [
     "kostel [SWARMING:_M|HOUSING:_M]",
     "dům [SWARMING:_M|HOUSING:_M]",
     "[METAL_ML][_M] důl",
     "přístav",
+    "hostinec [PUB_NAME]",
     "přístav [SWARMING:_M]",
     "nevěstinec [SWARMING:_M|HOUSING:_M]",
     "obchod s [FOOD_7]",
@@ -20,11 +40,12 @@ VOCAB.BUILDING_M = [
 ];
 
 VOCAB.BUILDING_F = [
-    "[ADJ:MATERIAL:_F] brána",
+    "[MATERIAL_ML][_F] brána",
     "dílna [SWARMING:_F|HOUSING:_F]",
     "věž [SWARMING:_F|HOUSING:_F]",
     "svatyně [SWARMING:_F|HOUSING:_F]",
     "fontána",
+    "hospoda [PUB_NAME]",
     "továrna [SWARMING:_F|HOUSING:_F]",
     "zřícenina dříve létající [BUILDING_F_4]",
     "zřícenina dříve létajícího [BUILDING_M_4]",
@@ -33,19 +54,19 @@ VOCAB.BUILDING_F = [
 ];
 
 VOCAB.BUILDING_F_4 = [
-    "[ADJ:MATERIAL:_F] brána",
+    "[MATERIAL_ML][_F_2] bránu",
     "dílna",
     "věže",
     "svatyně",
     "fontány",
     "továrny",
-    "pevnosti",    
+    "pevnosti",
     "[METAL_ML][_F] socha [ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2]",
 ];
 
 
 VOCAB.BUILDING_F_7 = [
-    "[ADJ:MATERIAL:_F] bránou",
+    "[MATERIAL_ML][_F] bránou",
     "dílnou",
     "věží [SWARMING:_F_7|HOUSING:_F_7]",
     "svatyní [SWARMING:_F_7|HOUSING:_F_7]",

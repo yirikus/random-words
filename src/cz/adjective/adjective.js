@@ -66,7 +66,7 @@ VOCAB.TRAIT_JR = [
     "agresivní",
     "depresivní",
     "tolerantní",
-    "létající",
+    "[ADJ_ACTIV_JR]"
 ];
 
 VOCAB.APPEARENCE_B_ML= [
@@ -138,7 +138,6 @@ VOCAB.ANIMAL_ADJ=[
 VOCAB.MATERIAL_ML = [
     "dřevěnn",     
     "kamenn",
-    "železn",
     "ocelov",
     "kostěnn",
     "skleněnn",
@@ -166,6 +165,18 @@ VOCAB.GEM_ML = [
     "topazov" 
 ];
 
+VOCAB.ELEMENT_JR = [
+    "vodní"
+];
+
+VOCAB.ELEMENT_ML = [
+    "ohniv",
+    "mraziv",
+    "ledov",
+    "větrn",
+    "roslinn"
+]
+
 
 //VOCAB.MINERAL_JR = [];
 
@@ -191,8 +202,9 @@ VOCAB._M_4= ["ého"]; // živonost D: mladého kraba vs mladý špark
 VOCAB._M_6= ["ém"];
 VOCAB._M_7= ["ým"];
 //jarni
-VOCAB._JAR_F_7= [""];
 
+VOCAB._JAR_S = VOCAB._JAR_M = VOCAB._JAR_F = VOCAB._JAR_F_7 = VOCAB._JAR_F_3 = VOCAB._JAR_F_2 =
+    VOCAB._JAR_MN_4 =[""];
 VOCAB._JAR_S_2= ["ho"];
 VOCAB._JAR_S_3= ["mu"];
 VOCAB._JAR_S_6= ["m"];
@@ -205,7 +217,7 @@ VOCAB._JAR_M_6= ["m"];
 VOCAB._JAR_M_7= ["m"];
 
 
-VOCAB._MN= [ "ých"];
+VOCAB._MN = VOCAB._F_MN_6 = [ "ých"];
 VOCAB._MN_4= ["é"];
 
 /**
@@ -234,10 +246,51 @@ VOCAB.SIZE_ML = [
         "širok",
     ]
 
+VOCAB.ITEM_CONDITION_ML = [
+    "prokopnut",
+    "rozmlácen",
+    "prastar",
+    "[CONDITION_ML]",
+    "[PROPERTY_ML]",
+    "[CONDITION_ML]",
+]
+
+VOCAB.ITEM_CONDITION_JR = [
+   "[CONDITION_JR]"
+];
+
 VOCAB.CONDITION_JR = [
     "nóbl",
     "luxusní",
 ];
+
+
+VOCAB.ADJ_ACTIV_JR = [
+    "létající",
+    "skákající",
+    "vyjící",
+    "štěkající",
+    "výskající",
+    "čůrající",
+    "hrající",
+    "zpívající",
+]
+
+
+VOCAB.COLOR = [
+    "čern",
+    "zelen",
+    "bíl",
+    "žlut",
+    "modr",
+    "hněd",
+    "šediv",
+    "orandžov",
+    "růžov",
+    "červen",
+    "rud",
+    "fialov"
+]
 
 VOCAB.CONDITION_ML = [
     "uboh",

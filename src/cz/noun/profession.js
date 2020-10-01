@@ -4,9 +4,12 @@ VOCAB.PROFESSION_M = [
     "lovec", //čeho
     "alchymista",
     "rytíř",
-    "rytíř řádu [ADJ:TRAIT:_F_2|ADJ:METAL:_F_2] [ELEMENT_F_2]",
-    "rytíř řádu [ADJ:TRAIT:_S_2|ADJ:METAL:_S_2] [ELEMENT_S_2]",
-    "rytíř řádu [ADJ:TRAIT:_M_2|ADJ:METAL:_M_2] [ELEMENT_M_2]",
+    "rytíř řádu [ADJ:TRAIT:_F_2|] [ELEMENT_F_2]",
+    "rytíř řádu [ADJ:TRAIT:_S_2|] [ELEMENT_S_2]",
+    "rytíř řádu [ADJ:TRAIT:_M_2|] [ELEMENT_M_2]",
+    "rytíř řádu [METAL_ML][_F_2] [ELEMENT_F_2]",
+    "rytíř řádu [METAL_ML][_S_2] [ELEMENT_S_2]",
+    "rytíř řádu [METAL_ML][_M_2] [ELEMENT_M_2]",
     "kněz",
     "kovář",
     "obchodník", //s čím
@@ -35,6 +38,10 @@ VOCAB.PROFESSION_M = [
     "kapitán",
     "zabiják", //TODO čeho
 ];
+
+VOCAB.PROFESSION_2 = [
+    "[PROFESSION_M_2|PROFESSION_F_2]"
+]
 
 VOCAB.PROFESSION_M_2 = [
     "čaroděje",
@@ -261,16 +268,23 @@ VOCAB.PROFESSION_MN_2 = [
 VOCAB.PROFESSION_S = [
     //"dítě [PROFESSION_F_2]",
     "nemehlo",
+    "trdlo",
+    "individuum",
+    "monstrum",
+    
 ];
 
 VOCAB.PROFESSION_MN_7 = [
     "čaroději",
-    "lovci [ANIMALS_MN_2]", //čeho
+    "lovci [ANIMAL_2_MN]", //čeho
     "alchymisty",
     "rytíři",
-    "rytíři řádu [ADJ:TRAIT:_F_2|ADJ:METAL:_F_2] [ELEMENT_F_2]",
-    "rytíři řádu [ADJ:TRAIT:_S_2|ADJ:METAL:_S_2] [ELEMENT_S_2]",
-    "rytíři řádu [ADJ:TRAIT:_M_2|ADJ:METAL:_M_2] [ELEMENT_M_2]",
+    "rytíři řádu [ADJ:TRAIT:_F_2] [ELEMENT_F_2]",
+    "rytíři řádu [ADJ:TRAIT:_S_2] [ELEMENT_S_2]",
+    "rytíři řádu [ADJ:TRAIT:_M_2] [ELEMENT_M_2]",
+    "rytíři řádu [METAL_ML][_F_2] [ELEMENT_F_2]",
+    "rytíři řádu [METAL_ML][_S_2] [ELEMENT_S_2]",
+    "rytíři řádu [METAL_ML][_M_2] [ELEMENT_M_2]",
     "knězi",
     "kováři",
     "obchodníky", 

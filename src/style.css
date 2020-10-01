@@ -7,6 +7,12 @@ html {
   body {
     margin-bottom: 60px; /* Margin bottom by footer height */
   }
+
+  .name {
+    text-transform:capitalize;
+    font-weight: bold;
+  }
+
   .footer {
     position: absolute;
     bottom: 0;

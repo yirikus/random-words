@@ -78,7 +78,7 @@ const replaceExapandableWord = (word, expandable) => {
         let replaceWithExpandable = VOCAB[vocabName];
         if (!replaceWithExpandable) {
             console.warn("cannot expand " + vocabName + " in word " + word);
-            replaceWithExpandable = "";
+            replaceWithExpandable = '';
         }
         let replaceWith = expandWord(replaceWithExpandable, vocabNameAndParams.slice(1));
         let expandedWord = word.replace(expandable, replaceWith);

@@ -146,6 +146,19 @@ VOCAB.ELEMENT_2_S_E = [
     "světla",
 ];
 
+VOCAB.FLOWER= [
+    "růže",
+    "karafiát",
+    "tulipán",
+    "lilie",
+    "narcis",
+    "slunečnice",
+    "jetel",
+    "sedmikráska",
+    "kopretina",
+    "levandule"
+]
+
 VOCAB.ABSTRACT_2 = [
     "léčení",
     "lásky",    
@@ -292,6 +305,25 @@ VOCAB.SCIENCE = [
     "technology"   
 ];
 
+VOCAB.INSTRUMENT_M_2 = [
+    "bubnu",
+    "trombónu",
+    "klarinetu",
+    "rohu",
+
+];
+
+VOCAB.INSTRUMENT_F_2 = [
+    "harfy",
+    "loutny",
+    "kytary",
+    "trumpety",
+    "píšťaly",
+    "banja",
+    "basy",
+    "rumba koule",
+];
+
 VOCAB.INSTRUMENT_F_4 = [
     "harfu",
     "loutnu",
@@ -300,19 +332,39 @@ VOCAB.INSTRUMENT_F_4 = [
     "rumba kouli",
 ]
 
+VOCAB.ITEM_F_2 = [
+    "nádoby",
+    "schránky",
+    "truhlice",
+    "sošky",
+    "[INSTRUMENT_F_2]"
+]
+
+VOCAB.ITEM_M_2 = [
+    "koberce",
+    "šperku",
+    "svícnu",
+    "amuletu",
+    "hrnce",
+    "kotle",
+]
+
 VOCAB.ITEM_F_4 = [
     "nádobu",
     "schránku",
     "truhlici",
-    "sošku",    
+    "sošku",
     "[INSTRUMENT_F_4]"
 ]
 
 VOCAB.ITEM_M_4 = [
+    "náhrobek",
     "koberec",
     "šperk",
     "svícen",
-    "amulet"    
+    "amulet",
+    "hrnec",
+    "kotel",
 ]
 
 VOCAB.ITEM_S_4 = [
@@ -324,7 +376,7 @@ VOCAB.ACTIVITY=[
     "jezení [FOOD_2]",
     "pití [DRINK_2]",
     "házení [WEAPON_7]",
-    "rozbíjení [FURNITURE_2]",
+    "rozbíjení [FURNITURE_MN_2]",
     "sekání polínek",
     "vaření",
     "běhání",

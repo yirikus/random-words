@@ -28,6 +28,35 @@ VOCAB.HUMANOID_M = [
     
 ];
 
+VOCAB.HUMANOID_M_2 = [
+    "opa",
+    "barbara",
+    "kyklopa",
+    "démona",
+    "goblina",
+    "obra",
+    "impa",
+    "kobolda",
+    "[ANIMAL_ADJ]ho muže",
+    "mnicha",
+    "opičáka",
+    "mutanta",
+    "ninjy",
+    "ogra",
+    "piráta",
+    "kostlivce",
+    "satyra",
+    "šamana",
+    "trola",
+    "upíra",
+    "vlkodlaka",
+    "čaroděje",
+    "válečníka",
+    "mága",
+    "yettiho",
+
+];
+
 VOCAB.HUMANOID_M_7 = [
     "opem",
     "barbarem",
@@ -78,6 +107,17 @@ VOCAB.HUMANOID_F_7 = [
     "zombie [PROFESSION_M_7|PROFESSION_F_7]"
 ]
 
+VOCAB.HUMANOID_F_2 = [
+    "mořské panny",
+    "sirény",
+    "kyklopky",
+    "obryně",
+    "upíří královnoy",
+    "upírkoy",
+    "zombie [PROFESSION_M_2|PROFESSION_F_2]"
+]
+
+
 VOCAB.CREATURE = [ "[CREATURE_M|CREATURE_F]"]
 
 VOCAB.CREATURE_M = [
@@ -92,11 +132,24 @@ VOCAB.CREATURE_F = [
     "harpye",
 ]
 
+VOCAB.CREATURE_M_2 = [
+    "draka",
+    "stína",
+    "gremlina",
+    "goblina",
+    "pegasa",
+]
+
 VOCAB.CREATURE_M_7 = [
     "drakem",
     "stínem",
     "gremlinem",
     "goblinem",
+]
+
+VOCAB.CREATURE_F_2 = [
+    "nymfy",
+    "harpye",
 ]
 
 VOCAB.CREATURE_F_7 = [
@@ -127,20 +180,37 @@ VOCAB.ANIMAL_M_2 = [
     "jelena",
     "medvěda",
     "netopýra",
+    "pstruha",
+    "úhoře",
+    "delfína",
+    "kozla",
+    "hřebce",
+    "poníka",
+    "jesetera",
+    "pavouka",
+    "orla",
+    "jestřába",
+    "bobra"
+
 ];
 
 VOCAB.ANIMAL_S_2 = [
     "prasete", 
     "kuřete",
+    "jehnětě"
 ]
 
 VOCAB.ANIMAL_F_2 = [
     "ovce",
     "ryby",
+    "kozy",
+    "svině",
+    "klisny",
     "krysy",
     "krávy",
     "kočky",
-    "lišky"
+    "lišky",
+    "sovy",
 ];
 
 VOCAB.ANIMAL_M_7 = [
@@ -151,6 +221,7 @@ VOCAB.ANIMAL_M_7 = [
     "koněm",
     "medvědem",
     "netopýrem",
+    "bobrem"
 ];
 
 VOCAB.ANIMAL_S_7 = [
@@ -214,6 +285,7 @@ VOCAB.ANIMAL_M = [
     "kůň",
     "medvěd",
     "netopýr",
+    "bobr",
 ];
 
 VOCAB.ANIMAL_MN = [

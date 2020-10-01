@@ -89,9 +89,9 @@ VOCAB.VERB_ROMANCE = [
 ];
 
 VOCAB.VERB_DRUNK = [
-    "do bezvědomí a při pádu přaštil[$1$] [BODY_PART_7] o [FURNITURE_M_4] takovou silou až se rozletěl na kousky",
-    "do bezvědomí a při pádu přaštil[$1$] [BODY_PART_7] o [FURNITURE_F_4] takovou silou až se rozletěla na kousky",
-    "do bezvědomí a při pádu přaštil[$1$] [BODY_PART_7] o [FURNITURE_F_4] takovou silou až se rozletělo na kousky",
+    "do bezvědomí a při pádu praštil[$1$] [BODY_PART_7] o [FURNITURE_M_4] takovou silou až se rozletěl na kousky",
+    "do bezvědomí a při pádu praštil[$1$] [BODY_PART_7] o [FURNITURE_F_4] takovou silou až se rozletěla na kousky",
+    "do bezvědomí a při pádu praštil[$1$] [BODY_PART_7] o [FURNITURE_F_4] takovou silou až se rozletělo na kousky",
     "a začal[$1$] [VERB_INF]",
     "a kousnul[$1$] se do jazyku. Zakrvácel cel[_F_4] [FURNITURE_F_4] ",
     "a kousnul[$1$] se do jazyku. Zakrvácel celý [FURNITURE_M_4] ",
@@ -102,7 +102,7 @@ VOCAB.VERB_DRUNK = [
     "a probudil[$1$] se v posteli s [ADJ:TRAIT:_F_7] [ANIMAL_F_7|CREATURE_F_7|HUMANOID_F_7|PROFESSION_F_7]",
     "a probudil[$1$] se se zlatou medailí na krku. Zřejmě vyhrál[$1$] soutěž v [ACTIVITY]",
     "a zahájil[$1$] zvířecí revoluci osvobozením [ANIMAL_2_MN] z nedaleké farmy.",
-    "a začal nekontrolovatelně brečet, protože [ANIMAL_MN] museli umřít, aby on[$1$] mohl jíst steak.",
+    "a začal nekontrolovatelně brečet, protože [ANIMAL_MN] museli umřít, aby on[$1$] mohl[$1$] jíst steak.",
     "a běhal[$1$] nahatý po městě",
 ]
 

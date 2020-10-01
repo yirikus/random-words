@@ -4,7 +4,8 @@ VOCAB.EMOTION = [
     "boring",
     "scary",
     "gloomy",
-    "happy"
+    "happy",
+    "mysterious"
 ];
 
 VOCAB.RACE = [
@@ -38,11 +39,29 @@ VOCAB.MATERIAL = [
     "[MINERAL]"
 ];
 
-VOCAB.MINERAL = [
+VOCAB.METAL = [
     "gold",
+    "golden",
     "silver",
     "metal",
     "iron",
+    "bronze"
+];
+
+VOCAB.STATE = [
+    "drunken",
+    "gilded",
+    "slaughtered",
+    "lonely",
+    "mysterious"
+];
+
+VOCAB.APPEARENCE = [
+
+];
+
+
+VOCAB.MINERAL = [
     "emerald",
     "ruby",
     "amethyst",

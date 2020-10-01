@@ -2,6 +2,37 @@ VOCAB.PERSON = [
     "[TRAIT|] [PROFESSION]"
 ];
 
+VOCAB.PUB_NAME = [
+    "<span class='name'>The [PUB_NAME_PART1] [PUB_NAME_PART2]</span>"
+];
+
+VOCAB.PUB_NAME_PART1 = [
+    "[METAL|EMOTION|STATE|COLOR]"
+];
+
+VOCAB.PUB_NAME_PART2 = [
+    "[ANIMAL]",
+    "[CELESTIAL]",
+    "[HUMANOID]",
+    "[CREATURE]",
+    "[PUB_NAME_OTHER]",
+];
+
+VOCAB.PUB_NAME_OTHER = [
+    "jester",
+    "rose",
+    "horde",
+    "mountain",
+    "tree",
+    "cauldron",
+    "barrel",
+    "drum",
+    "axe",
+    "king",
+    "prince",
+    "princess"
+];
+
 VOCAB.BUILDING = [
     "gate",
     "gate made of [MATERIAL]",
@@ -36,7 +67,7 @@ VOCAB.BUILDING = [
     "castle",    
     "statue of a [SUBJECT|PERSON|ABSTRACT]",
     "lighthouse",
-    "pub",
+    "[*PUB_NAME] inn",
     "hotel",
     "library",
     "brothel", 
