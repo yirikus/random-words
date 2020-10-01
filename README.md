@@ -1,6 +1,6 @@
 # random-words
 published on yirikus.cz/x/rnd
 
-##TODO:
+##BUGS:
 
-- context
+Vychytralý yetti hledá zlatou sošku požitků, ukryt**ý** někde v kaňonu.
