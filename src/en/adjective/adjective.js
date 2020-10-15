@@ -57,7 +57,7 @@ VOCAB.STATE = [
 ];
 
 VOCAB.APPEARENCE = [
-
+    "bioluomiscent",
 ];
 
 
@@ -70,14 +70,29 @@ VOCAB.MINERAL = [
 ];
 
 VOCAB.SIZE = [
-    "Great",
-    "Small",
-    "Tall",
+    "great",
+    "small",
+    "tall",
+    "long",
+    "scrubby",
     "Short",
-    "Average",
-    "Narrow",
-    "Wide",
-    "Monstrous",    
+    "narrow",
+    "wide",
+    "monstrous",
+]
+
+VOCAB.BODY_PART_FEATURE = [
+    "flat",
+    "spiky",
+    "pointy",
+    "stinging",
+    "poisonous",
+    "hairy",
+    "hairless",
+    "slimy",
+    "shining",
+    "electric",
+    "demonic",
 ]
 
 VOCAB.CONDITION = [

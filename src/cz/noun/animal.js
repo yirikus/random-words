@@ -145,30 +145,101 @@ VOCAB.CREATURE_M_7 = [
     "stínem",
     "gremlinem",
     "goblinem",
-]
+];
 
 VOCAB.CREATURE_F_2 = [
     "nymfy",
     "harpye",
-]
+];
 
 VOCAB.CREATURE_F_7 = [
     "nymfou",
     "harpyí",
-]
+];
+
+VOCAB.ANIMAL_MUTANT = [
+    "praso",
+    "mědvědo",
+    "kryso",
+    "kočko",
+    "krávo",
+    "klokano",
+    "králíko",
+    "slimáko",
+    "koňo",
+    "vlko",
+    "ještěro",
+    "netopýro",
+    "hrocho",
+    "gorilo",
+    "opo",
+    "slono",
+    "pso",
+    "tygro",
+    "žirafo",
+    "žraloko",
+];
+
+VOCAB.ANIMAL = [
+    "[ANIMAL_S|ANIMAL_F|ANIMAL_M]"
+];
 
 VOCAB.ANIMAL_S = [
     "prase", 
     "kuře",
-]
+    "morče",
+];
 
 VOCAB.ANIMAL_F = [
-    "ovce",
-    "ryba",
+    "hyena",
+    "chobotnice",
     "krysa",
     "kráva",
     "kočka",
-    "liška"
+    "liška",
+    "myš",
+    "ovce",
+    "opice",
+    "paryba",
+    "ryba",
+    "vačice",
+    "veverka",
+    "žirafa",
+]
+
+VOCAB.ANIMAL_M = [
+    "býk",
+    "bobr",
+    "hmyz",
+    "had",
+    "hroch",
+    "jelen",
+    "ježek",
+    "kanec",
+    "krab",
+    "kůň",
+    "klokan",
+    "leguán",
+    "lemur",
+    "lev",
+    "lachtan",
+    "mrož",
+    "medvěd",
+    "mýval",
+    "nosorožec",
+    "netopýr",
+    "potkan",
+    "opičák",
+    "panter",
+    "pták",
+    "ptakopysk",
+    "skunk",
+    "škorpion",
+    "slimák",
+    "tuleň",
+    "vlk",
+    "velbloud",
+    "zajíc",
 ];
 
 VOCAB.ANIMAL_M_2 = [
@@ -274,19 +345,6 @@ VOCAB.BIG_ANIMAL_M_6 = [
 VOCAB.ANIMAL_6 = [ "[ANIMAL_F_6|ANIMAL_M_6]"];
 
 VOCAB.BIG_ANIMAL_6 = [ "[BIG_ANIMAL_F_6|BIG_ANIMAL_M_6]"];
-
-
-VOCAB.ANIMAL_M = [
-    "pták",    
-    "vlk",       
-    "hmyz",
-    "had",
-    "kanec",
-    "kůň",
-    "medvěd",
-    "netopýr",
-    "bobr",
-];
 
 VOCAB.ANIMAL_MN = [
     "ovce",

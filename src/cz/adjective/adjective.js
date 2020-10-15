@@ -83,6 +83,32 @@ VOCAB.APPEARENCE_JR = [
     "[SIZE_JR]"
 ];
 
+VOCAB.APPEARENCE_ANIMAL_JR = [
+    "zářící",
+    "bioluminiscentní",
+];
+
+VOCAB.APPEARENCE_ANIMAL_ML = [
+    "oškliv",
+    "nechutn",
+    "zjizven",
+    "potetovan",
+    "průhledn",
+    "chlupat",
+    "šupinat",
+    "slizsk",
+    "obojživeln",
+    "opeřen",
+    "[COLOR]",
+    "tlust",
+    "šavlozub",
+    "štíhl",
+    "vyhubl",
+    "špinav",
+    "krásn",
+    "[SIZE_ML]"
+];
+
 VOCAB.APPEARENCE_CHAR_ML = [
     "oškliv",
     "přitažliv",
@@ -201,6 +227,7 @@ VOCAB._M_3= ["ému"];
 VOCAB._M_4= ["ého"]; // živonost D: mladého kraba vs mladý špark
 VOCAB._M_6= ["ém"];
 VOCAB._M_7= ["ým"];
+
 //jarni
 
 VOCAB._JAR_S = VOCAB._JAR_M = VOCAB._JAR_F = VOCAB._JAR_F_7 = VOCAB._JAR_F_3 = VOCAB._JAR_F_2 =
@@ -245,6 +272,21 @@ VOCAB.SIZE_ML = [
         "úzk",
         "širok",
     ]
+VOCAB.LENGTH = [
+    "dlouh",
+    "krátk",
+    "přerostl",
+    "zakrsl",
+]
+
+VOCAB.NUMBER_7 = [
+    "třema",
+    "čtyřma",
+    "pěti",
+    "šesti",
+    "osmi",
+    "deseti"
+]
 
 VOCAB.ITEM_CONDITION_ML = [
     "prokopnut",

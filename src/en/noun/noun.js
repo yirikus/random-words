@@ -85,6 +85,15 @@ VOCAB.ANIMALS = [
     "bats",
 ];
 
+VOCAB.NUMBER = [
+    "three",
+    "four",
+    "five",
+    "six",
+    "eight",
+    "ten"
+]
+
 VOCAB.BIOME = [    
     "Mountain",
     "Mineral",

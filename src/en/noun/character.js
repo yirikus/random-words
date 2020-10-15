@@ -16,6 +16,49 @@ VOCAB.ORIGIN = [
     "tribal",
 ];
 
+VOCAB.ANIMALISTIC_FEATURE = [
+    "wings",
+    "faery wings",
+    "demonic wings",
+    "insect wings",
+    "angel wings",
+    "[LENGTH|BODY_PART_FEATURE] [BODY_PART]",
+    "[LENGTH|BODY_PART_FEATURE] protubarances on [BODY_PART]",
+    "thorns on the [BODY_PART]",
+    "tentacles on the [BODY_PART]",
+    "spikes on the [BODY_PART]",
+    "sting",
+    "twisted horns",
+    "twisted tusks",
+    "scales",
+    "[COLOR] stripes",
+    "[COLOR] spots",
+    "[COLOR] on [BODY_PART]",
+    "[COLOR] [BODY_PART]",
+    "fur on [BODY_PART]",
+    "no eyes",
+    "[NUMBER] eyes",
+    "two tails",
+    "one eye",
+    "six legs",
+    "[NUMBER] heads",
+    "trunk",
+    "long mane",
+    "thick fur",
+    "camouflage coloring",
+    "loab on throat",
+    "[COLOR] on throat",
+    "[COLOR] around the neck",
+    "flat head",
+    "shell",
+    "protective exoskeleton",
+    "thorns over the whole body",
+    "membrane for gliding",
+    "membrane between toes",
+    "tuft on head",
+    "blisters over the whole body"
+];
+
 VOCAB.FEATURE = [
     "[ORIGIN|ANIMAL] tattoo",
     "external power source",    
@@ -75,11 +118,30 @@ VOCAB.BODY = [
 
 ];
 
-VOCAB.BODY_PART = [
-    "[ANIMAL] head",
-    "[ANIMAL] eye",
-    "[ANIMAL] leg",
+VOCAB.ANIMAL_BODY_PART = [
+    "[ANIMAL] [BODY_PART]",
 ];
+
+VOCAB.BODY_PART = [
+    "legs",
+    "head",
+    "eyes",
+    "eye",
+    "ears",
+    "neck",
+    "tail",
+    "fangs",
+    "claws",
+    "tusks",
+    "horns",
+    "back",
+    "spine",
+    "feelers",
+    "pincers",
+    "snout",
+    "jaw",
+    "tentacles"
+]
 
 VOCAB.TOOL_VERB = [
  
