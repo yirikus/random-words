@@ -24,14 +24,14 @@ var VOCAB = {
     ],
 
     CHARACTER_GRAMMAR: [
-        "[NAMES_M|NAMES_M2], [ADJ:TRAIT:_M] [ADJ:RACE:_M] [PROFESSION_M]",
-        "[NAMES_F], [ADJ:TRAIT:_F] [ADJ:RACE:_F] [PROFESSION_F]",
-        "[NAMES_M|NAMES_M2], [ADJ:RACE:_M] [PROFESSION_M] [CLOTHES_6|WEAPON_7]",
-        "[NAMES_F], [ADJ:RACE:_F] [PROFESSION_F] [CLOTHES_6|WEAPON_7]",
-        "[NAMES_M|NAMES_M2], [ADJ:TRAIT:_M] [PROFESSION_M] [CLOTHES_6|WEAPON_7]",
-        "[NAMES_F], [ADJ:TRAIT:_F] [PROFESSION_F] [CLOTHES_6|WEAPON_7]",
-        "[NAMES_M|NAMES_M2], [PROFESSION_M] a mistr v [ACTIVITY]",
-        "[NAMES_F], [PROFESSION_F] a mistrině v [ACTIVITY]",
+        "<b class='blue'>[NAMES_M|NAMES_M2]</b>, [ADJ:TRAIT:_M] [ADJ:RACE:_M] [PROFESSION_M]",
+        "<b class='brown'>[NAMES_F]</b>, [ADJ:TRAIT:_F] [ADJ:RACE:_F] [PROFESSION_F]",
+        "<b class='blue'>[NAMES_M|NAMES_M2]</b>, [ADJ:RACE:_M] [PROFESSION_M] [CLOTHES_6|WEAPON_7]",
+        "<b class='brown'>[NAMES_F]</b>, [ADJ:RACE:_F] [PROFESSION_F] [CLOTHES_6|WEAPON_7]",
+        "<b class='blue'>[NAMES_M|NAMES_M2]</b>, [ADJ:TRAIT:_M] [PROFESSION_M] [CLOTHES_6|WEAPON_7]",
+        "<b class='brown'>[NAMES_F]</b>, [ADJ:TRAIT:_F] [PROFESSION_F] [CLOTHES_6|WEAPON_7]",
+        "<b class='blue'>[NAMES_M|NAMES_M2]</b>, [PROFESSION_M] a mistr v [ACTIVITY]",
+        "<b class='brown'>[NAMES_F]</b>, [PROFESSION_F] a mistrině v [ACTIVITY]",
         // "[NAMES_1|NAMES_2|NAMES_3], the [TRAIT|TRAIT|RACE|] [PROFESSION] [CLOTHES_GRAMMAR], [WEAPON_GRAMMAR]",
         // "[NAMES_1|NAMES_2|NAMES_3], the [TRAIT|TRAIT|] [RACE] [PROFESSION] [CLOTHES_GRAMMAR]",
         // "[NAMES_1|NAMES_2|NAMES_3], the [TRAIT|TRAIT|] [PROFESSION|ANIMAL] killer",
@@ -41,20 +41,15 @@ var VOCAB = {
         "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] [MATERIAL_ML][_M] golem [CLOTHES_6|WEAPON_7|]",
         "[ADJ:TRAIT:_F] [ADJ:RACE:_F|] [ANIMAL_F] [FEATURE_7]",
         "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] [ANIMAL_M|HUMANOID_M] [FEATURE_7]",
-        "[APPEARENCE_ANIMAL_ML][_M] <b>[ANIMAL_MUTANT]-[ANIMAL_M]</b> [FEATURE_7]",
-        "[APPEARENCE_ANIMAL_ML][_F] <b>[ANIMAL_MUTANT]-[ANIMAL_F]</b> [FEATURE_7]",
-        "[APPEARENCE_ANIMAL_ML][_S] <b>[ANIMAL_MUTANT]-[ANIMAL_S]</b> [FEATURE_7]",
-        // "[TRAIT|CONDITION] [ELEMENT|MATERIAL|FOOD] golem that looks [TRAIT]"
+        "[APPEARENCE_ANIMAL_ML][_M] <b class='brown'>[ANIMAL_MUTANT]-[ANIMAL_M]</b> [FEATURE_7]",
+        "[APPEARENCE_ANIMAL_ML][_F] <b class='brown'>[ANIMAL_MUTANT]-[ANIMAL_F]</b> [FEATURE_7]",
+        "[APPEARENCE_ANIMAL_ML][_S] <b class='brown'>[ANIMAL_MUTANT]-[ANIMAL_S]</b> [FEATURE_7]",
     ],
 
     TECHNO_MONSTER_GRAMMAR: [
-        "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] [MATERIAL_ML][_M] golem [CLOTHES_6|WEAPON_7|]",
-        "[ADJ:TRAIT:_F] [ADJ:RACE:_F|] [ANIMAL_F] [FEATURE_7]",
-        "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] [ANIMAL_M|HUMANOID_M] [FEATURE_7]",
-        "[APPEARENCE_ANIMAL_ML][_M] <b>[ANIMAL_MUTANT]-[ANIMAL_M]</b> [TECHNO_FEATURE_7]",
-        "[APPEARENCE_ANIMAL_ML][_F] <b>[ANIMAL_MUTANT]-[ANIMAL_F]</b> [TECHNO_FEATURE_7]",
-        "[APPEARENCE_ANIMAL_ML][_S] <b>[ANIMAL_MUTANT]-[ANIMAL_S]</b> [TECHNO_FEATURE_7]",
-        // "[TRAIT|CONDITION] [ELEMENT|MATERIAL|FOOD] golem that looks [TRAIT]"
+        "[APPEARENCE_ANIMAL_ML][_M] <b class='blue'>[ANIMAL_MUTANT]-[ANIMAL_M]</b> [TECHNO_FEATURE_7]",
+        "[APPEARENCE_ANIMAL_ML][_F] <b class='blue'>[ANIMAL_MUTANT]-[ANIMAL_F]</b> [TECHNO_FEATURE_7]",
+        "[APPEARENCE_ANIMAL_ML][_S] <b class='blue'>[ANIMAL_MUTANT]-[ANIMAL_S]</b> [TECHNO_FEATURE_7]",
     ],
 
     CITY_NAME_GRAMMAR: [

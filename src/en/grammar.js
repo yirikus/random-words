@@ -30,7 +30,7 @@ var VOCAB = {
     ],
 
     CHAR_NAME_GRAMMAR:[
-        "[NAMES_M|NAMES_M2|NAMES_F]"
+        "<b>[NAMES_M|NAMES_M2|NAMES_F]</b>"
     ],
 
     CHARACTER_GRAMMAR: [
@@ -50,11 +50,11 @@ var VOCAB = {
         "[TRAIT|CONDITION] [CREATURE|ANIMAL]",
         "[TRAIT|CONDITION] [HUMANOID] [WEAPON_GRAMMAR]",
         "[ANIMAL]-[ANIMAL] with [ANIMALISTIC_FEATURE]",
-        "[COLOR] [ANIMAL]-[ANIMAL] with [ANIMALISTIC_FEATURE]",
+        "[COLOR] <b>[ANIMAL]-[ANIMAL]</b> with [ANIMALISTIC_FEATURE]",
     ],
 
     TECHNO_MONSTER_GRAMMAR: [
-        "[COLOR] [ANIMAL]-[ANIMAL] with [TECHNO_FEATURE]",
+        "[COLOR] <b>[ANIMAL]-[ANIMAL]</b> with [TECHNO_FEATURE]",
     ],
 
     CLOTHES_GRAMMAR: [

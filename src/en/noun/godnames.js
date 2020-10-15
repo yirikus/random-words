@@ -1,5 +1,5 @@
 VOCAB.GODNAME = [
-    "[GODNAME_P1][GODNAME_P2|][GODNAME_P2|]",
+    "<b class='violet'>[GODNAME_P1][GODNAME_P2|][GODNAME_P2|]</b>",
 ];
 
 VOCAB.GODNAME_P1 = [

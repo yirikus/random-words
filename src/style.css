@@ -13,6 +13,22 @@ html {
     font-weight: bold;
   }
 
+  .brown {
+    color: brown;
+  }
+
+.blue {
+  color: darkcyan;
+}
+
+.violet {
+  color: blueviolet;
+}
+
+.green {
+  color: darkgreen;
+}
+
   .footer {
     position: absolute;
     bottom: 0;
