@@ -158,10 +158,12 @@ VOCAB.CREATURE_F_7 = [
 ];
 
 VOCAB.ANIMAL_MUTANT = [
+    "dino",
     "praso",
     "mědvědo",
     "kryso",
     "kočko",
+    "kroko",
     "krávo",
     "klokano",
     "králíko",
@@ -232,6 +234,7 @@ VOCAB.ANIMAL_M = [
     "opičák",
     "panter",
     "pták",
+    "pásovec",
     "ptakopysk",
     "skunk",
     "škorpion",

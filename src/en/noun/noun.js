@@ -94,6 +94,14 @@ VOCAB.NUMBER = [
     "ten"
 ]
 
+VOCAB.TECHNO_FEATURE = [
+    "flamethrower on back",
+    "jetpack",
+    "mechanical [BODY_PART]",
+    "led light on [BODY_PART]",
+    "laser eyes",
+]
+
 VOCAB.BIOME = [    
     "Mountain",
     "Mineral",

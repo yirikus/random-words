@@ -1,5 +1,5 @@
-const version = '15.10.2020, 11:19 (v19 - animal mutants!)';
-const main = () => {     
+const version = '15.10.2020, 12:26 (v20 - techno monsters!)';
+const main = () => {
     writeElement('cityName', cityName());
     writeElement('cityDesc', cityDesc());
     writeElement('mainStory', mainStory()); 
@@ -7,7 +7,8 @@ const main = () => {
     writeElement('buildings', buildings());   
     writeElement('faith', faith());  
     writeElement('characters', characters()); 
-    writeElement('monsters', monsters());            
+    writeElement('monsters', monsters());
+    writeElement('techno-monsters', technoMonsters());
     writeElement('version', version);  
 }
 
@@ -69,6 +70,11 @@ const characters = () => {
 const monsters = () => {
     GrammarExpander.setContext('monsters');
     return writeList(VOCAB.MONSTER_GRAMMAR, 5);
+}
+
+const technoMonsters = () => {
+    GrammarExpander.setContext('technoMonsters');
+    return writeList(VOCAB.TECHNO_MONSTER_GRAMMAR, 5);
 }
 
 main();
