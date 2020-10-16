@@ -49,13 +49,19 @@ VOCAB.ABSTRACT = [
     "victory",    
 ];
 
+VOCAB.DRINK = [
+    "wine",
+    "beer",
+    "water",
+    "strange liquid"
+]
+
 VOCAB.FOOD = [
     "[ANIMAL] meat",
     "wheat",
     "rice", 
     "pastry",
-    "beer",
-    "wine",   
+    "[DRINK]"
 ];
 
 VOCAB.CELESTIAL = [
@@ -66,7 +72,10 @@ VOCAB.CELESTIAL = [
 
 VOCAB.VEGETABLE = [
     "tomato",
-    ""   
+    "cucumber",
+    "onion",
+    "pepper",
+    "cabbage"
 ];
 
 VOCAB.ANIMALS = [

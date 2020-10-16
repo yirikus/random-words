@@ -76,6 +76,19 @@ VOCAB.VERB_DRUNK = [
     "got extremely thirsty and threw themselves down a nearby well to quench their thirst."
 ];
 
+VOCAB.ITEM_PURPOSE = [
+    "holding soul of [ANIMAL|CREATURE|HUMANOID]",
+    "full of bones",
+    "full of [TOOL]s",
+    "holding ancient creature",
+    "full of [METAL] coins",
+    "full of [FOOD]",
+    "bottles of [DRINK]",
+    "holding weapons",
+    "remains of a legendary [PROFESSION]",
+    "holding [PROFESSION] clothes"
+]
+
 VOCAB.ACTIVITY = [
     "staggering",
     "laughing",

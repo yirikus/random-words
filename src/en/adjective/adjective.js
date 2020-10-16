@@ -39,6 +39,54 @@ VOCAB.MATERIAL = [
     "[MINERAL]"
 ];
 
+VOCAB.CULTURE = [
+    "celtic",
+    "egyptian",
+    "mayan",
+    "hindu",
+    "asian",
+    "barbarian",
+    "roman",
+    "greek",
+    "arabic",
+    "elven",
+    "dwarvish",
+    "draconian",
+    "demonic",
+]
+
+VOCAB.DECORATION = [
+    "[ANIMAL|CREATURE] statues",
+    "[ANIMAL|CREATURE] reliefs",
+    "[ANIMAL|CREATURE] carvings",
+    "[CULTURE] ornaments",
+    "[METAL] lining",
+    "[ANIMAL|PLANT] paintings",
+    "arcane writing",
+    "chains wrapping around it",
+    "covered with vines",
+    "covered with cobwebs",
+    "spikes",
+    "chains",
+    "[MINERAL] gems",
+    "rust",
+    "mushroom",
+    "blinking eye",
+    "roots wrapping around it",
+    "dust",
+    "ornamental pattern",
+    "[ANIMAL|CREATURE|HUMANOID] head",
+    "skull of [ANIMAL|CREATURE|HUMANOID]",
+];
+
+VOCAB.SHAPE = [
+    "round",
+    "keg-like",
+    "diamond shaped",
+    "square",
+    "pyramid shaped",
+]
+
 VOCAB.METAL = [
     "gold",
     "golden",

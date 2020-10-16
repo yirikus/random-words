@@ -88,7 +88,10 @@ var VOCAB = {
     ],
 
     MAIN_STORY_GRAMMAR: [
-        "[*PROFESSION] [VERB]",
+        "it is said that somewhere in the city a [PROFESSION] has hidden [MATERIAL] <b class='brown'>chest</b> decorated with <b class='brown'>[DECORATION]</b> and <b class='brown'>[DECORATION]</b>",
+        "it is said that somewhere in the city <b class='blue'>ancient [CULTURE] civilization</b> has hidden [MATERIAL] <b class='brown'>chest</b> decorated with <b class='brown'>[DECORATION]</b> and <b class='brown'>[DECORATION]</b>",
+        "it is said that somewhere in the city a [PROFESSION] has hidden [MATERIAL] <b class='brown'>chest</b> decorated with <b class='brown'>[DECORATION]</b> [ITEM_PURPOSE]",
+        "it is said that somewhere in the city a [PROFESSION] has hidden [CONDITION|SHAPE] [MATERIAL] <b class='brown'>chest</b> decorated with <b class='brown'>[DECORATION]</b>",
     ],
 
 };
