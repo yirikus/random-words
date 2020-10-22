@@ -1,17 +1,12 @@
 var VOCAB = {
 
     BUILDING_GRAMMAR : [
-        "[BUILDING_PART:_M|BUILDING_PART:_F|BUILDING_PART:_S]",
-    ],
-
-    BUILDING_PART : [
-
-        "[ADJ:SIZE:$1$] [ADJ:CONDITION:$1$] [BUILDING$1$]",
-        //"[ADJ:CONDITION:$1$] [BUILDING$1$] [BUILDING_STATE_GRAMMAR:$1$]",
-        //"[ADJ:SIZE:$1$] [BUILDING$1$] [BUILDING_STATE_GRAMMAR:$1$]",
-        // "[SIZE|] [CONDITION] [MATERIAL] [BUILDING]",
-        // "[SIZE|] [CONDITION] [AREA]",
-        // "[CONDITION] [BUILDING] [BUILDING_STATE_GRAMMAR|]",
+        "[BUILDING_M|BUILDING_F]",
+        "[BUILDING_M|BUILDING_F]",
+        "[BUILDING_M|BUILDING_F]",
+        "[BUILDING_M|BUILDING_F]",
+        "[BUILDING_M|BUILDING_F]",
+        "[BUILDING_M|BUILDING_F|BUILDING_S]",
     ],
 
     FAITH_GRAMMAR: [
@@ -67,13 +62,13 @@ var VOCAB = {
 
     STORY_GRAMMAR: [
         "[PROFESSION_M|PROFESSION_F] [VERB]",
-        "[STORY_PAST_GRAMAMR]",
+        //STORY_PAST_GRAMAMR
     ],
 
     STORY_PAST_GRAMAMR: [
-        "[PROFESSION_M] [VERB_PAST:_VM]",
-        "[PROFESSION_F] [VERB_PAST:_VF]",
-    ],
+        "[PROFESSION_M] [VERB_PAST:_VM:_M]",
+        "[PROFESSION_F] [VERB_PAST:_VF:_F]",
+          ],
 
     MAIN_STORY_GRAMMAR: [
         "[PROFESSION_M] [CHARACTER_STORY:_M]",
@@ -81,12 +76,20 @@ var VOCAB = {
         "Před [BUILDING_M_7|BUILDING_S_7|BUILDING_F_7] byl nalezen [ADJ:TRAIT:_M] [ANIMAL_M|PROFESSION_M].",
         "Před [BUILDING_M_7|BUILDING_S_7|BUILDING_F_7] byla nalezena [ADJ:TRAIT:_F] [ANIMAL_F|PROFESSION_F].",
         "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] přetrhl pouta a blíží se k městu.",
-        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_4], ukrytý někde ve městě.",
-        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_4], ukrytý někde v [BIOME_6].",
+        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_M_4], ukrytý někde ve městě.",
+        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_F_4], ukrytou někde ve městě.",
+        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_S_4], ukryté někde ve městě.",
+        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_M_4], ukrytý někde v [BIOME_6].",
+        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_F_4], ukrytou někde v [BIOME_6].",
+        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_S_4], ukryté někde v [BIOME_6].",
+        "Ve sklepení [BUILDING_2] se nahromadili [STORED_STUFF], v městě prý není dostatek [PROFESSION_MN_2]",
         "Město bylo zamořeno [ANIMAL_7_MN], [SWARM_SOLUTION]",
-        "Startosta kvůli [DISASTER_3] odložil [EVENT]."
-        //"[PROFESSION_M] [VERBS:VERB_PAST:_M]",
-        //"[PROFESSION_F] [VERBS:VERB_PAST:_F]"
+        "Startosta kvůli [DISASTER_3] odložil [EVENT].",
+        "Z města lidé na rychlo odcházejí, protože [LEGENDARY_LOCATION] se prý nachází [LEGENDARY_BUILDING]",
+        "V městském přístavu zakotvila loď [HUMANOID_MN_2],[CREW_ACTIVITY_MN]",
+        "V městském přístavu zakotvila loď [HUMANOID_MN_2] [SHIP_CONTENTS]",
+        "V městském přístavu zakotvila loď [HUMANOID_MN_2] převážející [STORED_STUFF]",
+        "Kapitán lodi <b class='name blue'>[SHIP_NAME]</b> prý [CAPTAIN_ACTIVITY]"
     ],
 
     SWARM_SOLUTION: [

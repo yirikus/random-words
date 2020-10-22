@@ -146,17 +146,20 @@ VOCAB.ELEMENT_2_S_E = [
     "světla",
 ];
 
-VOCAB.FLOWER= [
+VOCAB.FLOWER_F= [
     "růže",
-    "karafiát",
-    "tulipán",
     "lilie",
-    "narcis",
     "slunečnice",
-    "jetel",
     "sedmikráska",
     "kopretina",
     "levandule"
+]
+
+VOCAB.FLOWER_M= [
+    "karafiát",
+    "tulipán",
+    "narcis",
+    "jetel",
 ]
 
 VOCAB.ABSTRACT_2 = [
@@ -176,6 +179,7 @@ VOCAB.ABSTRACT_2 = [
     "technologie",
     "chtíče",
     "lovu",
+    "osudu",
     "teologie",
     "filozofie",
     "vítězství"
@@ -195,7 +199,9 @@ VOCAB.FOOD_7 = [
     "rýží", 
     "pečivem",
     "pivem",
-    "vínem",   
+    "vínem",
+    "exoticкými knedlíky",
+    "exotickým ovocem",
 ];
 
 VOCAB.DRINK_2 = [
@@ -247,7 +253,6 @@ VOCAB.TARGETLOC_F_2 = [
     "džungle",
     "jeskyně",
     "řeky",
-    "jezera",
     "bažiny",
 ];
 
@@ -268,6 +273,10 @@ VOCAB.BIOME_2_MN = [
     "bažin",
     "mokřadů",
     "oceánů",
+];
+
+VOCAB.LOCATION_2 = [
+    "[TARGETLOC_M_2|TARGETLOC_S_2|TARGETLOC_F_2]"
 ];
 
 VOCAB.BIOME_6 = [    
@@ -349,26 +358,37 @@ VOCAB.ITEM_M_2 = [
     "kotle",
 ]
 
-VOCAB.ITEM_F_4 = [
-    "nádobu",
-    "schránku",
-    "truhlici",
-    "sošku",
+VOCAB.ITEM_M_4 = ["[ITEM_M]"];
+VOCAB.ITEM_M = [
+    "deník [PROFESSION_M_2|PROFESSION_F_2]",
+    "[METAL_ML][_M] klíč",
+    "kotel [ABSTRACT_2]",
+    "elixír [ABSTRACT_2]",
+    "náhrobek",
+    "koberec",
+    "svitek",
+    "[METAL_ML][_M] šperk",
+    "[METAL_ML][_M] svícen",
+    "[METAL_ML][_M] prsten [ABSTRACT_2|ELEMENT_2]",
+    "[METAL_ML][_M] amulet [ABSTRACT_2]",
+    "[METAL_ML][_M] hrnec",
+    "[METAL_ML][_M] kotel",
+];
+
+VOCAB.ITEM_F_4=[
+    "knihu [ABSTRACT_2]",
+    "nádobu [ABSTRACT_2]",
+    "[METAL_ML][_F_4] schránku",
+    "mapu",
+    "[METAL_ML][_F_4] truhlici",
+    "[ANIMAL_ADJ] sošku",
     "[INSTRUMENT_F_4]"
 ]
 
-VOCAB.ITEM_M_4 = [
-    "náhrobek",
-    "koberec",
-    "šperk",
-    "svícen",
-    "amulet",
-    "hrnec",
-    "kotel",
-]
+VOCAB.ITEM_S_4 = ["[ITEM_S]"];
 
-VOCAB.ITEM_S_4 = [
-
+VOCAB.ITEM_S=[
+    "[METAL_ML][_S] zrcadlo",
 ]
 
 VOCAB.ACTIVITY=[
@@ -430,15 +450,110 @@ VOCAB.DISASTER_3 = [
 ];
 
 VOCAB.TARGET_ENEMY_7 = [
-    "s [RACE_JR]mi lidmi",
-    "s bohem [GOD_ASPECT_2|ANIMAL_2_MN]",
-    "s uctívači boha [GOD_ASPECT_2|ANIMAL_2_MN]",
-    "s královstvím [CITY_NAME_GRAMMAR]",
+    "[RACE_JR]mi lidmi",
+    "bohem [GOD_ASPECT_2|ANIMAL_2_MN]",
+    "uctívači boha [GOD_ASPECT_2|ANIMAL_2_MN]",
+    "královstvím [CITY_NAME_GRAMMAR]",
 ];
 
 VOCAB.ENEMY_2_MN=[
     "nemrtvých",
     "nemrtvých [ANIMAL_2_MN]"
+]
+
+VOCAB.SHIP_CONTENTS=[
+    "s nákladem exotického ovoce",
+    "vezoucí mrtvé z boje s [TARGET_ENEMY_7]",
+]
+
+VOCAB.FRUIT_S = [
+    "zelí",
+    "pomelo",
+    "jablko",
+    "konopí",
+    "liči",
+];
+
+VOCAB.FRUIT_M = [
+    "meloun",
+    "banán",
+    "kedluben",
+    "okurek",
+    "chřest",
+    "křen",
+    "zázvor",
+    "angrešt",
+];
+
+VOCAB.FRUIT_F = [
+    "broskev",
+    "brambora",
+    "hruška",
+    "mrkev",
+    "kapusta",
+    "pomeranč",
+    "mandarinka",
+    "tykev",
+    "kedlubna",
+    "dýně",
+    "okurka",
+    "borůvka",
+    "bluma",
+];
+
+VOCAB.WEIRD_STUFF = [
+    "klíče, o kterých nikdo neví k čemu jsou",
+    "zrezivělé lžíce",
+    "neumyté nádobí",
+    "nefunkční čarodějné předměty",
+    "magické předměty k ničemu",
+    "kapusty, které nikdo nežere",
+    "umělecká díla, která nikdo nechce",
+    "alchymistické serepetičky",
+    "lovecké trofeje",
+    "nechutně velké množství peněz",
+    "zabavené drogy",
+    "návykové substance",
+    "exotické knedlíky",
+    "exotické ovoce",
+    "zbytky od večeře",
+    "barely se svěcenou vodou",
+    "ukradené předměty",
+    "nově narozené děti",
+    "zbraně z dob války",
+    "zbytečné medaile",
+    "smrduté ryby",
+    "voodoo panenky",
+    "kořínky podivných vlastností",
+    "odpuzovače [ANIMAL_2_MN]",
+    "halucinogenní lektvary",
+    "lektvary [ABSTRACT_2]",
+    "oplzlé sošky",
+    "prsteny s očima",
+    "prsteny vypadající jako [BODY_PART]",
+    "jadeitové sošky [ANIMAL_2_MN]",
+    "svíčky ve tvaru [ANIMAL_2_MN]",
+    "potřeby pro rituály",
+    "potřeby pro vyvolání démónů",
+    "sušená netopýří křídla",
+    "podivnosti z cicích zemí",
+]
+
+VOCAB.STORED_STUFF = [
+    "[WEIRD_STUFF]",
+    "[WEIRD_STUFF]",
+    "[WEIRD_STUFF]",
+    "[WEIRD_STUFF]",
+    "[WEIRD_STUFF]",
+    "[WEIRD_STUFF]",
+    "[WEIRD_STUFF]",
+    "[WEIRD_STUFF]",
+    "[WEIRD_STUFF]",
+    "lidé pokousaní [ANIMAL_7_MN]",
+    "lidé podvedení falešným [PROFESSION_M_7]",
+    "lidé podvedení falešným [PROFESSION_F_7]",
+    "otroci",
+    "podivně světélkující [ANIMAL_MN]",
 ]
 
 VOCAB.EVENT = [
@@ -469,10 +584,18 @@ VOCAB.ANIMAL_BODY_PART_MN_7 = [
     "ocasy",
 ];
 
-VOCAB.ARTEFACT_4 = [
-    "[ITEM_M_4] [ABSTRACT_2]",
-    "[METAL_ML][_F_4] [ITEM_F_4] [ABSTRACT_2]",
-    "[METAL_ML]ý [ITEM_M_4] [ABSTRACT_2]"
-   // "[ADJ:METAL:_S_4][ITEM_S_4] [ABSTRACT_2]",
+VOCAB.ARTEFACT_M_4 = [
+    "[ARTEFACT_CONDITION]ý [WEAPON_M_4] [ABSTRACT_2]",
+    "[ARTEFACT_CONDITION]ý [ITEM_M_4]",
 
+]
+
+VOCAB.ARTEFACT_F_4 = [
+    "[ARTEFACT_CONDITION][_F_4] [ITEM_F_4]",
+    "[ARTEFACT_CONDITION][_F_4] [WEAPON_F_4] [ABSTRACT_2]",
+]
+
+VOCAB.ARTEFACT_S_4 = [
+    "[ARTEFACT_CONDITION][_S_4] [WEAPON_S_4] [ABSTRACT_2]",
+    "[ARTEFACT_CONDITION][_S_4] [ITEM_S_4]",
 ]

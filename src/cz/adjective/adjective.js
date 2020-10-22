@@ -164,11 +164,11 @@ VOCAB.ANIMAL_ADJ=[
 
 
 VOCAB.MATERIAL_ML = [
-    "dřevěnn",     
+    "dřevěn",
     "kamenn",
     "ocelov",
-    "kostěnn",
-    "skleněnn",
+    "kostěn",
+    "skleněn",
     "ledov",
     "[METAL_ML]",
 ];
@@ -290,24 +290,20 @@ VOCAB.NUMBER_7 = [
     "deseti"
 ]
 
+VOCAB.ARTEFACT_CONDITION = [
+  "prastar",
+  "proklet",
+  "magick",
+];
+
 VOCAB.ITEM_CONDITION_ML = [
     "prokopnut",
     "rozmlácen",
-    "prastar",
+    "[ARTEFACT_CONDITION]",
     "[CONDITION_ML]",
     "[PROPERTY_ML]",
     "[CONDITION_ML]",
 ]
-
-VOCAB.ITEM_CONDITION_JR = [
-   "[CONDITION_JR]"
-];
-
-VOCAB.CONDITION_JR = [
-    "nóbl",
-    "luxusní",
-];
-
 
 VOCAB.ADJ_ACTIV_JR = [
     "létající",

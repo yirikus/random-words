@@ -46,7 +46,7 @@ VOCAB.TECHNO_FEATURE_7 = [
     "s hadičkami vedoucí z pusy",
     "s hadičkami po celém těle",
     "s velkou skleněnou bání na hlavě",
-    "se skleněnáým tělem",
+    "se skleněným tělem",
     "se satelitem",
     "s hřeby po celém těle",
     "s kamerou místo hlavy",
@@ -162,38 +162,48 @@ VOCAB.BODY = [
 ];
 
 VOCAB.BODY_PART = [
-    "[ANIMAL] head",
-    "[ANIMAL] eye",
-    "[ANIMAL] leg",
+    "oko",
+    "noha",
+    "ruka",
+    "hlava",
+    "zadek",
+    "prst",
+    "prsa",
 ];
 
 VOCAB.TOOL_VERB = [
  
 ];
 
-VOCAB.TOOL = [
-    "journal",
-    "book",
-    "book of [ABSTRACT]",
-    "wrench", 
-    "keys", 
-    "scroll",
-    "parasol", 
-    "cauldron",
-    "herbs",
-    "flowers",
-    "hunting horn",
-    "mirror",
-    "flag",
-    "banner",
-    "beverage",
-    "elixir",
-    "[ANIMAL|] statuette",
-    "saw",
-    "enchanted fruit",
-    "enchanted [FOOD]"
-
+VOCAB.WEAPON_F_4 = [
+    "kuši",
+    "pistoli",
+    "sekeru",
+    "hůl",
+    "hůlku",
+    "halapartnu",
 ];
+
+VOCAB.WEAPON_S = [
+    "kopí",
+    "žezlo",
+    "kladivo",
+]
+
+VOCAB.WEAPON_M = [
+    "bič",
+    "prak",
+    "luk",
+    "nůž",
+    "palcát",
+    "řemdih",
+    "ceremoniální nůž",
+    "štít",
+    "grimoár",
+]
+
+VOCAB.WEAPON_M_4 = ["[WEAPON_M]"];
+VOCAB.WEAPON_S_4 = ["[WEAPON_S]"];
 
 VOCAB.INSTRUMENT_7 = [
     "s flétnou",
@@ -222,26 +232,3 @@ VOCAB.WEAPON_7 = [
     "s kouzelnou knížkou",
     "s grimoárem",    
 ];
-
-// "shaved head",
-// "mohawk",
-// "war paint",
-// "extreme beard",
-// "braid",
-// "[ANIMAL] companion",
-// "scars",
-// "medusa hair",
-// "horns",
-// "fairy wings",
-// "feathers",
-// "internal power source",
-// "piercings",
-// "spines",
-// "bandages",
-// "demonic companion",
-// "antlers",
-// "thorns",
-// "parasitic infection",
-// "satyr legs",
-// "backpack",
-// "medal",

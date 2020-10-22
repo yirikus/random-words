@@ -54,7 +54,61 @@ VOCAB.HUMANOID_M_2 = [
     "válečníka",
     "mága",
     "yettiho",
+];
 
+VOCAB.HUMANOID_MN_2 = [
+    "barbarů",
+    "kyklopů",
+    "démonů",
+    "goblinů",
+    "obrů",
+    "impů",
+    "koboldů",
+    "[ANIMAL_ADJ]ch lidí",
+    "mnichů",
+    "opičáků",
+    "mutantů",
+    "ogrů",
+    "pirátů",
+    "kostlivců",
+    "satyrů",
+    "šamanů",
+    "trolů",
+    "upírů",
+    "vlkodlaků",
+    "čarodějů",
+    "válečníků",
+    "mágů",
+];
+
+VOCAB.HUMANOID_MN_4 = [
+    "[ANIMAL_ADJ] lidí",
+    "barbary",
+    "démony",
+    "gobliny",
+    "elfy",
+    "kyklopy",
+    "obry",
+    "impy",
+    "koboldy",
+    "mnichy",
+    "opičáky",
+    "mutanty",
+    "ogry",
+    "piráty",
+    "kostlivce",
+    "satyry",
+    "šamany",
+    "troly",
+    "trpaslíky",
+    "upíry",
+    "vlkodlaky",
+    "čaroděje",
+    "válečníky",
+    "mágy",
+    "námořníky",
+    "ženy",
+    "otroky",
 ];
 
 VOCAB.HUMANOID_M_7 = [
@@ -113,7 +167,7 @@ VOCAB.HUMANOID_F_2 = [
     "kyklopky",
     "obryně",
     "upíří královnoy",
-    "upírkoy",
+    "upírky",
     "zombie [PROFESSION_M_2|PROFESSION_F_2]"
 ]
 
@@ -156,6 +210,17 @@ VOCAB.CREATURE_F_7 = [
     "nymfou",
     "harpyí",
 ];
+
+VOCAB.CREATURE_MN_2 = [
+    "draků",
+    "gremlinů",
+    "goblinů",
+    "nymf",
+    "harpyí",
+    "jednorožců",
+    "mantikór",
+    "hyder"
+]
 
 VOCAB.ANIMAL_MUTANT = [
     "dino",
@@ -247,6 +312,8 @@ VOCAB.ANIMAL_M = [
     "velbloud",
     "zajíc",
 ];
+
+VOCAB.ANIMAL_2 = ["[ANIMAL_M_2|ANIMAL_S_2|ANIMAL_F_2]"];
 
 VOCAB.ANIMAL_M_2 = [
     "ptáka",    
@@ -440,7 +507,7 @@ VOCAB.ANIMAL_7_MN = [
     "hady",
     "kuřaty",
     "krysami",
-    "koněmi",
+    "koňmi",
     "krávami",
     "kočkami",
     "medvědy",

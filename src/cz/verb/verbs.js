@@ -3,7 +3,7 @@
  * $2 = vocab name _M,_F,_S
  */
 VOCAB.VERB_PAST = [
-    "se opil[$1$] [VERB_DRUNK:$1$]",
+    "se opil[$1$] [VERB_DRUNK:$1$:$2$]",
 ];
 
 VOCAB._VM = [""];
@@ -16,9 +16,23 @@ VOCAB.VERB = [
     "[VERB_ACTION]",
     "[VERB_MYSTERY]",
     "[VERB_MYSTERY]",
+    "[VERB_BUSINESS]",
     "[VERB_REST]",
     "[VERB_ROMANCE]",
 ];
+
+VOCAB.CREW_ACTIVITY_MN = [
+    "celá posádka se šla opít do hospody [PUB_NAME]",
+    "členové posádky začali rabovat ve městě a unášet místní ženy",
+    "celá posádka [VERB_BUSINESS]",
+    "celá posádka [VERB_REST]",
+];
+
+VOCAB.CAPTAIN_ACTIVITY = [
+    "našel cestu ke ztracenému pokladu",
+    "našel cestu ke ztracenému městu",
+    "po roce cestování konečně nalezl [ARTEFACT_M_4|ARTEFACT_F_4|ARTEFACT_S_4]",
+]
 
 VOCAB.VERB_ACTION = [
     //action
@@ -35,7 +49,7 @@ VOCAB.VERB_ACTION = [
     "zabíjí [ANIMAL_4_MN] v [BIOME_6]",
     "odhalí tajemství [ANIMAL_2_MN]",
     "provádí rituál",    
-    //"steals [SUBJECT]",
+    "hromadí [STORED_STUFF]",
     "vyvolává démona",
     "soutěží na turnaji",
     "utíká pryč",
@@ -50,6 +64,10 @@ VOCAB.VERB_ACTION = [
     
     
 ];
+
+VOCAB.VERB_BUSINESS = [
+    "se snaží prodat [STORED_STUFF]",
+]
 
 VOCAB.VERB_MYSTERY = [
     //mystery
@@ -68,7 +86,7 @@ VOCAB.VERB_REST = [
     "jde přes most",
     "dělá něco pod mostem",
     "si užívá vyhlídku",
-    "odpočívá na",
+    "si jde užít do nevěstince",
     "navštěvuje svaté místo",
     "se snaží prodat [FOOD_4]",
     "učí žáky svému umění",
@@ -78,12 +96,12 @@ VOCAB.VERB_REST = [
 ];
 
 VOCAB.VERB_ROMANCE = [
-    "si užívá s [ADJ:APPEARENCE_CHAR:_F_7] ženou u [BUILDING_2]",
-    "si užívá s [ADJ:APPEARENCE_CHAR:_M_7] mužem u [BUILDING_2]",
-    "si užívá s [ADJ:APPEARENCE_CHAR:_F_7] [PROFESSION_F_7] u [BUILDING_2]",
-    "si užívá s [ADJ:APPEARENCE_CHAR:_M_7] [PROFESSION_M_7] u [BUILDING_2]",
-    "svádí atraktivní ženy u [BUILDING_2]",
-    "svádí atraktivní muže u [BUILDING_2]",
+    "si užívá s [ADJ:APPEARENCE_CHAR:_F_7] ženou u [BUILDING_2|STRUCTURE_2|LOCATION_2]",
+    "si užívá s [ADJ:APPEARENCE_CHAR:_M_7] mužem u [BUILDING_2|STRUCTURE_2|LOCATION_2]",
+    "si užívá s [ADJ:APPEARENCE_CHAR:_F_7] [PROFESSION_F_7] u [BUILDING_2|STRUCTURE_2|LOCATION_2]",
+    "si užívá s [ADJ:APPEARENCE_CHAR:_M_7] [PROFESSION_M_7] u [BUILDING_2|STRUCTURE_2|LOCATION_2]",
+    "svádí atraktivní ženy u [BUILDING_2|STRUCTURE_2]",
+    "svádí atraktivní muže u [BUILDING_2|STRUCTURE_2]",
     "dělá neslušné nabídky [ADJ:APPEARENCE_CHAR:_F_3] ženě",
     "dělá neslušné nabídky [ADJ:APPEARENCE_CHAR:_M_3] muži",
 ];
@@ -103,7 +121,7 @@ VOCAB.VERB_DRUNK = [
     "a probudil[$1$] se se zlatou medailí na krku. Zřejmě vyhrál[$1$] soutěž v [ACTIVITY]",
     "a zahájil[$1$] zvířecí revoluci osvobozením [ANIMAL_2_MN] z nedaleké farmy.",
     "a začal nekontrolovatelně brečet, protože [ANIMAL_MN] museli umřít, aby on[$1$] mohl[$1$] jíst steak.",
-    "a běhal[$1$] nahatý po městě",
+    "a běhal[$1$] nahat[$2$] po městě",
 ]
 
 VOCAB.VERB_INF = [

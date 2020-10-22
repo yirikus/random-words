@@ -224,6 +224,7 @@ VOCAB.PROFESSION_MN_2 = [
     "lupičů",
     "vrahů",
     "svůdníků",
+    "lékařů",
     "rybářů",
     "učitelů",
     "lučištníků",

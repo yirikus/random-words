@@ -3,7 +3,7 @@ VOCAB.PERSON = [
 ];
 
 VOCAB.PUB_NAME = [
-    "<span class='name'>[PUB_NAME_PART]</span>"
+    "<span class='brown name'>[PUB_NAME_PART]</span>"
 ];
 
 VOCAB.PUB_NAME_PART = [
@@ -11,53 +11,105 @@ VOCAB.PUB_NAME_PART = [
     "U [ITEM_CONDITION_ML][_F_2] [INSTRUMENT_F_2|ITEM_F_2]",
     "U [ADJ_ACTIV_JR]ho [INSTRUMENT_M_2]",
     "U [ADJ_ACTIV_JR] [INSTRUMENT_F_2]",
-    "[COLOR][_F] [FLOWER]",
+    "[COLOR][_F] [FLOWER_F]",
+    "[COLOR][_M] [FLOWER_M]",
+    "[COLOR|MATERIAL_ML][_S] [FRUIT_S]",
+    "[COLOR|MATERIAL_ML][_M] [FRUIT_M]",
+    "[COLOR|MATERIAL_ML][_F] [FRUIT_F]",
     "U [COLOR|METAL_ML][_S_2] slunce",
     "U [COLOR|METAL_ML][_F_2] hvězdy",
     "U [COLOR|METAL_ML][_M_2] měsíce",
     "U [ADJ:TRAIT:_M_2] [HUMANOID_M_2|ANIMAL_M_2|CREATURE_M_2]",
-    "U [ADJ:TRAIT:_M_2] [HUMANOID_F_2|ANIMAL_F_2|CREATURE_F_2]",
+    "U [ADJ:TRAIT:_F_2] [HUMANOID_F_2|ANIMAL_F_2|CREATURE_F_2]",
     "U [ADJ_ACTIV_JR] [HUMANOID_F_2|ANIMAL_F_2|CREATURE_F_2]",
     "U [ADJ_ACTIV_JR]ho [HUMANOID_M_2|ANIMAL_M_2|CREATURE_M_2]",
 ];
 
+VOCAB.SHIP_NAME = [
+    "zhouba [ANIMAL_2_MN|HUMANOID_MN_2|CREATURE_MN_2]",
+    "[COLOR|METAL_ML][_S] slunce",
+    "[COLOR|METAL_ML][_F] hvězda",
+    "[COLOR|METAL_ML][_M] měsíc",
+    "[COLOR][_F] [FLOWER_F]",
+    "[COLOR][_M] [FLOWER_M]",
+    "[COLOR|METAL_ML][_M] vítr",
+    "[COLOR|METAL_ML][_F] bouře",
+    "[ANIMAL_ADJ] hostina",
+    "[ANIMAL_ADJ] pomsta",
+    "[ANIMAL_ADJ] zhouba",
+    "[NAMES_F]",
+    "mořský [ANIMAL_M]",
+    "mořská [ANIMAL_F]",
+    "[ADJ:TRAIT:_M] [ANIMAL_M]",
+    "[ADJ:TRAIT:_F] [ANIMAL_F]"
+]
+
+VOCAB.LEGENDARY_BUILDING = [
+    "vstup do tunelů vyhloubených obřím červem",
+    "dračí jeskyně",
+    "laboratoř s děsivými experimenty",
+];
+
+VOCAB.LEGENDARY_LOCATION = [
+    "ve starostově paláci",
+    "v čarodějné věži",
+    "v místní katedrále",
+    "pod místním hřbitovem",
+    "pod ruinami za městem",
+    "v přístavu pod hladinou moře",
+];
+
 VOCAB.BUILDING_M = [
     "kostel [SWARMING:_M|HOUSING:_M]",
-    "dům [SWARMING:_M|HOUSING:_M|BUILDING_DECOR]",
+    "dům [SWARMING:_M|HOUSING:_M|BUILDING_DECOR:_M]",
     "[METAL_ML][_M] důl",
-    "přístav",
+    "přístav [SWARMING:_M]",
     "hostinec [PUB_NAME]",
     "přístav [SWARMING:_M]",
     "nevěstinec [SWARMING:_M|HOUSING:_M]",
+    "nevěstinec [BROTHEL_FEATURE]",
     "obchod s [FOOD_7|ANIMAL_7_MN]",
     "obchod s [ANIMAL_ADJ]mi [ANIMAL_BODY_PART_MN_7]",
     "obchod s [FOOD_7] [SWARMING:_M]",
+    "obchod prodávající [WEIRD_STUFF]",
     "dům [PROFESSION_M_2|PROFESSION_F_2]",
-    "dům [ADJ:TRAIT:_F_2] [PROFESSION_F_2|PROFESSION_M_2|]",
+    "dům [ADJ:TRAIT:_F_2] [PROFESSION_F_2|PROFESSION_M_2]",
     "menhir z meteorovitého kamene popsaný [ADJ:ORIGIN:_S_7] písmem",
     "menhir z [ADJ:CELESTIAL:_M_2]  kamene popsaný [ADJ:ORIGIN:_S_7] písmem",
     "menhir z [ADJ:CELESTIAL:_M_2]  kamene postavený [RACE_JR|ORIGIN_JR]mi lidmi",
     "menhir z [ADJ:CELESTIAL:_M_2] kamene postavený [RACE_JR]mi lidmi",
 ];
 
+VOCAB.BROTHEL_FEATURE = [
+    "s exotickým představením",
+    "s exotickým personálem",
+    "pro [HUMANOID_MN_4|PROFESSION_MN_4]",
+    "bohatou klientelu",
+    "s dlouhou historií",
+    "ovládaný kultem boha [*GODNAME]"
+]
+
 VOCAB.BUILDING_F = [
-    "[MATERIAL_ML][_F] brána",
-    "[MATERIAL_ML][_F] brána",
+    "[MATERIAL_ML][_F] brána [BUILDING_DECOR:_F]",
+    "[MATERIAL_ML][_F] brána [BUILDING_DECOR:_F]",
     "dílna [SWARMING:_F|HOUSING:_F]",
     "věž [SWARMING:_F|HOUSING:_F]",
-    "svatyně [SWARMING:_F|HOUSING:_F|BUILDING_DECOR] zasvěcená bohu [*GOD_NAME]",
-    "fontána [BUILDING_DECOR]",
+    "svatyně [SWARMING:_F|HOUSING:_F|BUILDING_DECOR:_F] zasvěcená bohu [*GODNAME]",
+    "fontána [BUILDING_DECOR:_F]",
     "hospoda [*PUB_NAME]",
+    "[MATERIAL_ML|METAL_ML][_F] socha [ANIMAL_2]",
     "továrna [SWARMING:_F|HOUSING:_F]",
-    "zřícenina dříve létající [BUILDING_F_4]",
-    "zřícenina dříve létajícího [BUILDING_M_4]",
     "pevnost [SWARMING:_F|HOUSING:_F]",
     "[METAL_ML][_F] socha [ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2]",
 ];
 
 VOCAB.BUILDING_DECOR = [
     "s [ANIMAL_ADJ] sochou",
-    "lemovaná s [ANIMAL_ADJ]mi sochami",
+    "s [ANIMAL_ADJ]mi sochami",
+    "lemovan[$1$] [ANIMAL_ADJ]mi sochami",
+    "se zlatým pruhem",
+    "popsan[$1$] prastarým písmem",
+    "popsan[$1$] [ADJ:ORIGIN:_S_7] písmem",
     "s vytesanou [ANIMAL_ADJ] hlavou",
 ]
 
@@ -125,16 +177,33 @@ VOCAB.BUILDING_M_7 = [
 
 VOCAB.BUILDING_S = [
     "lázně pro [PROFESSION_MN_4]",
-    "tržiště",    
+    "tržiště, kde prodávají [STORED_STUFF]",
+    "divadlo"
 ];
 
 VOCAB.BUILDING_2 = [
-    "parku",
-    "mostu",
-    "tržiště",
     "brány",
     "lázní",
+    "nemocnice",
+    "kostelu",
+    "katedrály",
+    "radnice",
+    "domu",
+    "[METAL_ML][_M] dolu",
+    "přístavu",
+    "nevěstince",
+    "obchodu s [FOOD_7]",
+    "věže",
+    "svatyně",
+    "továrny",
+    "pevnosti",
+]
+
+VOCAB.STRUCTURE_2 = [
+    "parku",
+    "mostu",
     "fontány",
+    "tržiště",
     "[METAL_ML|MATERIAL_ML]é sochy [ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2]"
 ]
 
@@ -203,15 +272,11 @@ The Obsidian Enclave: A centuries-old laboratory deep in the caverns below where
 
 Earthmote of the Elemental Lords: The ruins of a once-mighty floating embassy of the elemental lords.
 
-
-
 The Infernal Machine: A machine that crosses worlds devouring entire civilizations and leaving behind nothing but poisoned ruins.
 
 The Structure in the Ice: A shapeless structure buried under the ice for over a million years recently uncovered by the northern barbarians above.
 
 The Undercity: A city of sin and murder where the only laws are those imposed with a knife.
-
-The Elven City of Moonwillow: The ruins of a once-mighty elven kingdom brought low by their own hubris.
 
 The Lich's Sanctuary: A chrome orb formed around the sanctuary of an ancient lich once floating deep in the astral plane.
 
