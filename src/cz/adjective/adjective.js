@@ -156,7 +156,9 @@ VOCAB.ANIMAL_ADJ=[
     "dračí",
     "soví",
     "krabí",
-    "vlčí"
+    "vlčí",
+    "rybí",
+    "žabí"
 ]
 
 

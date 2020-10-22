@@ -15,6 +15,7 @@ VOCAB.CLOTHES_6 = [
     "s dredy",
     "s copem",
     "v obvazech",
+    "s žabíma očima",
     "s infekcí",
     "v [COLOR][_F_MN_6] šatech"
 ];

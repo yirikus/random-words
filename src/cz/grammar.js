@@ -15,12 +15,12 @@ var VOCAB = {
     ],
 
     FAITH_GRAMMAR: [
-        "[GODNAME], [ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M] [ADJ:RACE:_M|] bůh [GOD_ASPECT_2]",
-        "[GODNAME], [ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M] [ADJ:RACE:_M|] pán [GOD_ASPECT_2]",
-        "[GODNAME], [ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M] [ADJ:RACE:_M|] strážce [BIOME_2_MN]",
-        "[GODNAME], [ADJ:APPEARENCE_CHAR:_F|ADJ:TRAIT:_F] [ADJ:RACE:_F|] strážkyně [BIOME_2_MN]",
-        "[GODNAME], [ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M] [ADJ:RACE:_M|] ochránce [ANIMAL_2_MN]",
-        "[GODNAME], [ADJ:APPEARENCE_CHAR:_F|ADJ:TRAIT:_F] [ADJ:RACE:_F|] bohyně [GOD_ASPECT_2]",
+        "[*GODNAME], [ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M] [ADJ:RACE:_M|] bůh [GOD_ASPECT_2]",
+        "[*GODNAME], [ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M] [ADJ:RACE:_M|] pán [GOD_ASPECT_2]",
+        "[*GODNAME], [ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M] [ADJ:RACE:_M|] strážce [BIOME_2_MN]",
+        "[*GODNAME], [ADJ:APPEARENCE_CHAR:_F|ADJ:TRAIT:_F] [ADJ:RACE:_F|] strážkyně [BIOME_2_MN]",
+        "[*GODNAME], [ADJ:APPEARENCE_CHAR:_M|ADJ:TRAIT:_M] [ADJ:RACE:_M|] ochránce [ANIMAL_2_MN]",
+        "[*GODNAME], [ADJ:APPEARENCE_CHAR:_F|ADJ:TRAIT:_F] [ADJ:RACE:_F|] bohyně [GOD_ASPECT_2]",
     ],
 
     CHARACTER_GRAMMAR: [
@@ -73,7 +73,6 @@ var VOCAB = {
     STORY_PAST_GRAMAMR: [
         "[PROFESSION_M] [VERB_PAST:_VM]",
         "[PROFESSION_F] [VERB_PAST:_VF]",
-        "[PROFESSION_S] [VERB_PAST:_VS]"
     ],
 
     MAIN_STORY_GRAMMAR: [
@@ -83,9 +82,15 @@ var VOCAB = {
         "Před [BUILDING_M_7|BUILDING_S_7|BUILDING_F_7] byla nalezena [ADJ:TRAIT:_F] [ANIMAL_F|PROFESSION_F].",
         "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] přetrhl pouta a blíží se k městu.",
         "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_4], ukrytý někde ve městě.",
-        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_4], ukrytý někde v [BIOME_6]."
+        "[POWER_ML][_M] [CREATURE_M|HUMANOID_M] hledá [ARTEFACT_4], ukrytý někde v [BIOME_6].",
+        "Město bylo zamořeno [ANIMAL_7_MN], [SWARM_SOLUTION]",
+        "Startosta kvůli [DISASTER_3] odložil [EVENT]."
         //"[PROFESSION_M] [VERBS:VERB_PAST:_M]",
         //"[PROFESSION_F] [VERBS:VERB_PAST:_F]"
+    ],
+
+    SWARM_SOLUTION: [
+        "startosta se rozhodl vypustit [ANIMAL_4_MN]",
     ],
 
     CHARACTER_STORY: [

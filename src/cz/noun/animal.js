@@ -180,6 +180,7 @@ VOCAB.ANIMAL_MUTANT = [
     "tygro",
     "žirafo",
     "žraloko",
+    "žábo",
 ];
 
 VOCAB.ANIMAL = [
@@ -204,9 +205,11 @@ VOCAB.ANIMAL_F = [
     "opice",
     "paryba",
     "ryba",
+    "ropucha",
     "vačice",
     "veverka",
     "žirafa",
+    "žába"
 ]
 
 VOCAB.ANIMAL_M = [
@@ -264,7 +267,8 @@ VOCAB.ANIMAL_M_2 = [
     "pavouka",
     "orla",
     "jestřába",
-    "bobra"
+    "bobra",
+
 
 ];
 
@@ -275,16 +279,18 @@ VOCAB.ANIMAL_S_2 = [
 ]
 
 VOCAB.ANIMAL_F_2 = [
-    "ovce",
-    "ryby",
-    "kozy",
     "svině",
+    "kozy",
     "klisny",
     "krysy",
     "krávy",
     "kočky",
     "lišky",
+    "ovce",
+    "ryby",
+    "ropuchy",
     "sovy",
+    "žáby"
 ];
 
 VOCAB.ANIMAL_M_7 = [
@@ -295,7 +301,8 @@ VOCAB.ANIMAL_M_7 = [
     "koněm",
     "medvědem",
     "netopýrem",
-    "bobrem"
+    "bobrem",
+
 ];
 
 VOCAB.ANIMAL_S_7 = [
@@ -304,12 +311,14 @@ VOCAB.ANIMAL_S_7 = [
 ]
 
 VOCAB.ANIMAL_F_7 = [
-    "ovcí",
-    "rybou",
     "krysou",
     "krávou",
     "kočkou",
-    "liškou"
+    "liškou",
+    "ovcí",
+    "rybou",
+    "ropuchou",
+    "žábou"
 ];
 
 VOCAB.ANIMAL_F_6 = [ 
@@ -319,9 +328,11 @@ VOCAB.ANIMAL_F_6 = [
 
 VOCAB.SMALL_ANIMAL_F_6 = [
     "rybě",
+    "ropuše",
     "kryse",
     "kočce",
-    "lišce"
+    "lišce",
+    "žábě",
 ];
 
 VOCAB.BIG_ANIMAL_F_6 = [
@@ -350,33 +361,32 @@ VOCAB.ANIMAL_6 = [ "[ANIMAL_F_6|ANIMAL_M_6]"];
 VOCAB.BIG_ANIMAL_6 = [ "[BIG_ANIMAL_F_6|BIG_ANIMAL_M_6]"];
 
 VOCAB.ANIMAL_MN = [
-    "ovce",
-    "ryby",
-    "ptáky",    
-    "koně",
-    "vlci",
-    "kanci",
-    "prasata",
-    "velbloudi",
-    "velryby",
-    "kuřata",
     "draci",
+    "koně",
+    "kanci",
+    "kuřata",
     "krysy",
     "hmyz",
+    "chlupatí sloni",
     "hadi",
-    "netopýři",
     "krávy",
     "kočky",
     "medvědi",
     "mamuti",
+    "netopýři",
+    "ovce",
+    "prasata",
+    "ptáky",
+    "ryby",
+    "ropuchy",
     "sloni",
-    "chlupatí sloni"
+    "velbloudi",
+    "velryby",
+    "vlci",
+    "žáby"
 ];
 
 VOCAB.ANIMAL_2_MN = [
-    "ovcí",
-    "ryb",
-    "ptáků",    
     "koní",
     "vlků",
     "kanců",
@@ -391,14 +401,16 @@ VOCAB.ANIMAL_2_MN = [
     "koček",
     "medvědů",
     "mamutů",
+    "ovcí",
+    "ptáků",
+    "ryb",
+    "ropuch",
     "slonů",
-    "chlupatých slonů"
+    "chlupatých slonů",
+    "žab",
 ];
 
 VOCAB.ANIMAL_4_MN = [
-    "ovce",
-    "ryby",
-    "ptáky",    
     "koně",
     "vlky",
     "kance",
@@ -413,23 +425,30 @@ VOCAB.ANIMAL_4_MN = [
     "kočky",
     "medvědy",
     "draky",
+    "ovce",
+    "ptáky",
+    "ryby",
+    "ropuchy",
+    "žáby",
 ];
 
 VOCAB.ANIMAL_7_MN = [
-    "ovcemi",
-    "rybami",
-    "ptáky",    
-    "koněmi",
+    "draky",
     "vlky",
     "kanci",
-    "prasaty",
-    "kuřaty",
-    "krysami",
     "hmyzem",
     "hady",
-    "netopýry",
+    "kuřaty",
+    "krysami",
+    "koněmi",
     "krávami",
     "kočkami",
     "medvědy",
-    "draky",
+    "netopýry",
+    "ovcemi",
+    "ptáky",
+    "prasaty",
+    "rybami",
+    "ropuchami",
+    "žábami"
 ];

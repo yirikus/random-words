@@ -13,6 +13,7 @@ VOCAB.PROFESSION_M = [
     "kněz",
     "kovář",
     "obchodník", //s čím
+    "obchodník s [ANIMAL_7_MN] [ANIMAL_BODY_PART_MN_7]",
     "rebel",
     "lupič",
     "vrah",

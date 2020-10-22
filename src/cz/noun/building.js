@@ -23,13 +23,14 @@ VOCAB.PUB_NAME_PART = [
 
 VOCAB.BUILDING_M = [
     "kostel [SWARMING:_M|HOUSING:_M]",
-    "dům [SWARMING:_M|HOUSING:_M]",
+    "dům [SWARMING:_M|HOUSING:_M|BUILDING_DECOR]",
     "[METAL_ML][_M] důl",
     "přístav",
     "hostinec [PUB_NAME]",
     "přístav [SWARMING:_M]",
     "nevěstinec [SWARMING:_M|HOUSING:_M]",
-    "obchod s [FOOD_7]",
+    "obchod s [FOOD_7|ANIMAL_7_MN]",
+    "obchod s [ANIMAL_ADJ]mi [ANIMAL_BODY_PART_MN_7]",
     "obchod s [FOOD_7] [SWARMING:_M]",
     "dům [PROFESSION_M_2|PROFESSION_F_2]",
     "dům [ADJ:TRAIT:_F_2] [PROFESSION_F_2|PROFESSION_M_2|]",
@@ -41,17 +42,24 @@ VOCAB.BUILDING_M = [
 
 VOCAB.BUILDING_F = [
     "[MATERIAL_ML][_F] brána",
+    "[MATERIAL_ML][_F] brána",
     "dílna [SWARMING:_F|HOUSING:_F]",
     "věž [SWARMING:_F|HOUSING:_F]",
-    "svatyně [SWARMING:_F|HOUSING:_F]",
-    "fontána",
-    "hospoda [PUB_NAME]",
+    "svatyně [SWARMING:_F|HOUSING:_F|BUILDING_DECOR] zasvěcená bohu [*GOD_NAME]",
+    "fontána [BUILDING_DECOR]",
+    "hospoda [*PUB_NAME]",
     "továrna [SWARMING:_F|HOUSING:_F]",
     "zřícenina dříve létající [BUILDING_F_4]",
     "zřícenina dříve létajícího [BUILDING_M_4]",
     "pevnost [SWARMING:_F|HOUSING:_F]",
     "[METAL_ML][_F] socha [ANIMAL_F_2|ANIMAL_M_2|ANIMAL_S_2]",
 ];
+
+VOCAB.BUILDING_DECOR = [
+    "s [ANIMAL_ADJ] sochou",
+    "lemovaná s [ANIMAL_ADJ]mi sochami",
+    "s vytesanou [ANIMAL_ADJ] hlavou",
+]
 
 VOCAB.BUILDING_F_4 = [
     "[MATERIAL_ML][_F_2] bránu",
@@ -78,11 +86,11 @@ VOCAB.BUILDING_F_7 = [
 
 VOCAB.SWARMING = [
     "zamořen[$1$] [ANIMAL_7_MN]",
-],
+];
 
 VOCAB.HOUSING = [
     "obývan[$1$] [PROFESSION_MN_7]",
-],
+];
 
 
 VOCAB.BUILDING_M_4 = [

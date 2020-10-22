@@ -226,7 +226,7 @@ VOCAB.FOOD_4 = [
     "maso z [ANIMAL_2_MN]",
     "pšenici",
     "rajčata",
-    "exotické kndedlíky",
+    "exotické knedlíky",
     "rýži", 
     "pečivo",
     "pivo",
@@ -420,6 +420,33 @@ VOCAB.FURNITURE_S_4 = [
     "staré křeslo",    
 ]
 
+VOCAB.DISASTER_3 = [
+    "přemnožení [ANIMAL_2_MN]",
+    "válce s [TARGET_ENEMY_7]",
+    "epidemii [ANIMAL_ADJ]ho moru",
+    "požáru",
+    "nečekanému útoku [ENEMY_2_MN]",
+    "probuzení tisíc let mrtvých [PROFESSION_MN_2]"
+];
+
+VOCAB.TARGET_ENEMY_7 = [
+    "s [RACE_JR]mi lidmi",
+    "s bohem [GOD_ASPECT_2|ANIMAL_2_MN]",
+    "s uctívači boha [GOD_ASPECT_2|ANIMAL_2_MN]",
+    "s královstvím [CITY_NAME_GRAMMAR]",
+];
+
+VOCAB.ENEMY_2_MN=[
+    "nemrtvých",
+    "nemrtvých [ANIMAL_2_MN]"
+]
+
+VOCAB.EVENT = [
+    "předávání státních vyznamenání",
+    "závody [ANIMAL_2_MN]",
+    "turnaj v [ACTIVITY]"
+]
+
 VOCAB.BODY_PART_7 = [
     "hlavou",
     "nohou",
@@ -430,7 +457,17 @@ VOCAB.BODY_PART_7 = [
     "zády",
     "břichem",
     "pěstí",
-]
+];
+
+VOCAB.ANIMAL_BODY_PART_MN_7 = [
+    "hlavami",
+    "nohami",
+    "pařáty",
+    "zadky",
+    "kožkami",
+    "očima",
+    "ocasy",
+];
 
 VOCAB.ARTEFACT_4 = [
     "[ITEM_M_4] [ABSTRACT_2]",
