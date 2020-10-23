@@ -76,6 +76,7 @@ VOCAB.PROFESSION_M_2 = [
     "sluhy",
     "kapitána",
     "zabijáka", //TODO čeho
+    "zloděje [ANIMAL_2_MN]",
 ];
 
 VOCAB.PROFESSION_M_7 = [
@@ -190,9 +191,35 @@ VOCAB.PROFESSION_F_2 = [
     "kněžny",
 ];
 
+VOCAB.PROFESSION_F_4 = [
+    "čarodějnici",
+    "lovkyni",
+    "bojovnici",
+    "kněžku",
+    "kovářku",
+    "obchodnici",
+    "rebelku",
+    "zlodějku",
+    "kurtizánu",
+    "rybářku",
+    "učitelku",
+    "lučištnici",
+    "strážkyni",
+    "vůdkyni",
+    "hrdinku",
+    "trhovkyni",
+    "akrobatku",
+    "umělkyni",
+    "kuchařku",
+    "pekařku",
+    "kapitánku",
+    "služku",
+    "kněžku",
+    "potapěčku"
+];
+
 VOCAB.PROFESSION_M_4 = [
-    "zloděje [ANIMAL_2_MN]",
-    "čarodějnice"
+    "[PROFESSION_M_2]",
 ]
 
 VOCAB.PROFESSION_MN_4 = [
@@ -221,6 +248,7 @@ VOCAB.PROFESSION_MN_2 = [
     "kovářů",
     "obchodníků", 
     "rebelů",
+    "potapěčů",
     "lupičů",
     "vrahů",
     "svůdníků",

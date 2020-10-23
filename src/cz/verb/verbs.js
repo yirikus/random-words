@@ -49,7 +49,7 @@ VOCAB.VERB_ACTION = [
     "zabíjí [ANIMAL_4_MN] v [BIOME_6]",
     "odhalí tajemství [ANIMAL_2_MN]",
     "provádí rituál",    
-    "hromadí [STORED_STUFF]",
+    "hromadí [WEIRD_STUFF]",
     "vyvolává démona",
     "soutěží na turnaji",
     "utíká pryč",

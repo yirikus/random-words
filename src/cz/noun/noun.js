@@ -501,6 +501,33 @@ VOCAB.FRUIT_F = [
     "bluma",
 ];
 
+
+
+VOCAB.SECRET_STASH_6 = [
+    "v převráceném člunu",
+    "ve ztroskotané lodi",
+    "v zatopené jeskyni",
+    "v zatopeném kanálu",
+    "v dutém stromu",
+    "v podpalubí [BUILDING_TRAIT][_F_2] lodi",
+    "v podpalubí ztroskotan[_F_2] lodi",
+    "v kopici slizu",
+    "v břiše zahynuté [ANIMAL_F_2|CREATURE_F_2]",
+    "v břiše zahynutého [ANIMAL_M_2|CREATURE_M_2]",
+];
+
+VOCAB.UNEXPECTED_DISCOVERY = [
+    "živého [PROFESSION_M_4|ANIMAL_M_4]",
+    "živého [ANIMAL_MUTANT]-[ANIMAL_M_4]",
+    "živé [ANIMAL_S]",
+    "živé [ANIMAL_MUTANT]-[ANIMAL_S]",
+    "[TRAIT_ML][_M_4] [PROFESSION_M_4|ANIMAL_M_4]",
+    "živou [ANIMAL_MUTANT]-[ANIMAL_F_4]",
+    "živou [PROFESSION_F_4|ANIMAL_F_4] ",
+    "[TRAIT_ML][_F_4] [PROFESSION_F_4|ANIMAL_F_4]",
+    "[WEIRD_STUFF]"
+]
+
 VOCAB.WEIRD_STUFF = [
     "klíče, o kterých nikdo neví k čemu jsou",
     "zrezivělé lžíce",
@@ -519,7 +546,6 @@ VOCAB.WEIRD_STUFF = [
     "zbytky od večeře",
     "barely se svěcenou vodou",
     "ukradené předměty",
-    "nově narozené děti",
     "zbraně z dob války",
     "zbytečné medaile",
     "smrduté ryby",

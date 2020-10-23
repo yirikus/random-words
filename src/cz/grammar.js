@@ -89,7 +89,8 @@ var VOCAB = {
         "V městském přístavu zakotvila loď [HUMANOID_MN_2],[CREW_ACTIVITY_MN]",
         "V městském přístavu zakotvila loď [HUMANOID_MN_2] [SHIP_CONTENTS]",
         "V městském přístavu zakotvila loď [HUMANOID_MN_2] převážející [STORED_STUFF]",
-        "Kapitán lodi <b class='name blue'>[SHIP_NAME]</b> prý [CAPTAIN_ACTIVITY]"
+        "Kapitán lodi <b class='name blue'>[SHIP_NAME]</b> prý [CAPTAIN_ACTIVITY]",
+        "Skupina [PROFESSION_MN_2] našla [SECRET_STASH_6] [UNEXPECTED_DISCOVERY]"
     ],
 
     SWARM_SOLUTION: [

@@ -313,6 +313,60 @@ VOCAB.ANIMAL_M = [
     "zajíc",
 ];
 
+VOCAB.ANIMAL_M_4 = [
+    "býka",
+    "bobra",
+    "hada",
+    "hrocha",
+    "jelena",
+    "ježka",
+    "kance",
+    "kraba",
+    "koně",
+    "klokana",
+    "leguána",
+    "lemura",
+    "lva",
+    "lachtana",
+    "mrože",
+    "medvěda",
+    "mývala",
+    "nosorožce",
+    "netopýra",
+    "potkana",
+    "opičáka",
+    "pantera",
+    "ptáka",
+    "pásovce",
+    "ptakopyska",
+    "skunka",
+    "škorpiona",
+    "slimáka",
+    "tuleňe",
+    "vlka",
+    "velblouda",
+    "zajíce",
+];
+
+VOCAB.ANIMAL_F_4 = [
+    "hyenu",
+    "chobotnici",
+    "krysu",
+    "krávu",
+    "kočku",
+    "lišku",
+    "myš",
+    "ovci",
+    "opici",
+    "parybu",
+    "rybu",
+    "ropuchu",
+    "vačici",
+    "veverku",
+    "žirafu",
+    "žábu"
+]
+
 VOCAB.ANIMAL_2 = ["[ANIMAL_M_2|ANIMAL_S_2|ANIMAL_F_2]"];
 
 VOCAB.ANIMAL_M_2 = [

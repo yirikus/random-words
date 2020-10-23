@@ -12,6 +12,14 @@ VOCAB.POWER_ML = [
     "podl",
 
 ]
+VOCAB.BUILDING_TRAIT=[
+    "strašideln",
+    "proklet",
+    "opušťen",
+    "rozpadl",
+    "shořel",
+]
+
 VOCAB.TRAIT_ML = [
     "nudn",
     "strašideln",
