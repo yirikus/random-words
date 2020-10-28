@@ -1,19 +1,57 @@
-const version = '23.10.2020, 11:54 (v24 - unexpected discovery)';
+const version = '28.10.2020, 12:51 (v25 - preferred words)';
 const main = () => {
+    writePreferences();
+    writeGeneratedWords();
+}
+
+const writeGeneratedWords = () => {
     writeElement('cityName', cityName());
     writeElement('cityDesc', cityDesc());
-    writeElement('mainStory', mainStory()); 
-    writeElement('story', story()); 
-    writeElement('buildings', buildings());   
-    writeElement('faith', faith());  
-    writeElement('characters', characters()); 
+    writeElement('mainStory', mainStory());
+    writeElement('story', story());
+    writeElement('buildings', buildings());
+    writeElement('faith', faith());
+    writeElement('characters', characters());
     writeElement('monsters', monsters());
     writeElement('techno-monsters', technoMonsters());
-    writeElement('version', version);  
+    writeElement('version', version);
+}
+
+const writePreferences = () => {
+    let elements = $('.preference');
+    for(let i = 0; i < elements.length; i++) {
+        if (!VOCAB[elements[i].id]) {
+            console.error('Vocabulary ' + VOCAB[elements[i].id] + 'does not exist!');
+            continue;
+        }
+        writeElement(elements[i].id, options(VOCAB[elements[i].id]));
+    }
+}
+
+const generate = () => {
+    resetContext()
+    setContext('preferences');
+    addPreferencesToContext();
+    writeGeneratedWords();
+}
+
+const addPreferencesToContext = () => {
+    let elements = $('.preference');
+    for(let i = 0; i < elements.length; i++) {
+        let val = $(elements[i]).val();
+        if (val) {
+            addToContext(elements[i].id, val);
+        }
+    }
+}
+
+const options = (list) => {
+    let opts = list.map(a => '<option>' + a + '</option>');
+    return '<option></option>' + opts.join('');
 }
 
 const writeElement = (elementId, value) => {
-    document.getElementById(elementId).innerHTML = value;    
+    document.getElementById(elementId).innerHTML = value;
 }
 
 const writeList = (grammar, count) => {

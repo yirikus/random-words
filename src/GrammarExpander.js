@@ -5,16 +5,24 @@
  * @param {*} expandable 
  */
 const getVocabNames = (expandable) => expandable.replace(/\[(.*)\]/, "$1").split("|");
-const context = {
-    currentContext: 'default',
-    vocabNames: {
-        /*  example:
-        'PROFESSION': {
-                'blacksmith': []
-            }
-        } */
-    }
-};
+const initContext = () => {
+   return {
+       currentContext: 'default',
+       vocabNames: {
+           /*  example:
+           'PROFESSION': {
+                   'blacksmith': []
+               }
+           } */
+       }
+   };
+}
+
+var context = initContext();
+
+const resetContext = () => {
+    context = initContext();
+}
 
 /**
  * Choose on of possible vocabularies from given expandable element
@@ -53,7 +61,7 @@ const useFromContext = (vocabName) => {
 /**
  * Replace one expandable element in a word
  * @param {*} word word that consists of exapandable elements ie [A][B][C]
- * @param {*} expandable string contained in word that should be raplaced with word 
+ * @param {*} expandable string contained in word that should be raplaced with word
  *      from dictionary, ie [A|B|]
  */
 const replaceExapandableWord = (word, expandable) => {
@@ -93,11 +101,11 @@ const replaceExapandableWord = (word, expandable) => {
  * Applies params to a word
  * example: [ADJ:SIZE:_M] -> [$1$_ML][$2$]
  * result: [SIZE_M][_M]
- * @param {*} word 
- * @param {*} params 
+ * @param {*} word
+ * @param {*} params
  */
 const applyParams = (word, params) => {
-    
+
     if (!word || word.indexOf('$') < 0) {
         return word;
     }

@@ -19,9 +19,50 @@
         <link rel="stylesheet" href="style.css">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </head>
     <body>
+        <header>
+            <div class="collapse bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h4 class="text-white">Preferované parametry</h4>
+                            <div class="form-group row">
+                                <label for="ANIMAL_M" class="text-white col-sm-4 col-form-label">Zvíře mužského rodu</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control preference" id="ANIMAL_M">
+                                        <option>-</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="ANIMAL_F" class="text-white col-sm-4 col-form-label">Zvíře ženského rodu</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control preference" id="ANIMAL_F">
+                                        <option>-</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container d-flex justify-content-between">
+                    <span class="navbar-brand d-flex align-items-center">
+                        <strong>Generátor</strong>
+                    </span>
+                    <form class="form-inline">
+                    <button class="btn btn-secondary mr-sm-2" type="button" onClick="generate()">Generuj!</button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </header>
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link " href="index.html">EN</a>

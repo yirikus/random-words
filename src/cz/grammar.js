@@ -34,16 +34,16 @@ var VOCAB = {
 
     MONSTER_GRAMMAR: [
         "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] [MATERIAL_ML][_M] golem [CLOTHES_6|WEAPON_7|]",
-        "[ADJ:TRAIT:_F] [ADJ:RACE:_F|] [ANIMAL_F] [FEATURE_7]",
-        "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] [ANIMAL_M|HUMANOID_M] [FEATURE_7]",
-        "[APPEARENCE_ANIMAL_ML][_M] <b class='brown'>[ANIMAL_MUTANT]-[ANIMAL_M]</b> [FEATURE_7]",
-        "[APPEARENCE_ANIMAL_ML][_F] <b class='brown'>[ANIMAL_MUTANT]-[ANIMAL_F]</b> [FEATURE_7]",
+        "[ADJ:TRAIT:_F] [ADJ:RACE:_F|] [*ANIMAL_F] [FEATURE_7]",
+        "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] [*ANIMAL_M|HUMANOID_M] [FEATURE_7]",
+        "[APPEARENCE_ANIMAL_ML][_M] <b class='brown'>[ANIMAL_MUTANT]-[*ANIMAL_M]</b> [FEATURE_7]",
+        "[APPEARENCE_ANIMAL_ML][_F] <b class='brown'>[ANIMAL_MUTANT]-[*ANIMAL_F]</b> [FEATURE_7]",
         "[APPEARENCE_ANIMAL_ML][_S] <b class='brown'>[ANIMAL_MUTANT]-[ANIMAL_S]</b> [FEATURE_7]",
     ],
 
     TECHNO_MONSTER_GRAMMAR: [
-        "[APPEARENCE_ANIMAL_ML][_M] <b class='blue'>[ANIMAL_MUTANT]-[ANIMAL_M]</b> [TECHNO_FEATURE_7]",
-        "[APPEARENCE_ANIMAL_ML][_F] <b class='blue'>[ANIMAL_MUTANT]-[ANIMAL_F]</b> [TECHNO_FEATURE_7]",
+        "[APPEARENCE_ANIMAL_ML][_M] <b class='blue'>[ANIMAL_MUTANT]-[*ANIMAL_M]</b> [TECHNO_FEATURE_7]",
+        "[APPEARENCE_ANIMAL_ML][_F] <b class='blue'>[ANIMAL_MUTANT]-[*ANIMAL_F]</b> [TECHNO_FEATURE_7]",
         "[APPEARENCE_ANIMAL_ML][_S] <b class='blue'>[ANIMAL_MUTANT]-[ANIMAL_S]</b> [TECHNO_FEATURE_7]",
     ],
 

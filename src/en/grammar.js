@@ -44,17 +44,17 @@ var VOCAB = {
     ],
 
     MONSTER_GRAMMAR: [
-        "[TRAIT|CONDITION] [ELEMENT|MATERIAL|FOOD] golem that looks [EMOTION]",
-        "[TRAIT|CONDITION] [MATERIAL|FOOD] construct",
-        "[TRAIT|CONDITION] [CREATURE] that looks [EMOTION]",
-        "[TRAIT|CONDITION] [CREATURE|ANIMAL]",
+        "[TRAIT|CONDITION] [ELEMENT|MATERIAL|FOOD] <b class='brown'>golem</b> that looks [EMOTION]",
+        "[TRAIT|CONDITION] [MATERIAL|FOOD] <b class='brown'>construct</b>",
+        "[TRAIT|CONDITION] <b class='brown'>[CREATURE]</b> that looks [EMOTION]",
+        "[TRAIT|CONDITION] <b class='brown'>[CREATURE|*ANIMAL]</b>",
         "[TRAIT|CONDITION] [HUMANOID] [WEAPON_GRAMMAR]",
-        "[ANIMAL]-[ANIMAL] with [ANIMALISTIC_FEATURE]",
-        "[COLOR] <b>[ANIMAL]-[ANIMAL]</b> with [ANIMALISTIC_FEATURE]",
+        "<b class='brown'>[ANIMAL]-[*ANIMAL]</b> with [ANIMALISTIC_FEATURE]",
+        "[COLOR] <b class='brown'>[ANIMAL]-[*ANIMAL]</b> with [ANIMALISTIC_FEATURE]",
     ],
 
     TECHNO_MONSTER_GRAMMAR: [
-        "[COLOR] <b>[ANIMAL]-[ANIMAL]</b> with [TECHNO_FEATURE]",
+        "[COLOR] <b class='blue'>[ANIMAL]-[*ANIMAL]</b> with [TECHNO_FEATURE]",
     ],
 
     CLOTHES_GRAMMAR: [
