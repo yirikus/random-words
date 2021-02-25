@@ -108,6 +108,7 @@ VOCAB.FEATURE_7 = [
     "s dlouhýma ušima",
     "s krátkými uši",
     "s malou hlavou",
+    "s lidskou tváří",
     "s výrůstky na bradě",
     "s chapadly na bradě",
     "s bodáky na bradě",

@@ -34,6 +34,13 @@ VOCAB.CAPTAIN_ACTIVITY = [
     "po roce cestování konečně nalezl [ARTEFACT_M_4|ARTEFACT_F_4|ARTEFACT_S_4]",
 ]
 
+VOCAB.VERB_SCARED = [
+    "vyděsil",
+    "překvapil",
+    "přepadl",
+    "pokousal"
+]
+
 VOCAB.VERB_ACTION = [
     //action
     "přináší [ADJ:TRAIT:_F_4] zprávu o [BIOME_6]",

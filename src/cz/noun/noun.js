@@ -588,6 +588,8 @@ VOCAB.EVENT = [
     "turnaj v [ACTIVITY]"
 ]
 
+VOCAB.CREATURE_FEATURE
+
 VOCAB.BODY_PART_7 = [
     "hlavou",
     "nohou",

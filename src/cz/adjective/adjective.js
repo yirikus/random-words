@@ -105,6 +105,7 @@ VOCAB.APPEARENCE_ANIMAL_ML = [
     "chlupat",
     "šupinat",
     "slizsk",
+    "zmutovan",
     "obojživeln",
     "opeřen",
     "[COLOR]",

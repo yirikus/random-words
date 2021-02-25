@@ -1,4 +1,4 @@
-const version = '28.10.2020, 12:51 (v25 - preferred words)';
+const version = '25.02.2021, 15:45 (v26 - shark with human face)';
 const main = () => {
     writePreferences();
     writeGeneratedWords();

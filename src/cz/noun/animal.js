@@ -311,6 +311,7 @@ VOCAB.ANIMAL_M = [
     "vlk",
     "velbloud",
     "zajíc",
+    "žralok",
 ];
 
 VOCAB.ANIMAL_M_4 = [
