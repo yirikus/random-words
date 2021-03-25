@@ -56,6 +56,21 @@ const useFromContext = (vocabName) => {
             return word;
         }
     }
+    return expandWord(getVocabulary(vocabName, '*' + vocabName));
+}
+
+function usesContext(vocabName) {
+    return vocabName.indexOf('*') === 0;
+}
+
+function useParamsWithContext(vocabNameAndParams) {
+    for (let i = 1; i < vocabNameAndParams.length; i++) {
+        if (usesContext(vocabNameAndParams[i])) {
+            let paramVocabName = vocabNameAndParams[i].substr(1);
+            vocabNameAndParams[i] = useFromContext(paramVocabName);
+            addToContext(paramVocabName, vocabNameAndParams[i]);
+        }
+    }
 }
 
 /**
@@ -73,28 +88,34 @@ const replaceExapandableWord = (word, expandable) => {
         // empty option, ie <> or second option in <A|>
         return word.replace(expandable, "");
     } else {
-        if (vocabName.indexOf('*') === 0) {
+        if (usesContext(vocabName)) {
             vocabName = vocabName.substr(1);
             useContext = true;
         }
+        useParamsWithContext(vocabNameAndParams);
         if (useContext) {
             let fromContext = useFromContext(vocabName);
             if (fromContext) {
                 return word.replace(expandable, fromContext);
             }
         }
-        let replaceWithExpandable = VOCAB[vocabName];
-        if (!replaceWithExpandable) {
-            console.warn("cannot expand " + vocabName + " in word " + word);
-            replaceWithExpandable = '';
-        }
-        let replaceWith = expandWord(replaceWithExpandable, vocabNameAndParams.slice(1));
+
+        let replaceWith = expandWord(getVocabulary(vocabName, word), vocabNameAndParams.slice(1));
         let expandedWord = word.replace(expandable, replaceWith);
         if (useContext) {
             addToContext(vocabName, replaceWith);
         }
         return expandedWord;
     }
+}
+
+function getVocabulary(vocabName, sentence) {
+    let vocabulary = VOCAB[vocabName.toUpperCase()];
+    if (!vocabulary) {
+        console.warn("cannot expand " + vocabName + " in sentence " + sentence);
+        vocabulary = '';
+    }
+    return vocabulary;
 }
 
 /**
@@ -109,8 +130,10 @@ const applyParams = (word, params) => {
     if (!word || word.indexOf('$') < 0) {
         return word;
     }
-    for (let i = 0; i < params.length; i++) {
-        word = word.replace(new RegExp('\\$' + (i + 1) + '\\$','g'), params[i]);
+    if (params) {
+        for (let i = 0; i < params.length; i++) {
+            word = word.replace(new RegExp('\\$' + (i + 1) + '\\$', 'g'), params[i]);
+        }
     }
     return word;
 }

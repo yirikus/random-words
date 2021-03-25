@@ -1,21 +1,4 @@
-const version = '25.02.2021, 15:45 (v26 - shark with human face)';
-const main = () => {
-    writePreferences();
-    writeGeneratedWords();
-}
-
-const writeGeneratedWords = () => {
-    writeElement('cityName', cityName());
-    writeElement('cityDesc', cityDesc());
-    writeElement('mainStory', mainStory());
-    writeElement('story', story());
-    writeElement('buildings', buildings());
-    writeElement('faith', faith());
-    writeElement('characters', characters());
-    writeElement('monsters', monsters());
-    writeElement('techno-monsters', technoMonsters());
-    writeElement('version', version);
-}
+const version = '25.03.2021, 14:56 (v27 - hearthstone cards)';
 
 const writePreferences = () => {
     let elements = $('.preference');
@@ -72,7 +55,7 @@ const generateWord = (grammar) => {
 
 const cityName = () => {
     GrammarExpander.setContext('city');
-    return GrammarExpander.expandWord(VOCAB.CITY_NAME_GRAMMAR).toUpperCase();    
+    return GrammarExpander.expandWord(VOCAB.CITY_NAME_GRAMMAR).toUpperCase();
 }
 
 const cityDesc = () => {
@@ -114,5 +97,3 @@ const technoMonsters = () => {
     GrammarExpander.setContext('technoMonsters');
     return writeList(VOCAB.TECHNO_MONSTER_GRAMMAR, 5);
 }
-
-main();

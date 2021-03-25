@@ -2,21 +2,16 @@
     <head>
             <meta charset="UTF-8">
         <title>Random words generator!</title>
-        <script src="cz/grammar.js"></script>
-        <script src="cz/noun/noun.js"></script>
-        <script src="cz/noun/profession.js"></script>
-        <script src="cz/noun/building.js"></script>
-        <script src="cz/noun/animal.js"></script>
-        <script src="cz/noun/character.js"></script>
-        <script src="cz/noun/godnames.js"></script>
-        <script src="cz/adjective/adjective.js"></script>
-        <script src="cz/verb/verbs.js"></script>
+        <script src="hs/grammar.js"></script>
+        <script src="hs/noun/noun.js"></script>
+        <script src="hs/adjective/adjective.js"></script>
+
         <script src="common/noun/names.js"></script>
         <script src="common/noun/cityName.js"></script>
         <script src="util.js"></script>
         <script src="GrammarExpander.js"></script>
         <script defer="defer" src="generator.js"></script>
-        <script defer="defer" src="cz/app.js"></script>
+        <script defer="defer" src="hs/app.js"></script>
         <link rel="stylesheet" href="style.css">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -29,19 +24,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h4 class="text-white">Preferované parametry</h4>
+                            <h4 class="text-white">Preffered parameters</h4>
                             <div class="form-group row">
-                                <label for="ANIMAL_M" class="text-white col-sm-4 col-form-label">Zvíře mužského rodu</label>
+                                <label for="CLASS" class="text-white col-sm-4 col-form-label">Class</label>
                                 <div class="col-sm-8">
-                                    <select class="form-control preference" id="ANIMAL_M">
+                                    <select class="form-control preference" id="CLASS">
                                         <option>-</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="ANIMAL_F" class="text-white col-sm-4 col-form-label">Zvíře ženského rodu</label>
+                                <label for="RACE" class="text-white col-sm-4 col-form-label">Minion type</label>
                                 <div class="col-sm-8">
-                                    <select class="form-control preference" id="ANIMAL_F">
+                                    <select class="form-control preference" id="RACE">
                                         <option>-</option>
                                     </select>
                                 </div>
@@ -53,10 +48,10 @@
             <div class="navbar navbar-dark bg-dark shadow-sm">
                 <div class="container d-flex justify-content-between">
                     <span class="navbar-brand d-flex align-items-center">
-                        <strong>Generátor</strong>
+                        <strong>Generator</strong>
                     </span>
                     <form class="form-inline">
-                    <button class="btn btn-secondary mr-sm-2" type="button" onClick="generate()">Generuj!</button>
+                    <button class="btn btn-secondary mr-sm-2" type="button" onClick="generate()">Generate!</button>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -69,57 +64,44 @@
                 <a class="nav-link " href="index.html">EN</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="cz.html">CZ</a>
+                <a class="nav-link" href="cz.html">CZ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="hs.html">Hearthstone</a>
+                <a class="nav-link active" href="cz.html">Hearthstone</a>
             </li>
         </ul>
         <div class="container bottom-buffer">
-            <h1>
-                <span id="cityName"></span>
-                <small class="text-muted" id="cityDesc"></small>
-            </h1>
-            <h4 id="mainStory"></h4>
-            <div class="row">                
-                <emphasis class="list-unstyled" id="story"></emphasis> 
-            </div>
-            <br/>
-            <div class="row">   
-                <div class="col-sm">  
-                    <h2>Místa</h2>
-                    <div id="buildings"></div>
-                </div>
-                <div class="col-sm">
-                    <h2 class="title">Víra:</h2>
-                    <div id="faith"></div>
-                </div>
-                <div class="col-sm">
-                    <h2 class="title">Lidé:</h2>
-                    <div id="characters"></div>
-                </div>
-            </div>
-            <br/>
             <div class="row">
                 <div class="col-sm">
-                    <h2 class="title">Nepřátelé: </h2>
-                    <div id="monsters"></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <h2 class="title">Techno obluda: </h2>
-                        <div id="techno-monsters"></div>
+                    <div class="text-right">
+                        <img class="float-end" src="hs/img/card.png"/>
                     </div>
                 </div>
+                <div class="col-sm">
+                    <h1 id="cardName" class="name"></h1>
+                    <ul>
+                        <li><span class="name">Type:</span> Minion </li>
+                        <li><span class="name">Minion race:</span> <span id="cardRace"></span></li>
+                        <li><span class="name">Rarity:</span> Common </li>
+                        <li><span class="name">Set:</span> Forged in the Barrens </li>
+                        <li><span class="name">Class:</span> <span id="cardClass"></span></li>
+                    </ul>
+                </div>
             </div>
+
+
         </div>
             <footer class="footer">
                 <div class="container">
-                  <span class="text-muted">Poslední aktualizace: <span id="version"></span></span>
+                  <span class="text-muted">Last update: <span id="version"></span></span>
                 </div>
             </footer>
         </div>
         <br/>
     </body>
+
+<!--
+
+-->
 
 </html>
