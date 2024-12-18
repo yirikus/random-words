@@ -33,9 +33,10 @@ var VOCAB = {
     ],
 
     MONSTER_GRAMMAR: [
-        "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] [MATERIAL_ML][_M] golem [CLOTHES_6|WEAPON_7|]",
-        "[ADJ:TRAIT:_F] [ADJ:RACE:_F|] [*ANIMAL_F] [FEATURE_7]",
-        "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] [*ANIMAL_M|HUMANOID_M] [FEATURE_7]",
+        "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] <b class='brown'>[MATERIAL_ML][_M] golem</b> [CLOTHES_6|WEAPON_7|]",
+        "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] <b class='brown'>[MATERIAL_ML|GEM_ML|FOOD_ML|ELEMENT_ML][_M] elementál</b> [WEAPON_7|]",
+        "[ADJ:TRAIT:_F] [ADJ:RACE:_F|] <b class='brown'>[*ANIMAL_F]</b> [FEATURE_7]",
+        "[ADJ:TRAIT:_M] [ADJ:RACE:_M|] <b class='brown'>[*ANIMAL_M|HUMANOID_M]</b> [FEATURE_7]",
         "[APPEARENCE_ANIMAL_ML][_M] <b class='brown'>[ANIMAL_MUTANT]-[*ANIMAL_M]</b> [FEATURE_7]",
         "[APPEARENCE_ANIMAL_ML][_F] <b class='brown'>[ANIMAL_MUTANT]-[*ANIMAL_F]</b> [FEATURE_7]",
         "[APPEARENCE_ANIMAL_ML][_S] <b class='brown'>[ANIMAL_MUTANT]-[ANIMAL_S]</b> [FEATURE_7]",

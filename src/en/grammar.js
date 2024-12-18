@@ -3,8 +3,7 @@ var VOCAB = {
     BUILDING_GRAMMAR : [
 
         "[SIZE|] [CONDITION] [BUILDING]",
-        "[SIZE|] [CONDITION] [MATERIAL] [BUILDING]",
-        "[SIZE|] [CONDITION] [AREA]",
+        "[CONDITION] [AREA]",
         "[CONDITION] [BUILDING] [BUILDING_STATE_GRAMMAR|]",
     ],
 
@@ -16,16 +15,16 @@ var VOCAB = {
     MAIN_GRAMMAR: [],
 
     FAITH_GRAMMAR: [
-        "[GODNAME], mother of [CONDITION|] [ELEMENT|RACE] gods",
-        "[GODNAME], father of [CONDITION|] [ELEMENT|RACE] gods",
-        "[GODNAME], [TRAIT|] [RACE|] god of [ANIMAL|SUBJECT]",
-        "[GODNAME], [TRAIT|] [RACE|] goddess of [ANIMAL|SUBJECT]",
-        "[GODNAME], [RACE|] guardian of [ANIMAL|SUBJECT]",
-        "[GODNAME], [TRAIT|] [RACE|] god of the [ELEMENT|BIOME]",
-        "[GODNAME], [TRAIT|] [RACE|] goddess of the [ELEMENT|BIOME]",
-        "[GODNAME], [RACE|] guardian of the [BIOME]",
-        "[GODNAME], [TRAIT] [RACE|] bestower of healing",
-        "[GODNAME], [TRAIT|] [RACE|] gatekeeper of the [BIOME]",
+        "[*GODNAME], mother of [CONDITION|] [ELEMENT|RACE] gods",
+        "[*GODNAME], father of [CONDITION|] [ELEMENT|RACE] gods",
+        "[*GODNAME], [TRAIT|] [RACE|] god of [ANIMAL|SUBJECT]",
+        "[*GODNAME], [TRAIT|] [RACE|] goddess of [ANIMAL|SUBJECT]",
+        "[*GODNAME], [RACE|] guardian of [ANIMAL|SUBJECT]",
+        "[*GODNAME], [TRAIT|] [RACE|] god of the [ELEMENT|BIOME]",
+        "[*GODNAME], [TRAIT|] [RACE|] goddess of the [ELEMENT|BIOME]",
+        "[*GODNAME], [RACE|] guardian of the [BIOME]",
+        "[*GODNAME], [TRAIT] [RACE|] bestower of healing",
+        "[*GODNAME], [TRAIT|] [RACE|] gatekeeper of the [BIOME]",
 
     ],
 
@@ -45,10 +44,11 @@ var VOCAB = {
 
     MONSTER_GRAMMAR: [
         "[TRAIT|CONDITION] [ELEMENT|MATERIAL|FOOD] <b class='brown'>golem</b> that looks [EMOTION]",
-        "[TRAIT|CONDITION] [MATERIAL|FOOD] <b class='brown'>construct</b>",
+        "[TRAIT|CONDITION|CULTURE] [MATERIAL|FOOD] <b class='brown'>construct</b>",
+        "[TRAIT|CONDITION] [MATERIAL|FOOD|BIOME] <b class='brown'>elemental</b>",
         "[TRAIT|CONDITION] <b class='brown'>[CREATURE]</b> that looks [EMOTION]",
         "[TRAIT|CONDITION] <b class='brown'>[CREATURE|*ANIMAL]</b>",
-        "[TRAIT|CONDITION] [HUMANOID] [WEAPON_GRAMMAR]",
+        "[TRAIT|CONDITION] <b class='brown'>[HUMANOID]</b> [WEAPON_GRAMMAR]",
         "<b class='brown'>[ANIMAL]-[*ANIMAL]</b> with [ANIMALISTIC_FEATURE]",
         "[COLOR] <b class='brown'>[ANIMAL]-[*ANIMAL]</b> with [ANIMALISTIC_FEATURE]",
     ],

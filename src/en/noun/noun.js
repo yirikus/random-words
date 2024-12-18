@@ -24,7 +24,16 @@ VOCAB.MAGIC = [
 
 ];
 
+VOCAB.PLANT = [
+    "rose",
+    "tulip",
+    "tree",
+    "cactus",
+    "palm tree",
+]
+
 VOCAB.ELEMENT = [
+    "frost",
     "thunder",
     "ice",
     "fire",
@@ -53,6 +62,7 @@ VOCAB.DRINK = [
     "wine",
     "beer",
     "water",
+    "lemonade",
     "strange liquid"
 ]
 
@@ -61,6 +71,15 @@ VOCAB.FOOD = [
     "wheat",
     "rice", 
     "pastry",
+    "pasta",
+    "cake",
+    "porridge",
+    "jelly",
+    "ice cream",
+    "salad",
+    "toast",
+    "bread",
+    "pudding",
     "[DRINK]"
 ];
 
@@ -68,6 +87,9 @@ VOCAB.CELESTIAL = [
     "star",
     "sun",
     "moon",
+    "comet",
+    "planet",
+    "nebula",
 ]
 
 VOCAB.VEGETABLE = [
@@ -75,7 +97,9 @@ VOCAB.VEGETABLE = [
     "cucumber",
     "onion",
     "pepper",
-    "cabbage"
+    "cabbage",
+    "salad",
+    "beetroot",
 ];
 
 VOCAB.ANIMALS = [
@@ -87,7 +111,13 @@ VOCAB.ANIMALS = [
     "boars",
     "pigs",
     "chicken",
+    "camels",
+    "cows",
+    "cats",
+    "dogs",
+    "hyenas",
     "dragons",
+    "mice",
     "rats",
     "insects",
     "snakes",

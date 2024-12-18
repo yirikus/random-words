@@ -35,7 +35,8 @@ VOCAB.PROFESSION = [
     "Warmedic",
     "captain",
     "stablehand",
-    "scout"
+    "scout",
+    "demon hunter"
 ];
 
 VOCAB.ANIMAL = [
@@ -47,7 +48,9 @@ VOCAB.ANIMAL = [
     "scorpid",
     "toad",
     "hyena",
-    "basilisk"
+    "basilisk",
+    "wolf",
+    "rabbit",
 ];
 
 VOCAB.CREATURE_ADJ = [
@@ -56,6 +59,18 @@ VOCAB.CREATURE_ADJ = [
 
 VOCAB.CREATURE = [
     "spirit"
+]
+
+VOCAB.AREA = [
+    "Barrens",
+    "Zandalar",
+    "Nazmir",
+    "Stormwind city",
+    "Orgrimmar",
+    "Thunderbluff",
+    "Kul Tiras",
+    "Drustvar",
+    "Trigarde Sound"
 ]
 
 VOCAB.ELEMENTALS = [

@@ -94,13 +94,13 @@ VOCAB._STAV_MN_7=["mi"];
 
 
 VOCAB.AREA = [
-    "cemetary",
+    "[HUMANOID|] cemetery",
     "park",
-    "garden",
+    "[plant] garden",
     "slum",
     "alley",
-    "cave",
-    "road",
+    "[ANIMAL|HUMANOID|]cave",
+    "[MATERIAL] road",
 ];
 
 VOCAB.MAGIC = [

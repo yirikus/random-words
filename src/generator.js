@@ -1,4 +1,4 @@
-const version = '25.03.2021, 14:56 (v27 - hearthstone cards)';
+const version = '18.12.2024, 10:22 (v28 - now with elementals!)';
 
 const writePreferences = () => {
     let elements = $('.preference');

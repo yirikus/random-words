@@ -56,7 +56,7 @@ const useFromContext = (vocabName) => {
             return word;
         }
     }
-    return expandWord(getVocabulary(vocabName, '*' + vocabName));
+    return null;
 }
 
 function usesContext(vocabName) {
@@ -67,10 +67,24 @@ function useParamsWithContext(vocabNameAndParams) {
     for (let i = 1; i < vocabNameAndParams.length; i++) {
         if (usesContext(vocabNameAndParams[i])) {
             let paramVocabName = vocabNameAndParams[i].substr(1);
-            vocabNameAndParams[i] = useFromContext(paramVocabName);
-            addToContext(paramVocabName, vocabNameAndParams[i]);
+            let word = useFromContext(paramVocabName);
+            if (!word) {
+                word = expandWord(getVocabulary(paramVocabName, '*' + paramVocabName));
+            }
+            addToContext(paramVocabName, word);
         }
     }
+}
+
+/**
+ * If vocabName contains equality sign '=', this value is used and stored to context
+ * @param vocabName
+ * @returns {*|string} the used value
+ */
+function useValue(vocabName) {
+    let vocabNameAndValue = vocabName.split('=');
+    addToContext(vocabNameAndValue[0], vocabNameAndValue[1]);
+    return vocabNameAndValue[1];
 }
 
 /**
@@ -94,9 +108,16 @@ const replaceExapandableWord = (word, expandable) => {
         }
         useParamsWithContext(vocabNameAndParams);
         if (useContext) {
-            let fromContext = useFromContext(vocabName);
-            if (fromContext) {
-                return word.replace(expandable, fromContext);
+            // '=' sets given vocabulary to given value
+            // example: [*PROFESSION=necromancer] will set profession to 'necromancer' and set it to context
+            if (vocabName.indexOf('=') >= 0) {
+                let value = useValue(vocabName);
+                return word.replace(expandable, value);
+            } else {
+                let fromContext = useFromContext(vocabName);
+                if (fromContext) {
+                    return word.replace(expandable, fromContext);
+                }
             }
         }
 
@@ -132,7 +153,7 @@ const applyParams = (word, params) => {
     }
     if (params) {
         for (let i = 0; i < params.length; i++) {
-            word = word.replace(new RegExp('\\$' + (i + 1) + '\\$', 'g'), params[i]);
+            word = word.replace(new RegExp('\\$' + (i + 1) + '\\$', 'g'), params[i].toUpperCase());
         }
     }
     return word;

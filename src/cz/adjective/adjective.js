@@ -146,7 +146,12 @@ VOCAB.RACE_ML = [
     "stromov",    
     "démonick",
     "obojživeln",
-    "pekeln"
+    "pekeln",
+    "temn",
+    "horsk",
+    "seversk",
+    "bažinn",
+
 ];
 
 VOCAB.RACE_JR = [    
@@ -155,7 +160,8 @@ VOCAB.RACE_JR = [
     "elementální",
     "upíří",
     "vodní",
-    "elfí"
+    "elfí",
+    "přístavní"
 ];
 
 VOCAB.ANIMAL_ADJ=[
@@ -189,7 +195,29 @@ VOCAB.METAL_ML = [
     "stříbrn",
     "bronzov",
     "platinov",
-    "železn",   
+    "železn",
+    "mosazn",
+];
+
+VOCAB.FOOD_ML = [
+    "špagetov",
+    "dortov",
+    "ovocn",
+    "koláčov",
+    "pudinkov",
+    "masov",
+    "topinkov",
+    "salámov",
+    "hruškov",
+    "zmrzlinov",
+    "okurkov",
+    "kašovit",
+    "polívkov",
+    "rosolovit",
+];
+
+VOCAB.FOOD_JR = [
+    "želé",
 ];
 //VOCAB.METAL_JR = [];
 
@@ -211,7 +239,7 @@ VOCAB.ELEMENT_ML = [
     "mraziv",
     "ledov",
     "větrn",
-    "roslinn"
+    "rostlinn"
 ]
 
 

@@ -158,7 +158,6 @@ VOCAB.CONDITION = [
     "ruined",          
     "frozen",       
     "luxury",
-    "sexy",
     "exciting",
     "corrupted",
     "famous",
